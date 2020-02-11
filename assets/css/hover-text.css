@@ -2,13 +2,6 @@
   --color-of-text: #000000;
 }
 
-.main a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
 .main a:nth-child(1) {
   -webkit-clip-path: polygon(0 0, 100% 0, 50% 50%);
   clip-path: polygon(0 0, 100% 0, 50% 50%);
@@ -85,6 +78,119 @@
     -webkit-clip-path: var(--to);
     clip-path: var(--to);
     color: var(--color-of-text);
+  }
+}
+
+a.hover-link {
+  position: absolute;
+  display: block;
+  width: 61%;
+  height: 13%;
+  z-index: 1;
+  margin-top: 42px;
+}
+
+#dev {
+  width: 55.5%;
+}
+
+@media (max-width: 360px) {
+  #dev {
+    width: 66%;
+    margin-top: 16px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 361px) {
+  #dev {
+    width: 54.5%;
+    height: 48px;
+    margin-top: 23px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  #dev {
+    width: 51.5%;
+    margin-top: 30px;
+    height: 56px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #dev {
+    width: 45.5%;
+  }
+}
+
+@media (min-width: 1500px) {
+  #dev {
+    width: 36.5%;
+  }
+}
+
+#kennen {
+  width: 61%;
+}
+
+@media (max-width: 360px) {
+  #kennen {
+    width: 73%;
+    height: 35px;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 361px) {
+  #kennen {
+    width: 60%;
+    margin-top: 23px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  #kennen {
+    width: 56%;
+    margin-top: 30px;
+    height: 59px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #kennen {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1500px) {
+  #kennen {
+    width: 40%;
+  }
+}
+
+@media (max-width: 360px) {
+  #weirdo {
+    margin-top: 73px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 361px) {
+  #weirdo {
+    margin-top: 96px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  #weirdo {
+    margin-top: 125px;
+  }
+}
+
+@media (min-width: 769px) {
+  #weirdo {
+    margin-top: 168px;
   }
 }
 
