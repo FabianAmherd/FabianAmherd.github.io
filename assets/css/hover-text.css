@@ -1,0 +1,196 @@
+.main {
+  --color-of-text: #000000;
+}
+
+.main a:nth-child(1) {
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 50%);
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+}
+
+.main a:nth-child(2) {
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+}
+
+.main a:nth-child(3) {
+  -webkit-clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+  clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+}
+
+.main a:nth-child(4) {
+  -webkit-clip-path: polygon(0 0, 50% 50%, 0 100%);
+  clip-path: polygon(0 0, 50% 50%, 0 100%);
+}
+
+.main a:hover {
+  -webkit-clip-path: none;
+  clip-path: none;
+  z-index: 2;
+}
+
+.main a:nth-child(1):hover ~ .text:before {
+  --from: circle(0% at 50% 0%);
+  --to: circle(150% at 0% 50%);
+  -webkit-animation: textani 1s forwards;
+  animation: textani 1s forwards;
+}
+
+.main a:nth-child(2):hover ~ .text:before {
+  --from: circle(0% at 150% 50%);
+  --to: circle(100% at 50% 50%);
+  -webkit-animation: textani 1s forwards;
+  animation: textani 1s forwards;
+}
+
+.main a:nth-child(3):hover ~ .text:before {
+  --from: circle(0% at 50% 100%);
+  --to: circle(150% at 0% 50%);
+  -webkit-animation: textani 1s forwards;
+  animation: textani 1s forwards;
+}
+
+.main a:nth-child(4):hover ~ .text:before {
+  --from: circle(0% at 0% 50%);
+  --to: circle(150% at 0% 50%);
+  -webkit-animation: textani 1s forwards;
+  animation: textani 1s forwards;
+}
+
+.text {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-of-text);
+  text-stroke: 1px var(--color-of-text);
+  font-size: 350pt;
+  font-family: 'Staatliches', cursive;
+}
+
+.text:before {
+  content: attr(data-text);
+  position: absolute;
+}
+
+@keyframes textani {
+  0% {
+    -webkit-clip-path: var(--from);
+    clip-path: var(--from);
+  }
+  100% {
+    -webkit-clip-path: var(--to);
+    clip-path: var(--to);
+    color: var(--color-of-text);
+  }
+}
+
+a.hover-link {
+  position: absolute;
+  display: block;
+  width: 61%;
+  height: 13%;
+  z-index: 1;
+  margin-top: 42px;
+}
+
+#dev {
+  width: 55.5%;
+}
+
+@media (max-width: 360px) {
+  #dev {
+    width: 66%;
+    margin-top: 16px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 361px) {
+  #dev {
+    width: 54.5%;
+    height: 48px;
+    margin-top: 23px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  #dev {
+    width: 51.5%;
+    margin-top: 30px;
+    height: 56px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #dev {
+    width: 45.5%;
+  }
+}
+
+@media (min-width: 1500px) {
+  #dev {
+    width: 36.5%;
+  }
+}
+
+#kennen {
+  width: 61%;
+}
+
+@media (max-width: 360px) {
+  #kennen {
+    width: 73%;
+    height: 35px;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 361px) {
+  #kennen {
+    width: 60%;
+    margin-top: 23px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  #kennen {
+    width: 56%;
+    margin-top: 30px;
+    height: 59px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #kennen {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1500px) {
+  #kennen {
+    width: 40%;
+  }
+}
+
+@media (max-width: 360px) {
+  #weirdo {
+    margin-top: 73px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 361px) {
+  #weirdo {
+    margin-top: 96px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  #weirdo {
+    margin-top: 125px;
+  }
+}
+
+@media (min-width: 769px) {
+  #weirdo {
+    margin-top: 168px;
+  }
+}
+
