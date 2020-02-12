@@ -154,3 +154,46 @@
   }
 }
 
+.footer {
+  background-color: #305289;
+  padding-top: 100px;
+  color: rgb(255,255,255);
+  font-size: 18px;
+}
+
+.spacer-top {
+  height: 60px;
+  width: 3px;
+  background-color: #000000;
+  margin: auto;
+}
+
+.spacer-bot {
+  position: absolute;
+  width: 3px;
+  height: 60px;
+  background-color: #ffffff;
+  left: 50%;
+  margin-left: -1.5px;
+  z-index: 1;
+}
+
+#Logo {
+  margin-bottom: 43px;
+}
+
+#copyright {
+  font-size: 13px;
+  margin-top: 41px;
+}
+
+.link:hover {
+  color: #9f9f9f;
+  text-decoration: none;
+}
+
+.link {
+  color: #ffffff;
+}
+
+
