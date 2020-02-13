@@ -1,6 +1,7 @@
 #hero-vorteile{
   height:100vh;
   margin: 0;
+  display: grid;
 }
 #grid-container {
   display: grid;
@@ -32,8 +33,9 @@
   padding-left:10px;
 }
 .down-arrow{
-  text-align: center;
-  margin-top:180px ;
+  justify-self: center;
+  align-self: end;
+  margin-bottom: 40px;
 }
 #vorteile-grid{
   margin: 0px 5%;
@@ -59,9 +61,9 @@
   margin: 10px 0px 0px 20px;
 }
 #angebot-transition{
-  margin-top: 200px;
+  margin-top: 300px;
   text-align: center;
-  margin-bottom: 500px;
+  margin-bottom: 300px;
 }
 .transition-title{
  font-family: 'benton-sans', sans-serif; 
@@ -220,6 +222,7 @@ a {
   font-family: 'sofia-pro', sans-serif;
   font-size: 13px;
   margin-top: 41px;
+  margin-bottom: 0px;
 }
 
 .link:hover {
@@ -233,4 +236,14 @@ a {
 
 .adress{
   font-family: 'sofia-pro', sans-serif;
+}
+::-webkit-scrollbar{
+  width:20px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(
+    0deg,#305289,#3E83C1
+  );
+  border-radius: 6px;
+  height: 100px;
 }
