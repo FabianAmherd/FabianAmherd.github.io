@@ -49,8 +49,8 @@
 }
 
 .process-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: normal;
+  font-family: 'sofia-pro', sans-serif;
+  font-weight: 300;
   font-style: normal;
   line-height: 1.5em;
   font-size: 1.3em;
@@ -61,8 +61,8 @@
 
 @media (max-width: 360px) {
   .process-text {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
+    font-family: 'sofia-pro', sans-serif;
+    font-weight: 300;
     font-style: normal;
     line-height: 1.5em;
     font-size: 0.9em;
@@ -74,8 +74,8 @@
 
 @media (max-width: 576px) and (min-width: 361px) {
   .process-text {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
+    font-family: 'sofia-pro', sans-serif;
+    font-weight: 300;
     font-style: normal;
     line-height: 1.5em;
     font-size: 1em;
@@ -87,8 +87,8 @@
 
 @media (max-width: 768px) and (min-width: 577px) {
   .process-text {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
+    font-family: 'sofia-pro', sans-serif;
+    font-weight: 300;
     font-style: normal;
     line-height: 1.5em;
     font-size: 1.1em;
