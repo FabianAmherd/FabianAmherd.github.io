@@ -183,6 +183,7 @@
 }
 
 #copyright {
+  font-family: 'sofia-pro', sans-serif;
   font-size: 13px;
   margin-top: 41px;
 }
@@ -196,4 +197,6 @@
   color: #ffffff;
 }
 
-
+.adress{
+  font-family: 'sofia-pro', sans-serif;
+}
