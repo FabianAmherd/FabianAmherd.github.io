@@ -169,28 +169,3 @@ a.hover-link {
     width: 40%;
   }
 }
-
-@media (max-width: 360px) {
-  #weirdo {
-    margin-top: 73px;
-  }
-}
-
-@media (max-width: 576px) and (min-width: 361px) {
-  #weirdo {
-    margin-top: 96px;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 577px) {
-  #weirdo {
-    margin-top: 125px;
-  }
-}
-
-@media (min-width: 769px) {
-  #weirdo {
-    margin-top: 168px;
-  }
-}
-
