@@ -154,6 +154,12 @@
   }
 }
 
+@media (min-width: 1700px) {
+  #design {
+    width: 16%;
+  }
+}
+
 .footer {
   background-color: #305289;
   padding-top: 100px;

@@ -130,6 +130,12 @@ a.hover-link {
   }
 }
 
+@media (min-width: 1700px) {
+  #dev {
+    width: 32%;
+  }
+}
+
 #kennen {
   width: 61%;
 }
@@ -167,5 +173,11 @@ a.hover-link {
 @media (min-width: 1500px) {
   #kennen {
     width: 40%;
+  }
+}
+
+@media (min-width: 1700px) {
+  #kennen {
+    width: 35%;
   }
 }
