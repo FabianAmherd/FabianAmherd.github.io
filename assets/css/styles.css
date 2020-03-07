@@ -623,3 +623,18 @@ nav .logo img {
   transition: box-shadow 0.6s ease-in-out;
   opacity: 0;
 }
+
+.welcome>span{
+  display: inline-block;
+  overflow: hidden;
+}
+
+.welcome>span>span{
+   display: inline-block;
+   font-size: 50px;
+   color: rgb(97, 97, 97);
+   -webkit-transform: translateY(-100%);
+   transform: translateY(-100%);
+   will-change: transform;
+   font-family: monument;
+}

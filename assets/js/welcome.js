@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
    })
 
    anime({
-      targets: '.welcome_heading',
+      targets: '.welcome>span>span',
       delay: 400,
       opacity: 1,
       duration: 1800,
-      translateY: ['-30px', '0px'],
+      translateY: ['-100%', '0%'],
       easing: 'easeOutExpo'
    })
 
