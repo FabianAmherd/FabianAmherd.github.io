@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
    })
 
    .add({
-      delay: 1800,
+      delay: 2200,
       translateY: '-100vh',
       duration: 1500,
       complete: function(anime) {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       targets: '.welcome>span>span',
       delay: 400,
       opacity: 1,
-      duration: 1800,
+      duration: 2200,
       translateY: ['-100%', '0%'],
       easing: 'easeOutExpo'
    })

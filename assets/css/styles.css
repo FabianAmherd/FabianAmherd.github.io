@@ -467,7 +467,7 @@ nav {
 }
 
 .nav-scrolled {
-  background-color: white;
+  background-color: #F6F6F6;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
   transition-property: all;
   transition-duration: 0.5s;
@@ -612,13 +612,13 @@ nav .logo img {
 
 .welcome_heading {
   font-size: 40px;
-  margin: 30px;
   font-family: monument;
+
 }
 
 .welcome_logo {
-  width: 200px;
-  border-radius: 50px;
+  width: 250px;
+  border-radius: 70px;
   background: linear-gradient(-45deg, #e6e6e6, #ffffff);
   transition: box-shadow 0.6s ease-in-out;
   opacity: 0;
