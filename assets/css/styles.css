@@ -612,11 +612,17 @@ nav .logo img {
   font-weight: 800;
   margin: 50vh 0px 0px 15vw;
 }
-.nav-address{
+.nav-address1{
   position: absolute;
   font-size: 20px;
   font-weight: 300;
-  margin: 56vh 0px 0px 15vw;
+  margin: 57vh 0px 0px 15vw;
+}
+.nav-address2{
+  position: absolute;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 60vh 0px 0px 15vw;
 }
 .linkedin{
   position: absolute;
