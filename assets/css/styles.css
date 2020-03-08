@@ -582,16 +582,47 @@ nav .logo img {
   transform: rotate(90deg);
 }
 
-.nav-links li a {
-  color: white;
+.col-nav-right li a {
+  color:white;
   font-family: proxima-nova, sans-serif;
-  font-size: 200px;
+  font-size: 50px;
   font-weight: 800;
   text-decoration: none;
   font-size: 50px;
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
+}
+.col-nav-left{
+  color: white;
+  font-family: sofia-pro, sans-serif;
+}
+.nav-logo img{
+  margin: 14px 0px 0px 14px;
+  width: 50px;
+  height:50px;
+}
+.zurich{
+  font-size: 35px;
+  font-weight: 800;
+  margin: 300px 0px 0px 80px;
+}
+.nav-address{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0px 0px 0px 80px;
+  line-height: 28px;
+}
+.linkedin{
+  position: absolute;
+ bottom:0px;
+ left:14px;
+}
+.col-nav-right{
+  display: grid;
+  justify-items: right;
+  align-items:center;
+  margin: 0px 80px 0px 0px;
 }
 
 /* Loading Screen */
