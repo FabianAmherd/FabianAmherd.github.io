@@ -607,15 +607,16 @@ nav .logo img {
   height:50px;
 }
 .zurich{
+  position: absolute;
   font-size: 35px;
   font-weight: 800;
-  margin: 80% 0px 0px 25%;
+  margin: 50vh 0px 0px 15vw;
 }
 .nav-address{
+  position: absolute;
   font-size: 20px;
   font-weight: 300;
-  margin: 8px 0px 0px 25%;
-  line-height: 20px;
+  margin: 56vh 0px 0px 15vw;
 }
 .linkedin{
   position: absolute;
