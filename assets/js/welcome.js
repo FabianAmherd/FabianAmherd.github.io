@@ -38,14 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       easing: 'easeOutExpo'
    })
 
-   
-   anime({
-      targets: '.hero-button',
-      opacity: 1,
-      delay: 5800,
-      duration: 1000,
-      easing: 'easeOutExpo'
-   })
+
 
    anime({
       targets: '.hero-button',
