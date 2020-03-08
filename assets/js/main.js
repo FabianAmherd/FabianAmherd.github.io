@@ -21,7 +21,7 @@ heroButton.addEventListener('click', () => {
    .add({
       targets: 'nav',
       delay: 1300,
-      duration: 1000,
+      duration: 1500,
       translateY: ['-100px', '0px'],
       translateX: ['0', '0'],
       easing: 'easeOutExpo',
