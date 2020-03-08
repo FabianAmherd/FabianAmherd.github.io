@@ -425,16 +425,17 @@ body {
 
 .hero-button {
   opacity: 0;
+  margin-top: 300px;
 }
 
 .hero-button button {
   font-size: 20px;
   text-decoration: none;
-  border: 1px solid rgb(209, 209, 209);
+  border: 1px solid rgb(158, 158, 158);
   border-radius: 20px 3px 20px 3px;
-  background-color: rgb(12, 12, 12);
+  background-color: #818181;
   padding: 15px;
-  color: white;
+  color: #EEEEEE;
   font-family: Circular;
 }
 
@@ -624,10 +625,18 @@ nav .logo img {
   z-index: 9;
   overflow: hidden;
   font-size: 150px;
-
+  opacity: 1;
 }
-.box{
+.intro_container{
   position: absolute;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.intro_container>span{
+  display: inline-block;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 

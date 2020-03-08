@@ -43,13 +43,71 @@ document.addEventListener('DOMContentLoaded', () => {
    anime({
       targets: '.hero-button',
       opacity: 1,
-      delay: 5800,
-      duration: 1000,
-      translateY: ['-30px', '0px'],
+      delay: 6600,
+      duration: 1500,
       easing: 'easeOutExpo'
    })
 
+   anime({
+      targets: '.intro_container>.word1',
+      delay: 3000,
+      translateY: [
+            {
+              duration: 0,
+              value: '-=100%',
+            },
+            {
+               easing: 'easeOutExpo',
+               duration: 600,
+               value: '+=100',
+            },
+            {
+               easing: 'easeInExpo',
+               delay: 100,
+               duration: 600,
+               value: '+=100',
+            },
+      ],
+   })
 
+   anime({
+      targets: '.intro_container>.word2',
+      easing: 'easeOutExpo',
+      delay: 4400,
+      translateY: [
+            {
+              duration: 0,
+              value: '-=100%',
+            },
+            {
+               easing: 'easeOutExpo',
+               duration: 600,
+               value: '+=100',
+            },
+            {
+               easing: 'easeInExpo',
+               delay: 100,
+               duration: 600,
+               value: '+=100',
+            },
+      ],
+   })
 
+   anime({
+      targets: '.intro_container>.word3',
+      easing: 'easeInExpo',
+      delay: 5800,
+      translateY: [
+            {
+              duration: 0,
+              value: '-=100%',
+            },
+            {
+               easing: 'easeOutExpo',
+               duration: 600,
+               value: '+=100',
+            },
+      ],
+   })
 
 })
