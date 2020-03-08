@@ -502,17 +502,15 @@ nav .logo img {
 
 
 .nav-links {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   list-style: none;
   position: fixed;
   top: 0;
   left: 0;
-  background: rgb(129, 129, 129);
+  background: rgb(0, 0, 0);
   height: 100vh;
   width: 100%;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
   clip-path: circle(0% at 100% 0%);
   clip-path: circle(0% at 100% 0%);
   transition: all 0.5s ease;
@@ -584,6 +582,9 @@ nav .logo img {
 
 .nav-links li a {
   color: white;
+  font-family: proxima-nova, sans-serif;
+  font-size: 200px;
+  font-weight: 800;
   text-decoration: none;
   font-size: 50px;
   transition-property: all;
