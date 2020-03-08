@@ -7,9 +7,10 @@ const heroButton = document.querySelector('.hero-button')
 heroButton.addEventListener('click', () => {
    const timeline = anime.timeline({
    });
+
    timeline.add({
       targets: ".intro",
-      translateY: '100vh',
+      opacity: 0,
       easing: 'easeOutExpo',
       duration: 1500,
       complete: function(anime) {
@@ -19,7 +20,7 @@ heroButton.addEventListener('click', () => {
 
    .add({
       targets: 'nav',
-      delay: 1000,
+      delay: 1300,
       duration: 1000,
       translateY: ['-100px', '0px'],
       translateX: ['0', '0'],

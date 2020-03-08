@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
    anime({
       targets: '.hero-button',
       opacity: 1,
-      delay: 6600,
+      delay: 7000,
       duration: 1500,
       easing: 'easeOutExpo'
    })
 
    anime({
       targets: '.intro_container>.word1',
-      delay: 3000,
+      delay: 2700,
       translateY: [
             {
               duration: 0,
@@ -58,12 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                easing: 'easeOutExpo',
-               duration: 600,
+               duration: 1000,
                value: '+=100',
             },
             {
                easing: 'easeInExpo',
-               delay: 100,
                duration: 600,
                value: '+=100',
             },
@@ -73,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
    anime({
       targets: '.intro_container>.word2',
       easing: 'easeOutExpo',
-      delay: 4400,
+      delay: 4200,
       translateY: [
             {
               duration: 0,
@@ -81,12 +80,11 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                easing: 'easeOutExpo',
-               duration: 600,
+               duration: 1000,
                value: '+=100',
             },
             {
                easing: 'easeInExpo',
-               delay: 100,
                duration: 600,
                value: '+=100',
             },
@@ -96,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
    anime({
       targets: '.intro_container>.word3',
       easing: 'easeInExpo',
-      delay: 5800,
+      delay: 5700,
       translateY: [
             {
               duration: 0,
@@ -104,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                easing: 'easeOutExpo',
-               duration: 600,
+               duration: 1000,
                value: '+=100',
             },
       ],
