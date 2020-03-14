@@ -68,13 +68,3 @@ hamburger.addEventListener('click', () => {
    navLinks.classList.toggle("open");
    hamburger.classList.toggle("open");
 });
-
-// Progressbar
-
-$(window).scroll(function(){
-   var scroll = $(window).scrollTop(),
-   dh = $(document).height(),
-   wh = $(window).height();
-   scrollPercent = (scroll / (dh-wh)) * 100;
-   $('.progressbar').css('height', scrollPercent + '%');
-})
