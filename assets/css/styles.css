@@ -331,18 +331,19 @@ html { font-family: 'Inter', sans-serif; }
 a {
   color: #fff;
 }
+/*Custom progressbar*/
 ::-webkit-scrollbar{
-  width:6px;
+  width: 0;
 }
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(
-    0deg,#305289,#3E83C1
-  );
+.progressbar{
+  position: fixed;
+  top:0;
+  right:0;
+  width: 5px;
   border-radius: 10px;
-  height: 100px;
+  background: linear-gradient(to top, #4394D4,#305289);
 }
 
-/** Elias **/
 
 @font-face {
   src: url(fonts/MonumentExtended-Regular.otf);
