@@ -331,18 +331,18 @@ html { font-family: 'Inter', sans-serif; }
 a {
   color: #fff;
 }
+/*Custom progressbar*/
 ::-webkit-scrollbar{
-  width:6px;
+  width: 0;
 }
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(
-    0deg,#305289,#3E83C1
-  );
-  border-radius: 10px;
-  height: 100px;
+.progressbar{
+  position: fixed;
+  top:0;
+  right:0;
+  width: 5px;
+  background: linear-gradient(to top, #4394D4,#305289);
 }
 
-/** Elias **/
 
 @font-face {
   src: url(fonts/MonumentExtended-Regular.otf);
@@ -584,17 +584,6 @@ nav .logo img {
 .hamburger.open .line::before {
   transform: rotate(90deg);
 }
-
-.nav-link-element{
-  color:white;
-  font-family: proxima-nova, sans-serif;
-  font-weight: 800;
-  text-decoration: none;
-  font-size: 150px;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-}
 .col-nav-left{
   color: white;
   font-family: sofia-pro, sans-serif;
@@ -629,11 +618,71 @@ nav .logo img {
   bottom:3%;
   left:3%;
 }
+.linkedin:hover{
+  filter: brightness(0.5);
+}
 .col-nav-right{
   display: grid;
   justify-items: right;
   align-items:center;
-  margin: 175px 250px 125px 0px;
+  margin: 100px 80px 125px 0px;
+}
+/*Nav link hover effect*/
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.nav-link-element {
+  position: relative;
+  display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 800;
+  font-size: 130px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.nav-link-element:hover,
+.nav-link-element:focus {
+	outline: none;
+}
+.cl-effect-5 a {
+  overflow: hidden;
+  padding: 19px 0px;
+  height: 0.76em;
+  color: #fff;
+}
+.cl-effect-5 a span {
+	position: relative;
+  display: inline-block;
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+.cl-effect-5 a span::before {
+  position: absolute;
+	top: 100px;
+	content: attr(data-hover);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+	font-weight: 800;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.cl-effect-5 a:hover span,
+.cl-effect-5 a:focus span {
+	-webkit-transform: translateY(-100px);
+	-moz-transform: translateY(-100px);
+  transform: translateY(-100px);
+  color:#fff;
 }
 
 /* Loading Screen */

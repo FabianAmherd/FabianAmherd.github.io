@@ -42,8 +42,17 @@
   display:grid;
   place-content: center center;
 }
-.cross{
-}
 .column:nth-child(2n){
   background: rgba(226, 226, 226, 0.164)
+}
+/*Custom progressbar*/
+::-webkit-scrollbar{
+  width: 0;
+}
+.progressbar{
+  position: fixed;
+  top:0;
+  right:0;
+  width: 5px;
+  background: linear-gradient(to top, #4394D4,#305289);
 }

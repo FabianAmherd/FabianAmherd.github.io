@@ -237,13 +237,14 @@ a {
 .adress{
   font-family: 'sofia-pro', sans-serif;
 }
+/*Custom progressbar*/
 ::-webkit-scrollbar{
-  width:15px;
+  width: 0;
 }
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(
-    0deg,#305289,#3E83C1
-  );
-  border-radius: 6px;
-  height: 100px;
+.progressbar{
+  position: fixed;
+  top:0;
+  right:0;
+  width: 5px;
+  background: linear-gradient(to top, #4394D4,#305289);
 }
