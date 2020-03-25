@@ -20,7 +20,7 @@ heroButton.addEventListener('click', () => {
 
    .add({
       targets: 'nav',
-      delay: 1300,
+      delay: 3600,
       duration: 1500,
       translateY: ['-100px', '0px'],
       translateX: ['0', '0'],
@@ -31,31 +31,39 @@ heroButton.addEventListener('click', () => {
    anime({
       targets: '.word1',
       delay: 1800,
-      duration: 2000,
+      duration: 2700,
       translateY: ['-100%', '0%'],
       easing: 'easeOutExpo'
    })
 
    anime({
       targets: '.word2',
-      delay: 1900,
-      duration: 2000,
+      delay: 2000,
+      duration: 2700,
       translateY: ['-100%', '0%'],
       easing: 'easeOutExpo'
    })
 
    anime({
       targets: '.word3',
-      delay: 2000,
-      duration: 2000,
+      delay: 2200,
+      duration: 2700,
       translateY: ['-100%', '0%'],
       easing: 'easeOutExpo'
    })
 
    anime({
       targets: '.word4',
-      delay: 2100,
-      duration: 2000,
+      delay: 3000,
+      duration: 2700,
+      translateY: ['-100%', '0%'],
+      easing: 'easeOutExpo'
+   })
+
+   anime({
+      targets: '.word5',
+      delay: 3200,
+      duration: 2700,
       translateY: ['-100%', '0%'],
       easing: 'easeOutExpo'
    })
