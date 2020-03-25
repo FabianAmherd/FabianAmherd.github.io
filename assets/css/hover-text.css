@@ -51,7 +51,6 @@ html { font-family: 'Inter', sans-serif; }
 .text {
   color: transparent;
   -webkit-text-stroke: 1px var(--color-of-text);
-  text-stroke: 1px var(--color-of-text);
   font-size: 350pt;
   font-family: 'Staatliches', cursive;
 }
