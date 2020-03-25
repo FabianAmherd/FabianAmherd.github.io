@@ -1,35 +1,3 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-
-.process-title {
-  display: block;
-  /*color: rgb(0,0,0);*/
-  font-size: 7em;
-  font-family: Inter, cursive;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-.process-text {
-  font-family: Inter, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.5em;
-  font-size: 1.3em;
-  padding: 0;
-  margin: 0;
-  width: 80%;
-}
-.process-block {
-  margin: 30vh auto;
-  overflow: hidden;
-  width: 60%;
-  padding-left: 0px;
-}
-#design {
-  width: 27.5%;
-}
 #vorteile-transition{
   margin-top: 300px;
   text-align: center;
@@ -145,12 +113,10 @@ html { font-family: 'Inter', sans-serif; }
 a {
   color: #fff;
 }
-
 @font-face {
   src: url(fonts/MonumentExtended-Regular.otf);
   font-family: monument;
 }
-
 @font-face {font-family: "Circular";
    src: url("/assets//961a181da27e7cbc072ec2fb5bbfe2a9.eot"); /* IE9*/
    src: url("/assets/fonts/961a181da27e7cbc072ec2fb5bbfe2a9.eot") format("embedded-opentype"), /* IE6-IE8 */
@@ -159,12 +125,10 @@ a {
    url("/assets/fonts/961a181da27e7cbc072ec2fb5bbfe2a9.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
    url("/assets/fonts/961a181da27e7cbc072ec2fb5bbfe2a9.svg") format("svg"); /* iOS 4.1- */
  }
-
 /*,
 html {
   cursor: none;
 }*/
-
 body {
   width: 100%;
   font-family: proxima-nova, sans-serif;
@@ -172,7 +136,6 @@ body {
   font-style: normal;
   background-color: rgb(246, 246, 246);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -181,7 +144,6 @@ body {
   font-size: 100%;
   box-sizing: border-box;
 }
-
 .hero {
   height: 100vh;
   width: 100%;
@@ -190,14 +152,12 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
 .hero-scrolled {
   background-color: rgb(209, 209, 209);
   transition-property: background-color;
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
 }
-
 .hero-title-wrapper {
   display: flex;
   align-items: center;
@@ -206,20 +166,17 @@ body {
   position: relative;
   top: 35vh;
 }
-
 .hero-title {
   width: 100%;
   text-align: left;
   overflow: hidden;
 }
-
 .hero-title>span{
   display: inline-block;
   overflow: hidden;
   padding-left: 7px;
   margin-right: 25px;
 }
-
 .hero-title>span>span{
    display: inline-block;
    font-size: 100px;
@@ -229,12 +186,10 @@ body {
    will-change: transform;
    font-family: proxima-nova;
 }
-
 .hero-button {
   opacity: 0;
   margin-top: 300px;
 }
-
 .hero-button button {
   font-size: 20px;
   text-decoration: none;
@@ -245,7 +200,6 @@ body {
   color: #EEEEEE;
   font-family: Circular;
 }
-
 .hero-button button:hover {
   text-decoration: none;
   border: 1px solid rgb(209, 209, 209);
@@ -257,7 +211,6 @@ body {
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
 }
-
 nav {
   width: 100%;
   height: 8vh;
@@ -273,7 +226,6 @@ nav {
   z-index: 10;
   opacity: 0;
 }
-
 .nav-scrolled {
   background-color: #F6F6F6;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
@@ -281,7 +233,6 @@ nav {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
-
 .nav-wrapper {
   width: 90%;
   margin: 0 auto;
@@ -290,12 +241,10 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-
 nav .nav-wrapper .logo a {
   display: flex;
   align-items: center;
 }
-
 nav .logo {
   position: relative;
   float: left;
@@ -307,8 +256,6 @@ nav .logo img {
   position: absolute;
   left: 0;
 }
-
-
 .nav-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -323,11 +270,9 @@ nav .logo img {
   clip-path: circle(0% at 100% 0%);
   transition: all 0.5s ease;
 }
-
 .hover-this {
   transition: all 0.3s ease;
 }
-
 .cursor {
   position: fixed;
   width: 20px;
@@ -343,12 +288,10 @@ nav .logo img {
 .hover-this:hover ~ .cursor {
   transform: translate(-50%, -50%) scale(8);
 }
-
 .nav-links.open {
   clip-path: circle(100% at 50% 50%);
   clip-path: circle(100% at 50% 50%);
 }
-
 .hamburger {
   position: relative;
   display: flex;
@@ -358,7 +301,6 @@ nav .logo img {
   height: 50px;
   transition: all 0.5s ease-in-out;
 }
-
 .line {
   width: 45px;
   height: 4px;
@@ -367,7 +309,6 @@ nav .logo img {
   transition: all 0.2s ease-in-out;
   transform: translateY(6px);
 }
-
 .line::before {
   content: "";
   position: absolute;
@@ -378,12 +319,10 @@ nav .logo img {
   width: 45px;
   transform: translateY(-12px);
 }
-
 /* Animation */
 .hamburger.open .line {
   transform: rotate(-45deg);
 }
-
 .hamburger.open .line::before {
   transform: rotate(90deg);
 }
@@ -487,9 +426,7 @@ nav .logo img {
   transform: translateY(-100px);
   color:#fff;
 }
-
 /* Loading Screen */
-
 .welcome {
   height: 100vh;
   width: 100%;
@@ -528,20 +465,16 @@ nav .logo img {
   display: inline-block;
   overflow: hidden;
 }
-
 .intro_container>span{
   display: inline-block;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-
-
 .welcome_heading {
   font-size: 40px;
   font-family: monument;
 
 }
-
 .welcome_logo {
   width: 250px;
   border-radius: 70px;
@@ -549,12 +482,10 @@ nav .logo img {
   transition: box-shadow 0.6s ease-in-out;
   opacity: 0;
 }
-
 .welcome>span{
   display: inline-block;
   overflow: hidden;
 }
-
 .welcome>span>span{
    display: inline-block;
    font-size: 50px;
