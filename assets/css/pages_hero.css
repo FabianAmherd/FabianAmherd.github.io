@@ -18,10 +18,19 @@
 .hero-subtitle{
   font-size: 30px;
   margin: 0px;
-  padding-left:10px;
 }
 .down-arrow{
   justify-self: center;
   align-self: end;
   margin-bottom: 40px;
+}
+.section-heading{
+  font-family: 'Source-sans-pro', sans-serif;
+  font-size: 100px;
+  margin: 10vh 0px 0px 10%;
+}
+.section-subheading{
+  font-family: 'Source-sans-pro', sans-serif;
+  font-size: 25px;
+  margin: -20px 0px 15vh 10.5%;
 }
