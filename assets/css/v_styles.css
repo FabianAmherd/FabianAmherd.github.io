@@ -6,11 +6,6 @@
   font-size: 100%;
   box-sizing: border-box;
 }
-#hero-vorteile{
-  height:100vh;
-  margin: 0;
-  display: grid;
-}
 #grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -22,28 +17,6 @@
   height: 250px;
   max-width: 90%;
   place-self: center;
-}
-.hero-text{
-  font-family: 'Staatliches', sans-serif;
-  color: #000000;
-  margin-top: 17%;
-  margin-left: 10%;
-}
-.hero-title{
-  font-size: 150px;
-  margin: 0px;
-  padding: 0px;
-  line-height: 90px;
-}
-.hero-subtitle{
-  font-size: 30px;
-  margin: 0px;
-  padding-left:10px;
-}
-.down-arrow{
-  justify-self: center;
-  align-self: end;
-  margin-bottom: 40px;
 }
 #vorteile-grid{
   margin: 0px 5%;
@@ -68,122 +41,6 @@
   font-weight: 300;
   margin: 10px 0px 0px 20px;
 }
-#angebot-transition{
-  margin-top: 300px;
-  text-align: center;
-  margin-bottom: 300px;
-}
-.transition-title{
- font-family: 'benton-sans', sans-serif; 
- font-weight: 700;
- font-size: 70px;
-}
-.transition-text{
- font-family: 'sofia-pro', sans-serif; 
- font-weight: 300;
- font-size: 30px;
- margin: 50px 0px;
-}
-.transition-btn{
-  font-family: 'sofia-pro', sans-serif;
-  font-weight: 200;
-  font-size: 20px;
-  color:#fff;
-  background-color: #fff;
-  border-radius: 20px 5px;
-  border: 0.5px #305289 solid;
-  margin-top: 30px;
-  height: 50px;
-  width: 20%;
-}
-.button-container-2 {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7vh;
-  overflow: hidden;
-  border: 0.5px solid #305289;
-  font-family: 'sofia-pro', sans-serif;
-  font-weight: 300;
-  transition: 0.5s;
-  letter-spacing: 1px;
-}
-.button-container-2 button {
-  width: 101%;
-  height: 100%;
-  font-family: 'sofia-pro', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  letter-spacing: 1px;
-  background: #305289;
-  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
-  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
-  -webkit-mask-size: 3000% 100%;
-  mask-size: 3000% 100%;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  -webkit-animation: ani2 0.7s steps(29) forwards;
-  animation: ani2 0.7s steps(29) forwards;
-}
-.button-container-2 button:hover {
-  -webkit-animation: ani 0.7s steps(29) forwards;
-  animation: ani 0.7s steps(29) forwards;
-}
-.mas {
-  position: absolute;
-  color: rgb(48, 82, 137);
-  text-align: center;
-  width: 101%;
-  font-family: 'sofia-pro', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-@-webkit-keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-@keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-@-webkit-keyframes ani2 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-@keyframes ani2 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-a {
-  color: #fff;
-}
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -199,53 +56,6 @@ a {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.footer {
-  background-color: #305289;
-  padding-top: 100px;
-  color: rgb(255,255,255);
-  font-size: 18px;
-}
-.spacer-top {
-  height: 60px;
-  width: 3px;
-  background-color: #4b4b4b;
-  margin: auto;
-}
-
-.spacer-bot {
-  position: absolute;
-  width: 3px;
-  height: 60px;
-  background-color: #ffffff;
-  left: 50%;
-  margin-left: -1.5px;
-  z-index: 1;
-}
-
-#Logo {
-  margin-bottom: 43px;
-}
-
-#copyright {
-  font-family: 'sofia-pro', sans-serif;
-  font-size: 13px;
-  margin-top: 41px;
-  margin-bottom: 0px;
-}
-
-.link:hover {
-  color: #9f9f9f;
-  text-decoration: none;
-}
-
-.link {
-  color: #ffffff;
-}
-
-.adress{
-  font-family: 'sofia-pro', sans-serif;
-}
-
 /* RESPONSIVE DESIGN */
 /*Smartphones*/
 @media only screen and (max-width: 600px) {

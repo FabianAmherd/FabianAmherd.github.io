@@ -20,7 +20,7 @@ heroButton.addEventListener('click', () => {
 
    .add({
       targets: 'nav',
-      delay: 3600,
+      delay: 3400,
       duration: 1500,
       translateY: ['-100px', '0px'],
       translateX: ['0', '0'],
