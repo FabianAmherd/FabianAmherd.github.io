@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
 #hero-vorteile{
   height:100vh;
   margin: 0;
@@ -236,15 +244,4 @@ a {
 
 .adress{
   font-family: 'sofia-pro', sans-serif;
-}
-/*Custom progressbar*/
-::-webkit-scrollbar{
-  width: 0;
-}
-.progressbar{
-  position: fixed;
-  top:0;
-  right:0;
-  width: 5px;
-  background: linear-gradient(to top, #4394D4,#305289);
 }
