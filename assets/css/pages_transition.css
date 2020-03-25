@@ -52,7 +52,6 @@
   mask-size: 3000% 100%;
   border: none;
   color: #fff;
-  cursor: pointer;
   -webkit-animation: ani2 0.7s steps(29) forwards;
   animation: ani2 0.7s steps(29) forwards;
 }

@@ -9,16 +9,20 @@
 .pricing-table{
   font-family: sofia-pro, sans-serif;
   width: 100%;
+  border-bottom: 1px solid;
 }
 .heading-row{
-  background: #f4f4f4;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 29px;
+}
+.heading-row .column{
+  background-color: rgba(48, 82, 137, 0.95) !important;
+  color: #ffffff;
 }
 .table-row{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  text-align: left;
+  font-size: 22px;
   width: 100%;
   place-content: center;
 }
@@ -28,19 +32,19 @@
   padding: 20px;
 }
 .property{
-  font-size: 15px;
+  font-size: 21.6px;
   font-weight: 300;
   text-align: center;
   padding:  20px 8px;
   width: 1fr;
   overflow-x: hidden;
+  border-right: 1px solid;
 }
-.tick{
-  display:grid;
-  place-content: center center;
-}
+/*.tick{
+  background-color: rgba(48, 82, 137, 0.158) !important;
+}*/
 .column:nth-child(2n){
-  background: rgba(226, 226, 226, 0.226)
+  background-color: rgba(226, 226, 226, 0.452);
 }
 .plus{
   text-align: center;

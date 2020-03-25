@@ -1,3 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+.contact-subheading{
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 27px;
+  color: rgba(0, 0, 0, 0.65);
+  margin: 150px 0px 0px 10.5%;
+}
+.contact-email{
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 35px;
+  color: #000000;
+  margin: 0px 0px 0px 10.5%;
+}
+.contact-email > a{
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 35px;
+  color: #000000;
+  text-decoration: none;
+}
+.contact-email > a:hover{
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+.contact-btn{
+  margin: 20px 0px 0px 10.5% !important;
+}
+.contact-zurich{
+  font-family: 'Source-sans-pro', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: #000000;
+  margin: 150px 0px 0px 10.5%;
+}
+.contact-adress{
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 23px;
+  color: #000000;
+  margin: 20px 0px 0px 10.5%;
+  line-height: 27px;
+}
 /* RESPONSIVE DESIGN */
 /*Smartphones*/
 @media only screen and (max-width: 600px) {
