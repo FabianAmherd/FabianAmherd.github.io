@@ -48,3 +48,29 @@
 .column:nth-child(2n){
   background: rgba(226, 226, 226, 0.164)
 }
+
+/* RESPONSIVE DESIGN */
+/*Smartphones*/
+@media only screen and (max-width: 600px) {
+
+}
+/*Large Smartphones and Tablets*/
+@media only screen and (min-width: 600px) {
+
+}
+/*Landscape Tablets*/
+@media only screen and (min-width: 768px) {
+
+}
+/*Laptops*/
+@media only screen and (min-width: 992px) {
+
+}
+/*Larger Desktops*/
+@media only screen and (min-width: 1200px) {
+
+}
+/*Very large Desktops*/
+@media only screen and (min-width: 1600px) {
+
+}
