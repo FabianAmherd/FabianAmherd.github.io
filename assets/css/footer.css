@@ -1,0 +1,77 @@
+.footer {
+  background-color: #305289;
+  padding-top: 100px;
+  color: rgb(255,255,255);
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+}
+.spacer{
+  height: 130px;
+  width: 3px;
+  background-color: #4b4b4b;
+  margin: auto;
+}
+.spacer-top {
+  height: 60px;
+  width: 3px;
+  background-color: #4b4b4b;
+  margin: auto;
+}
+.spacer-bot {
+  position: absolute;
+  width: 3px;
+  height: 60px;
+  background-color: #ffffff;
+  left: 50%;
+  margin-left: -1.5px;
+  z-index: 1;
+}
+#Logo {
+  margin-bottom: 43px;
+  text-align: center;
+}
+.footer-latify{
+  margin: 0px 40px 0px 0px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.footer-latify > img{
+  vertical-align:middle;
+  padding-bottom: 6px;
+}
+.adress-street{
+  margin: 0px 0px 0px 48px;
+}
+.adress-postcode{
+  margin: 0px 0px 0px 32px;
+}
+.footer-email{
+  margin: 30px 0px 30px 15px;
+}
+.footer-email > img{
+  vertical-align:middle;
+  padding-bottom: 6px;
+}
+.footer-phone > img{
+  vertical-align:middle;
+  padding-bottom: 3px;
+}
+#copyright {
+  font-size: 13px;
+  margin-top: 41px;
+  margin-bottom: 0px;
+}
+#copyright > img{
+  vertical-align:middle;
+  padding: 0px 3px 2.7px 0px;
+}
+.link:hover {
+  color: #c9c9c9;
+  text-decoration: none;
+}
+.link {
+  color: #ffffff;
+  text-decoration: none;
+}

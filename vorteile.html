@@ -6,10 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Unsere Vorteile | Latify</title>
     <link rel="stylesheet" href="assets/css/v_styles.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/pages_hero.css">
+    <link rel="stylesheet" href="assets/css/pages_transition.css" />
     <link rel="stylesheet" href="https://use.typekit.net/dzy5izr.css">
+    <link rel="stylesheet" href="assets/css/progress.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches&amp;subset=latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#305289">
+    <meta name="apple-mobile-web-app-title" content="Professionelle Webseiten | Latify">
+    <meta name="application-name" content="Professionelle Webseiten | Latify">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -49,7 +62,8 @@
             </div>
         </div>
     </section>
-    <section id="angebot-transition">
+    <div class="spacer"></div>
+    <section class="pages-transition">
         <p class="transition-title">Klingt vielversprechend?</p>
         <p class="transition-text">Dann weiter zum Angebot.</p>
         <div class="button-container-2 transition-btn">
@@ -57,29 +71,48 @@
           <button type="button" name="Hover" onclick="window.location.href='angebot.html'">Hier klicken!</button>
         </div>
     </section>
-    <div class="text-center" id="Logo">
+    <div id="Logo">
         <img
           src="assets/img/logo_blue.png"
           width="130"
           alt="Latify_Logo"
         />
       </div>
-    <div class="spacer-top"></div>
-    <div class="spacer-bot"></div>
-    <footer class="footer">
-        <div class="text-center">
-            <p class="adress" style="margin-right: 57px;margin-bottom: 4px;font-size: 20px;"><img src="assets/img/logo_white.png" width="35">&nbsp;Latify<br></p>
-        </div>
-        <p class="text-center adress" style="margin: 0px;margin-left: 48px;">Südstrasse 43<br></p>
-        <p class="text-center adress" style="margin: 0px;margin-left: 32px;">8008 Zürich<br></p>
+      <div class="spacer-top"></div>
+      <div class="spacer-bot"></div>
+      <footer class="footer">
+          <p class="footer-latify">
+            <img
+              src="assets/img/logo_white.png"
+              width="38" alt="Latify_Logo_white"
+            />&nbsp;Latify<br />
+          </p>
+        <p class="adress-street">
+          Südstrasse 43<br />
+        </p>
+        <p class="adress-postcode">
+          8008 Zürich<br />
+        </p>
         <div>
-            <p class="text-center adress" style="margin-top: 45px;margin-left: 15px;"><img src="assets/img/Icon%20material-mail.png" width="30">&nbsp; hello@latify.ch<br></p>
+          <p class="footer-email">
+            <img src="assets/img/Icon%20material-mail.png" width="30" alt="mail_icon"/>&nbsp;
+            hello@latify.ch<br />
+          </p>
         </div>
         <div>
-            <p class="text-center" id="copyright"><i class="fa fa-copyright"></i>&nbsp;2020 Latify | <a class="link" href="#">Impressum</a>&nbsp;| <a class="link" href="#">Datenschutzerklärung</a>&nbsp;| <a class="link" href="#">Webseite erstellt durch Latify</a><br><br></p>
+          <p class="footer-phone">
+            <img src="assets/img/Icon awesome-phone-alt.png" width="30" alt="phone_icon"/>&nbsp;
+            044 525 12 14<br />
+          </p>
         </div>
-    </footer>
-    <script src="assets/js/jquery.min.js"></script>
+        <div>
+          <p id="copyright">
+            <img src="assets/img/Icon metro-copyright.png" width="14" alt="copyright_icon"/>&nbsp;2020 Latify |
+            <a class="link" href="#">Impressum</a>&nbsp;|
+            <a class="link" href="#">Datenschutzerklärung</a>&nbsp;<br /><br />
+          </p>
+        </div>
+      </footer>
     <script src="assets/js/progress.js"></script>
 </body>
 
