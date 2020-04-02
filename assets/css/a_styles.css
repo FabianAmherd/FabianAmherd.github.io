@@ -74,8 +74,8 @@
 .extra-element {
   border: 4px #305289 solid;
   border-radius: 40px 5px 40px 5px;
-  height: 500px;
-  max-width: 70%;
+  height: 520px;
+  max-width: 85%;
   place-self: center;
 }
 .extra-img{
