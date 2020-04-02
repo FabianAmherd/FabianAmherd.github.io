@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/dzy5izr.css" />
     <link rel="stylesheet" href="assets/css/hover-text.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/pages_transition.css" />
+    <link rel="stylesheet" href="assets/css/pages_translation.css" />
     <link rel="stylesheet" href="https://use.typekit.net/edz3nhh.css" />
     <link rel="stylesheet" href="assets/css/progress.css" />
     <link rel="stylesheet" href="assets/css/nav.css" />
@@ -38,6 +38,8 @@
   </head>
 
   <body>
+
+  <main id="swup" class="home transition-fade">
     <div class="progressbar"></div>
     <nav>
         <div class="nav-wrapper">
@@ -62,10 +64,10 @@
 
 
             <div class="col-nav-right cl-effect-5">
-            <li><a class="nav-link-element" href="index.html"><span data-hover="HOME">HOME</span></a></li>
-            <li><a class="nav-link-element" href="vorteile.html"><span data-hover="VORTEILE">VORTEILE</span></a></li>
-            <li><a class="nav-link-element" href="angebot.html"><span data-hover="ANGEBOT">ANGEBOT</span></a></li>
-            <li><a class="nav-link-element" href="kontakt.html"><span data-hover="KONTAKT">KONTAKT</span></a></li>
+            <li><a class="nav-link-element" href="/index.html"><span data-hover="HOME">HOME</span></a></li>
+            <li><a class="nav-link-element" href="/vorteile.html"><span data-hover="VORTEILE">VORTEILE</span></a></li>
+            <li><a class="nav-link-element" href="/angebot.html"><span data-hover="ANGEBOT">ANGEBOT</span></a></li>
+            <li><a class="nav-link-element" href="/kontakt.html"><span data-hover="KONTAKT">KONTAKT</span></a></li>
             </div>
 
 
@@ -169,18 +171,14 @@
       </div>
     </section>
     <div class="spacer"></div>
-    <section class="pages-transition">
-      <p class="transition-title">Packen Sie es an.</p>
-      <p class="transition-text">Es ist ganz einfach.</p>
-      <div class="button-container-2 transition-btn">
+    <section class="pages-translation">
+      <p class="translation-title">Packen Sie es an.</p>
+      <p class="translation-text">Es ist ganz einfach.</p>
+      <div class="button-container-2 translation-btn">
         <span class="mas">Jetzt starten!</span>
         <button
           type="button"
-          name="Hover"
-          onclick="window.location.href='vorteile.html'"
-        >
-          Jetzt starten!
-        </button>
+          name="Hover"><a href="/vorteile.html">Jetzt starten!</a></button>
       </div>
     </section>
     <div id="Logo">
@@ -225,6 +223,7 @@
         </p>
       </div>
     </footer>
+  </main>
 
     <div class="cursor"></div>
 
@@ -235,8 +234,42 @@
     <script type="text/javascript" src="assets/js/observers.js"></script>
 
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script data-swup-ignore-script="" src="assets/js/swup.min.js"></script>
+    <script data-swup-ignore-script="" src="assets/js/SwupOverlayTheme.min.js"></script>
+    <script data-swup-ignore-script="" src="assets/js/SwupHeadPlugin.min.js"></script>
+    <script data-swup-ignore-script="" src="assets/js/SwupScrollPlugin.min.js"></script>
+    <script data-swup-ignore-script="" src="assets/js/SwupScriptsPlugin.min.js"></script>
+    <script data-swup-ignore-script="" src="assets/js/anime.min.js"></script>
 
-    <script src="assets/js/anime.min.js"></script>
+    <script data-swup-ignore-script="">
+
+      function init(){setTimeout(function() {
+            if (document.querySelector('.home')) {
+              location.reload()
+            }
+        }, 490)}
+
+      const swup = new Swup({
+        plugins: [new SwupOverlayTheme({
+          color: '#305289',
+          duration: 700,
+          direction: 'to-right',
+        }),
+        new SwupHeadPlugin(),
+        new SwupScrollPlugin({
+          doScrollingRightAway: false,
+          animateScroll: false,
+          scrollFriction: 0.3,
+          scrollAcceleration: 0.025,
+        }),
+        new SwupScriptsPlugin()]
+      });
+
+      swup.on('contentReplaced', init);
+    </script>
+
+
+
     <script>
       var typed = new Typed(".type", {
         strings: ["Ihr Unternehmen?", "Ihre Praxis", "Ihre Idee?", ""],

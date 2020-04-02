@@ -25,6 +25,16 @@
   text-decoration: none;
 }
 .contact-email > a:hover{
+  text-decoration: none;
+}
+.contact-linkedin > a{
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 35px;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 10.5%;
+}
+.contact-linkedin>a:hover{
   color: rgba(0, 0, 0, 0.65);
   text-decoration: none;
 }
@@ -38,7 +48,7 @@
   color: #000000;
   margin: 150px 0px 0px 10.5%;
 }
-.contact-adress{
+.contact-address{
   font-family: 'sofia-pro', sans-serif;
   font-size: 23px;
   color: #000000;

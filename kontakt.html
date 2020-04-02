@@ -7,7 +7,7 @@
     <title>Kontakt | Latify</title>
     <link rel="stylesheet" href="assets/css/k_styles.css">
     <link rel="stylesheet" href="assets/css/pages_hero.css">
-    <link rel="stylesheet" href="assets/css/pages_transition.css">
+    <link rel="stylesheet" href="assets/css/pages_translation.css">
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/progress.css" />
     <link rel="stylesheet" href="https://use.typekit.net/dzy5izr.css">
@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <div class="progressbar"></div>
+  <main id="swup" class="transition-fade">
     <section id="hero-vorteile">
         <div class="hero-text">
             <p class="hero-title">KONTAKT</p>
@@ -38,16 +38,18 @@
       <p class="section-heading">Sagen Sie Hallo!</p>
       <p class="section-subheading">Alles unverbindlich.</p>
       <p class="contact-subheading">Für Neukunden und alle anderen Anfragen</p>
-      <p class="contact-email">hello@latify.ch</p>
+      <p class="contact-email"><a href="mailto:hello@latify.ch?subject=Anfrage für eine Zusammenarbeit mit Latify">hello@latify.ch</a></p>
       <p class="contact-subheading">Übermitteln Sie uns erste Informationen per Kontaktformular.</p>
-      <div class="button-container-2 transition-btn contact-btn">
+      <div class="button-container-2 translation-btn contact-btn">
         <span class="mas">Kontakt aufnehmen</span>
-      <button type="button" name="Hover" onclick="window.location.href='fullscreenform.php';">Kontakt aufnehmen</button>
+        <button
+          type="button"
+          name="Hover"><a href="/fullscreenform.php">Kontakt aufnehmen</a></button>
     </div>
       <p class="contact-subheading">Folgen Sie uns auf</p>
-      <p class="contact-email"><a href="https://linkedin.com/company/latify">LinkedIn</a></p>
+      <p class="contact-linkedin"><a href="https://linkedin.com/company/latify">LinkedIn</a></p>
       <p class="contact-zurich">Zürich</p>
-      <p class="contact-adress">Südstrasse 43<br/>8008 Zürich</p>
+      <p class="contact-address">Südstrasse 43<br/>8008 Zürich</p>
     </section>
     <div id="Logo">
       <img
@@ -91,6 +93,7 @@
         </p>
       </div>
     </footer>
+  </main>
     <script src="assets/js/progress.js"></script>
 </body>
 

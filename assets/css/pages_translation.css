@@ -1,20 +1,20 @@
-.pages-transition{
+.pages-translation{
   margin-top: 200px;
   text-align: center;
   margin-bottom: 200px;
 }
-.transition-title{
+.translation-title{
  font-family: 'benton-sans', sans-serif; 
  font-weight: 700;
  font-size: 70px;
 }
-.transition-text{
+.translation-text{
  font-family: 'sofia-pro', sans-serif; 
  font-weight: 300;
  font-size: 30px;
  margin: 50px 0px;
 }
-.transition-btn{
+.translation-btn{
   font-family: 'sofia-pro', sans-serif;
   font-weight: 200;
   font-size: 20px;
@@ -111,4 +111,12 @@
 }
 a {
   color: #fff;
+  text-decoration: none;
+}
+.transition-fade {
+  transition: 2s;
+  opacity: 1;
+}
+html.is-animating .transition-fade {
+  opacity: 0;
 }

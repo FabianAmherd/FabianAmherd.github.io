@@ -7,7 +7,7 @@
     <title>Unsere Vorteile | Latify</title>
     <link rel="stylesheet" href="assets/css/v_styles.css">
     <link rel="stylesheet" href="assets/css/pages_hero.css">
-    <link rel="stylesheet" href="assets/css/pages_transition.css" />
+    <link rel="stylesheet" href="assets/css/pages_translation.css" />
     <link rel="stylesheet" href="https://use.typekit.net/dzy5izr.css">
     <link rel="stylesheet" href="assets/css/progress.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
@@ -26,6 +26,7 @@
 </head>
 
 <body>
+  <main id="swup" class="transition-fade">
     <div class="progressbar"></div>
     <section id="hero-vorteile">
         <div class="hero-text">
@@ -63,12 +64,14 @@
         </div>
     </section>
     <div class="spacer"></div>
-    <section class="pages-transition">
-        <p class="transition-title">Klingt vielversprechend?</p>
-        <p class="transition-text">Dann weiter zum Angebot.</p>
-        <div class="button-container-2 transition-btn">
+    <section class="pages-translation">
+        <p class="translation-title">Klingt vielversprechend?</p>
+        <p class="translation-text">Dann weiter zum Angebot.</p>
+        <div class="button-container-2 translation-btn">
             <span class="mas">Hier klicken!</span>
-          <button type="button" name="Hover" onclick="window.location.href='angebot.html'">Hier klicken!</button>
+            <button
+            type="button"
+            name="Hover"><a href="/angebot.html">Hier klicken!</a></button>
         </div>
     </section>
     <div id="Logo">
@@ -77,42 +80,43 @@
           width="130"
           alt="Latify_Logo"
         />
+    </div>
+    <div class="spacer-top"></div>
+    <div class="spacer-bot"></div>
+    <footer class="footer">
+        <p class="footer-latify">
+          <img
+            src="assets/img/logo_white.png"
+            width="38" alt="Latify_Logo_white"
+          />&nbsp;Latify<br />
+        </p>
+      <p class="adress-street">
+        Südstrasse 43<br />
+      </p>
+      <p class="adress-postcode">
+        8008 Zürich<br />
+      </p>
+      <div>
+        <p class="footer-email">
+          <img src="assets/img/Icon%20material-mail.png" width="30" alt="mail_icon"/>&nbsp;
+          hello@latify.ch<br />
+        </p>
       </div>
-      <div class="spacer-top"></div>
-      <div class="spacer-bot"></div>
-      <footer class="footer">
-          <p class="footer-latify">
-            <img
-              src="assets/img/logo_white.png"
-              width="38" alt="Latify_Logo_white"
-            />&nbsp;Latify<br />
-          </p>
-        <p class="adress-street">
-          Südstrasse 43<br />
+      <div>
+        <p class="footer-phone">
+          <img src="assets/img/Icon awesome-phone-alt.png" width="30" alt="phone_icon"/>&nbsp;
+          044 525 12 14<br />
         </p>
-        <p class="adress-postcode">
-          8008 Zürich<br />
+      </div>
+      <div>
+        <p id="copyright">
+          <img src="assets/img/Icon metro-copyright.png" width="14" alt="copyright_icon"/>&nbsp;2020 Latify |
+          <a class="link" href="#">Impressum</a>&nbsp;|
+          <a class="link" href="#">Datenschutzerklärung</a>&nbsp;<br /><br />
         </p>
-        <div>
-          <p class="footer-email">
-            <img src="assets/img/Icon%20material-mail.png" width="30" alt="mail_icon"/>&nbsp;
-            hello@latify.ch<br />
-          </p>
-        </div>
-        <div>
-          <p class="footer-phone">
-            <img src="assets/img/Icon awesome-phone-alt.png" width="30" alt="phone_icon"/>&nbsp;
-            044 525 12 14<br />
-          </p>
-        </div>
-        <div>
-          <p id="copyright">
-            <img src="assets/img/Icon metro-copyright.png" width="14" alt="copyright_icon"/>&nbsp;2020 Latify |
-            <a class="link" href="#">Impressum</a>&nbsp;|
-            <a class="link" href="#">Datenschutzerklärung</a>&nbsp;<br /><br />
-          </p>
-        </div>
-      </footer>
+      </div>
+    </footer>
+  </main>
     <script src="assets/js/progress.js"></script>
 </body>
 
