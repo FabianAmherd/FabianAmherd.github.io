@@ -40,9 +40,18 @@
   overflow-x: hidden;
   border-right: 1px solid;
 }
-/*.tick{
-  background-color: rgba(48, 82, 137, 0.158) !important;
-}*/
+.pricing-currency{
+  font-size: 20px;
+  color: #305289;
+  font-weight: bold;
+  display: inline-block;
+}
+.pricing-number{
+  font-size: 30px;
+  color: #305289;
+  font-weight: bold;
+  display: inline-block;
+}
 .column:nth-child(2n){
   background-color: rgba(226, 226, 226, 0.452);
 }
