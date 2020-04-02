@@ -111,6 +111,7 @@
 }
 a {
   color: #fff;
+  text-decoration: none;
 }
 .transition-fade {
   transition: 2s;
