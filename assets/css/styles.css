@@ -31,8 +31,6 @@ body {
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  background: url('/assets/img/svg/SVG/bg.svg') no-repeat;
-  background-position: right;
 }
 .hero-scrolled {
   background-color: rgb(209, 209, 209);

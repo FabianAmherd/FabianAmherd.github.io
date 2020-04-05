@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                easing: 'easeOutExpo',
-               duration: 1000,
+               duration: 800,
                value: '+=100',
             },
             {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                easing: 'easeOutExpo',
-               duration: 1000,
+               duration: 800,
                value: '+=100',
             },
             {
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                easing: 'easeOutExpo',
-               duration: 1000,
+               duration: 800,
                value: '+=100',
             },
       ],
