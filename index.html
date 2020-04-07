@@ -56,9 +56,11 @@
               <a class="nav-logo" href="index.html">
               <img src="assets/img/logo_white.png" alt="logo_white">
               </a>
-              <p class="zurich">Zürich</p>
-              <p class="nav-address1">Südstrasse 43 8008</p>
-              <p class="nav-address2">hello@latify.ch</p>
+              <div class="address-container closed">
+                <p class="zurich">Zürich</p>
+                <p class="nav-address1">Südstrasse 43 <br> 8008 Zürich</p>
+                <p class="nav-address2">hello@latify.ch</p>
+              </div>
               <a class="linkedin" href="https://linkedin.com/company/latify
               ">
               <img src="assets/img/Icon awesome-linkedin-in.svg" alt="LinkedIn">
@@ -67,10 +69,10 @@
 
 
             <div class="col-nav-right cl-effect-5">
-            <li><a class="nav-link-element" href="/index.html"><span data-hover="HOME">HOME</span></a></li>
-            <li><a class="nav-link-element" href="/vorteile.html"><span data-hover="VORTEILE">VORTEILE</span></a></li>
-            <li><a class="nav-link-element" href="/angebot.html"><span data-hover="ANGEBOT">ANGEBOT</span></a></li>
-            <li><a class="nav-link-element" href="/kontakt.html"><span data-hover="KONTAKT">KONTAKT</span></a></li>
+            <li class="menu-li word01 closed"><a class="nav-link-element" href="/index.html"><span data-hover="HOME">HOME</span></a></li>
+            <li class="menu-li word02 closed"><a class="nav-link-element" href="/vorteile.html"><span data-hover="VORTEILE">VORTEILE</span></a></li>
+            <li class="menu-li word03 closed"><a class="nav-link-element" href="/angebot.html"><span data-hover="ANGEBOT">ANGEBOT</span></a></li>
+            <li class="menu-li word04 closed"><a class="nav-link-element" href="/kontakt.html"><span data-hover="KONTAKT">KONTAKT</span></a></li>
             </div>
 
 
@@ -459,12 +461,14 @@
 
     <div class="cursor"></div>
 
+    
+    <!-- Linked Javasript sources -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous">
     </script>
-    <!-- Linked Javasript sources -->
+    <script src="assets/js/menu_animation.js"></script>
     <script src="assets/js/cursor.js"></script>
     <script src="assets/js/welcome.js"></script>
     <script type="text/javascript" src="assets/js/observers.js"></script>
