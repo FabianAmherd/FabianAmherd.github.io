@@ -109,9 +109,11 @@
     mask-position: 0 0;
   }
 }
-a {
-  color: #fff;
+.translation-btn>button>a {
+  display: block;
+  color: #ffffff;
   text-decoration: none;
+  width: 99%;
 }
 .transition-fade {
   transition: 2s;
