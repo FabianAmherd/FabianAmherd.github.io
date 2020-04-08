@@ -1,6 +1,7 @@
 .footer {
   background-color: #305289;
   padding-top: 100px;
+  padding-bottom: 20px;
   color: rgb(255,255,255);
   font-family: 'sofia-pro', sans-serif;
   font-size: 18px;
@@ -116,4 +117,12 @@
   color: #305289;
   font-size: 18px;
   margin-top: 8%;
+}
+.footer>div>p>a{
+  text-decoration: none;
+  color: white;
+}
+.footer>div>p>a:hover{
+  text-decoration: none;
+  color: white;
 }

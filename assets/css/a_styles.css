@@ -63,13 +63,14 @@
   width: 80px;
 }
 .extras-section{
-  margin: 0px 5% 100px 5%;
+  margin: 0px 0 100px 0;
   font-family: 'sofia-pro', sans-serif;
 }
 #extras-container{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 3em 1em;
+  margin: 0 5%;
 }
 .extra-element {
   border: 4px #305289 solid;
