@@ -82,16 +82,16 @@
   z-index: 2;
   pointer-events: none;
   background: #ffffff;
-  padding: 1em;
-  width: 50%;
-  height: 50vh;
+  padding: 0.5em;
+  width: 60%;
+  height: 60vh;
   border: 1px solid #305289;
   border-radius: 40px 5px;
   clip-path: circle(0% at 50% 50%);
   transition: clip-path .4s ease-in-out;
   position: absolute;
   bottom:50%;
-  left:25%;
+  left:20%;
 }
 .popup-link:hover .link-popup{
   clip-path: circle(75%);
