@@ -113,22 +113,59 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
   z-index: 9;
   overflow: hidden;
   font-size: 150px;
   opacity: 1;
+  text-shadow: 0px 0px 6px #00000073;
 }
 .intro_container{
   position: absolute;
   display: inline-block;
   overflow: hidden;
 }
+
 .intro_container>span{
   display: inline-block;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
+  margin: 10px;
 }
+
+
+.intro_img{
+  clip-path: circle(25% at 50% 50%);
+}
+
+.intro_img_container{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(100% 0%, 0% 0%, 0% 0%, 100% 0%);
+  transition: all;
+  transition-duration: .6s;
+  transition-timing-function: ease-out;
+  position: absolute;
+}
+
+.intro_img_container2{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(100% 0%, 0% 0%, 0% 0%, 100% 0%);
+
+  transition-duration: .6s;
+  transition-timing-function: ease-out;
+  position: absolute;
+}
+
+.streched_intro_img{
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
+}
+
+
+
 .welcome_heading {
   font-size: 40px;
   font-family: monument;

@@ -1,3 +1,6 @@
+introImg = document.querySelector(".intro_img_container")
+introImg2 = document.querySelector(".intro_img_container2")
+
 document.addEventListener("DOMContentLoaded", () => {
   anime
     .timeline({
@@ -36,6 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 2200,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
+    complete: function (anime) {
+      introImg.classList.toggle("streched_intro_img");
+    }
   });
 
 
@@ -59,6 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
         value: "+=100",
       },
     ],
+    complete: function (anime) {
+      introImg2.classList.toggle("streched_intro_img");
+    }
   });
 
   anime({
