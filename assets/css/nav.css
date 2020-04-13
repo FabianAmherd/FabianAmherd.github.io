@@ -174,19 +174,23 @@ nav .logo img {
 .col-nav-right .menu-li{
   transform: translateY(400%);
   opacity: 0;
-  transition-delay: 200ms;
+  transition-delay: 0ms;
   transition-property: opacity, transform;
-  transition-duration: 1.5s;
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 .col-nav-right.links-open .menu-li{
   opacity: 1;
   transform: translateY(0%);
+  transition-property: opacity, transform;
+  transition-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .col-nav-right.links-open .menu-li:nth-child(1){
   transition-delay: 0ms;
+
 }
 
 .col-nav-right.links-open .menu-li:nth-child(2){
@@ -194,7 +198,6 @@ nav .logo img {
 }
 
 .col-nav-right.links-open .menu-li:nth-child(3){
-
   transition-delay: 400ms;
 }
 
@@ -203,9 +206,11 @@ nav .logo img {
 }
 
 .address-container{
+  transition-duration: .2s;
   transform: translateY(100%);
   opacity: 0;
-  transition-delay: 400ms;
+  transition-delay: 00ms;
+
 }
 
 #menu-circle{
