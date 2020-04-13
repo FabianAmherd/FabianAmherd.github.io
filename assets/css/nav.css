@@ -54,7 +54,7 @@ nav .logo img {
   width: 100%;
   transition: all 0.6s ease-in-out;
   align-items: center;
-
+  visibility: hidden;
 }
 
 .hamburger {
@@ -158,6 +158,11 @@ nav .logo img {
   opacity: 1;
 }
 
+.nav-links.open{
+  visibility: visible;
+  transition: visibility 0.6s ease-in-out;
+}
+
 .col-nav-right{
   display: grid;
   justify-items: right;
@@ -207,14 +212,16 @@ nav .logo img {
   position: absolute;
   right: -50vw;
   transform: scale(0);
-  transition-property: transform;
+  transition-property: transform, visibility;
   transition-duration: .5s;
   transition-timing-function: ease-in-out;
+  visibility: hidden;
 }
 
 #menu-circle.open {
   transform: scale(4);
   transition-duration: .5s;
+  visibility: visible;
 }
 
 .address-container.links-open{
