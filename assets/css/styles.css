@@ -94,7 +94,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   letter-spacing: 2px;
   color: rgb(17, 17, 17);
   z-index: 10;
@@ -177,15 +177,26 @@ body {
 
 }
 .welcome_logo {
-  width: 250px;
+  height: 275px;
+  width: 275px;
   border-radius: 70px;
   background: linear-gradient(-45deg, #e6e6e6, #ffffff);
   transition: box-shadow 0.6s ease-in-out;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -30px;
 }
+
+.welcome_logo img{
+  width: 200px;
+}
+
 .welcome>span{
   display: inline-block;
   overflow: hidden;
+  margin-left: -30px;
 }
 .welcome>span>span{
    display: inline-block;

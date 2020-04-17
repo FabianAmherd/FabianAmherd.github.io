@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     .add({
       delay: 2200,
       translateY: "-100vh",
-      duration: 1500,
+      duration: 1200,
+      easing: "easeOutExpo",
       complete: function (anime) {
         document.querySelector(".welcome").remove();
       },
@@ -27,17 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   anime({
     targets: ".welcome_logo",
-    boxShadow: "20px 20px 40px #d4d4d4, -20px -20px 40px #ffffff",
+    boxShadow: "28px 28px 55px #d9d9d9, -28px -28px 55px #ffffff",
     duration: 200,
     easing: "easeOutExpo",
   });
 
   anime({
     targets: ".welcome>span>span",
-    delay: 400,
+    delay: 700,
     opacity: 1,
     duration: 2200,
-    translateY: ["-100%", "0%"],
+    translateX: ["-100%", "0%"],
     easing: "easeOutExpo",
     complete: function (anime) {
       introImg.classList.toggle("streched_intro_img");
@@ -46,9 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
   anime({
     targets: ".intro_container>.word1",
-    delay: 2700,
+    delay: 3000,
     translateY: [
       {
         duration: 0,
@@ -73,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
   anime({
     targets: ".intro_container>.word2",
     easing: "easeOutExpo",
-    delay: 4200,
+    delay: 4500,
     translateY: [
       {
         duration: 0,
@@ -89,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   anime({
      targets: ".intro",
-     delay: 5300,
+     delay: 5500,
      translateY: "-100vh",
       duration: 1500,
      easing: "easeInOutExpo",
