@@ -201,7 +201,7 @@ body {
 .welcome>span>span{
    display: inline-block;
    font-size: 50px;
-   color: rgb(17, 17, 17);
+   color: rgb(32, 32, 32);
    -webkit-transform: translateY(-100%);
    transform: translateY(-100%);
    will-change: transform;
