@@ -84,34 +84,12 @@ document.addEventListener("DOMContentLoaded", () => {
         duration: 800,
         value: "+=100",
       },
-      {
-        easing: "easeInExpo",
-        duration: 600,
-        value: "+=100",
-      },
-    ],
-  });
-
-  anime({
-    targets: ".intro_container>.word3",
-    easing: "easeInExpo",
-    delay: 5700,
-    translateY: [
-      {
-        duration: 0,
-        value: "-=100%",
-      },
-      {
-        easing: "easeOutExpo",
-        duration: 800,
-        value: "+=100",
-      },
     ],
   });
 
   anime({
      targets: ".intro",
-     delay: 7000,
+     delay: 5300,
      translateY: "-100vh",
       duration: 1500,
      easing: "easeInOutExpo",
@@ -128,7 +106,7 @@ function playMainAnimation() {
 
     .add({
       targets: "nav",
-      delay: 2400,
+      delay: 1500,
       duration: 1500,
       translateY: ["-100px", "0px"],
       translateX: ["0", "0"],
@@ -146,7 +124,7 @@ function playMainAnimation() {
 
   anime({
     targets: ".word2",
-    delay: 200,
+    delay: 100,
     duration: 2700,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
@@ -154,7 +132,7 @@ function playMainAnimation() {
 
   anime({
     targets: ".word3",
-    delay: 400,
+    delay: 200,
     duration: 2700,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
@@ -162,7 +140,7 @@ function playMainAnimation() {
 
   anime({
     targets: ".word4",
-    delay: 600,
+    delay: 300,
     duration: 2700,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
@@ -170,7 +148,7 @@ function playMainAnimation() {
 
   anime({
     targets: ".word5",
-    delay: 800,
+    delay: 400,
     duration: 2700,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
