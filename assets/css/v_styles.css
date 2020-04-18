@@ -6,20 +6,31 @@
   font-size: 100%;
   box-sizing: border-box;
 }
+.vorteile-section{
+  background-color: rgb(255, 255, 255);
+  z-index: -2;
+  padding: 5vh 0 15vh 0;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
 #grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 3em 1em;
+  padding: 0 5%;
 }
 .grid-element {
-  border: 4px #305289 solid;
+  border: 2px #305289 solid;
   border-radius: 40px 5px 40px 5px;
   height: 250px;
+  text-align: left;
   max-width: 90%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)!important;
   place-self: center;
 }
 #vorteile-grid{
-  margin: 0px 5% 100px 5%;
+  margin: 0px 0 100px 0;
   font-family: 'sofia-pro', sans-serif;
 }
 .grid-img{
