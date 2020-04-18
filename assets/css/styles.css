@@ -150,8 +150,6 @@ body {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.16, 1.08, 0.38, 0.98);
   width: 42%;
-
-
 }
 
 .intro_img_container2{
@@ -162,7 +160,6 @@ body {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.16, 1.08, 0.38, 0.98);
   width: 42%;
-
 }
 
 .streched_intro_img{
