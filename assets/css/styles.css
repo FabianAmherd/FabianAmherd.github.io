@@ -12,7 +12,7 @@
 }
 body {
   width: 100%;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(255, 255, 255);
 }
 .hero {
   height: 100vh;
@@ -60,7 +60,6 @@ body {
 }
 .hero-button {
   opacity: 0;
-  margin-top: 300px;
 }
 .hero-button button {
   font-size: 20px;
@@ -133,7 +132,6 @@ body {
   margin: 10px;
 }
 
-
 .intro_img{
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   display: block;
@@ -203,6 +201,22 @@ body {
    transform: translateY(-100%);
    will-change: transform;
    font-family: monument;
+}
+
+.section-heading{
+  font-family: 'Source-sans-pro', sans-serif;
+  font-size: 100px;
+}
+.section-subheading{
+  font-family: 'Source-sans-pro', sans-serif;
+  font-size: 25px;
+  margin: -20px 0 3vh 0;
+}
+.section-heading-spacer{
+  height: 3px;
+  width: 100px;
+  margin: 0 0 10vh 0;
+  background-color: #305289;
 }
 
 /* RESPONSIVE DESIGN */
