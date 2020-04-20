@@ -115,10 +115,3 @@
   text-decoration: none;
   width: 99%;
 }
-.transition-fade {
-  transition: 2s;
-  opacity: 1;
-}
-html.is-animating .transition-fade {
-  opacity: 0;
-}

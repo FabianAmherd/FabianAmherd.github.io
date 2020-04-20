@@ -1,5 +1,5 @@
 const nav = document.querySelector("nav");
-const sectionOne = document.querySelector(".hero");
+const sectionOne = document.querySelector("#hero");
 
 
 const sectionOneOptions = {

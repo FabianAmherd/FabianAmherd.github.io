@@ -6,13 +6,15 @@
   font-size: 100%;
   box-sizing: border-box;
 }
-.vorteile-section{
+#vorteile-section{
   background-color: rgb(255, 255, 255);
   z-index: -2;
   padding: 5vh 0 15vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
+  margin: 0px 0 100px 0;
+  font-family: 'sofia-pro', sans-serif;
 }
 #grid-container {
   display: grid;
@@ -23,16 +25,13 @@
 .grid-element {
   background: linear-gradient(#ffffff);
   border-radius: 50px;
-  height: 200px;
+  height: 230px;
   text-align: left;
   max-width: 80%;
   box-shadow: 20px 20px 60px #d9d9d9, 
   -20px -20px 60px #ffffff !important;
   place-self: center;
-}
-#vorteile-grid{
-  margin: 0px 0 100px 0;
-  font-family: 'sofia-pro', sans-serif;
+  overflow: hidden;
 }
 .grid-img{
   height: 60px;

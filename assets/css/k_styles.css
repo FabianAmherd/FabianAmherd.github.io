@@ -6,7 +6,7 @@
   font-size: 100%;
   box-sizing: border-box;
 }
-.contact-section{
+#contact-section{
   background-color: rgb(255, 255, 255);
   z-index: -2;
   padding: 5vh 0 15vh 0;
