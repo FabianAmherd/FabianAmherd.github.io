@@ -56,7 +56,7 @@ body {
    -webkit-transform: translateY(-100%);
    transform: translateY(-100%);
    will-change: transform;
-   font-family: proxima-nova;
+   font-family: 'proxima-nova';
 }
 .hero-button {
   opacity: 0;
