@@ -14,7 +14,7 @@ body {
   width: 100%;
   background-color: #E0E5EB;
 }
-.hero {
+#hero {
   height: 100vh;
   width: 100%;
   background-color: #E0E5EB;
@@ -56,7 +56,7 @@ body {
    -webkit-transform: translateY(-100%);
    transform: translateY(-100%);
    will-change: transform;
-   font-family: proxima-nova;
+   font-family: 'proxima-nova';
 }
 .hero-button {
   opacity: 0;

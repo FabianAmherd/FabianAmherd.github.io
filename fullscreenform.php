@@ -37,7 +37,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="assets/css/form.css" />
-		<title>Kontakt | Latify</title>
+		<title>Kontaktformular | Latify</title>
 		<script src="assets/js/modernizr.custom.js"></script>
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">

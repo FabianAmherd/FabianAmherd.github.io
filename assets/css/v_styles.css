@@ -13,6 +13,8 @@
   text-align: center;
   display: grid;
   justify-items: center;
+  margin: 0px 0 100px 0;
+  font-family: 'sofia-pro', sans-serif;
 }
 #grid-container {
   display: grid;
@@ -22,17 +24,14 @@
 }
 .grid-element {
   border-radius: 50px;
-  height: 200px;
+  height: 230px;
   text-align: left;
   width: 80%;
   background: #E0E5EB;
   box-shadow:  24px 24px 48px #bec3c8, 
              -24px -24px 48px #ffffff!important;
   place-self: center;
-}
-#vorteile-grid{
-  margin: 0px 0 100px 0;
-  font-family: 'sofia-pro', sans-serif;
+  overflow: hidden;
 }
 .grid-img{
   height: 60px;
