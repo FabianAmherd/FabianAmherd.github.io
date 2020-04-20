@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   anime({
     targets: ".welcome_logo",
-    boxShadow: "28px 28px 55px #d9d9d9, -28px -28px 55px #ffffff",
+    boxShadow: "14px 14px 28px #bec3c8, -14px -14px 28px #ffffff",
     duration: 200,
     easing: "easeOutExpo",
   });

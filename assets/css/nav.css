@@ -13,13 +13,7 @@ nav {
   z-index: 10;
   opacity: 0;
 }
-.nav-scrolled {
-  background-color: #fff;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-}
+
 .nav-wrapper {
   width: 90%;
   margin: 0 auto;
@@ -37,11 +31,17 @@ nav .logo {
   float: left;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 70px;
+  border-radius: 65px;
+  background: linear-gradient(-45deg, #caced4, #f0f5fb);
+  box-shadow:  10px 10px 20px #bec3c8, 
+             -10px -10px 20px #ffffff;
+  margin-left: -17.5px;
 }
 nav .logo img {
-  width: 70px;
-  position: absolute;
-  left: 0;
+  width: 65px;
 }
 .nav-links {
   display: grid;
@@ -63,13 +63,26 @@ nav .logo img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  transition: all 0.5s ease-in-out;
+  width: 70px;
+  height: 70px;
+  transition: all .2s ease-in;
+  transition-delay: .3s;
   margin-right: -8px;
   z-index: 1;
-
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #caced4, #f0f5fb);
+  box-shadow:  10px 10px 20px #bec3c8, 
+             -10px -10px 20px #ffffff;
 }
+
+.hamburger.open {
+  transition: all .1s ease-in-out;
+  box-shadow: none;
+  background: linear-gradient(-45deg, #272727, #2e2e2e);
+  box-shadow:  7px 7px 15px #1a1a1a, 
+              -7px -7px 15px #3c3c3c;
+}
+
 .line {
   width: 45px;
   height: 4px;
@@ -109,19 +122,29 @@ nav .logo img {
 }
 
 .nav-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   transition-property: opacity;
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.nav-logo img{
   position: absolute;
   top: 5vh;
   transform: translateY(-50%);
   left: 5%;
-  width: 70px;
+  width: 100px;
   height: 70px;
+  margin-left: -17.5px;
+  border-radius: 65px;
+  background: linear-gradient(-45deg, #272727, #2e2e2e);
+  box-shadow:  7px 7px 15px #1a1a1a, 
+              -7px -7px 15px #3c3c3c;
+}
+
+.nav-logo img{
+  width: 65px;
+  height: 65px;
 }
 
 .zurich{
@@ -144,13 +167,21 @@ nav .logo img {
   position: absolute;
   bottom:3%;
   left: 5%;
-  padding-left: 10px;
   opacity: 0;
   transition-property: opacity;
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 50px;
+  background: linear-gradient(145deg, #272727, #2e2e2e);
+  box-shadow:  7px 7px 14px #1a1a1a, 
+              -7px -7px 14px #3c3c3c;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.linkedin:hover{
+.linkedin img:hover{
   filter: brightness(0.5);
 }
 
@@ -214,7 +245,11 @@ nav .logo img {
   transform: translateY(100%);
   opacity: 0;
   transition-delay: 00ms;
-
+  border-radius: 60px;
+  background: linear-gradient(-45deg, #272727, #2e2e2e);
+  box-shadow:  15px 15px 30px #202020, 
+               -15px -15px 30px #363636;
+  padding: 40px;
 }
 
 #menu-circle{
@@ -226,6 +261,7 @@ nav .logo img {
   transition-timing-function: ease-in-out;
   visibility: hidden;
   z-index: 1;
+  fill: #2b2b2b;
 }
 
 #menu-circle.open {

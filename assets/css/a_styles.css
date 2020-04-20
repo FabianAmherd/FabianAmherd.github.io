@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 .pricing-section{
-  background-color: rgb(253, 253, 253);
+  background-color: #E0E5EB;
   z-index: -2;
   padding: 5vh 0 15vh 0;
   text-align: center;
@@ -18,9 +18,9 @@
   font-family: 'sofia-pro', sans-serif;
   width: 75%;
   border: 1px transparent;
-  border-radius: 50px 50px 50px 50px;
-  box-shadow: 24px 24px 48px #d9d9d9, 
-  -24px -24px 48px #ffffff!important;
+  border-radius: 50px;
+  box-shadow:  41px 41px 82px #bec3c8, 
+              -41px -41px 82px #ffffff!important;
 }
 .heading-row{
   font-weight: 400;
