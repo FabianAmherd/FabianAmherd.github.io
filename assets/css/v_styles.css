@@ -6,7 +6,7 @@
   font-size: 100%;
   box-sizing: border-box;
 }
-.vorteile-section{
+#vorteile-section{
   background-color: #E0E5EB;
   z-index: -2;
   padding: 5vh 0 15vh 0;
