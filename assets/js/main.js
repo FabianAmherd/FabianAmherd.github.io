@@ -14,3 +14,12 @@ hamburger.addEventListener('click', () => {
    address.classList.toggle("closed_menu")
    menuCircle.classList.toggle("open")
 });
+
+links.addEventListener('click', () => {
+   navLinks.classList.toggle("open");
+   hamburger.classList.toggle("open")
+   colNavRight.classList.toggle("links-open")
+   address.classList.toggle("links-open")
+   address.classList.toggle("closed_menu")
+   menuCircle.classList.toggle("open")
+});

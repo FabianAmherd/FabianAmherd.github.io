@@ -1,7 +1,8 @@
 .pages-translation{
-  margin-top: 200px;
+  padding-top: 100px;
   text-align: center;
-  margin-bottom: 200px;
+  padding-bottom: 100px;
+  background-color: #E0E5EB;
 }
 .translation-title{
  font-family: 'benton-sans', sans-serif; 
@@ -18,8 +19,8 @@
   font-family: 'sofia-pro', sans-serif;
   font-weight: 200;
   font-size: 20px;
-  color:#fff;
-  background-color: #fff;
+  color:#E0E5EB;
+  background-color: #E0E5EB;
   border-radius: 20px 5px;
   border: 0.5px #305289 solid;
   margin-top: 30px;
@@ -114,4 +115,25 @@
   color: #ffffff;
   text-decoration: none;
   width: 99%;
+}
+/* Section headings */
+.section-heading{
+  font-family: 'Source-sans-pro', sans-serif;
+  font-size: 100px;
+}
+.section-subheading{
+  font-family: 'Source-sans-pro', sans-serif;
+  font-size: 25px;
+  margin: -20px 0 3vh 0;
+}
+.section-heading-spacer{
+  height: 3px;
+  width: 100px;
+  margin: 0 0 10vh 0;
+  background-color: #305289;
+  border-radius: 3px;
+}
+/*Hide scrollbar*/
+::-webkit-scrollbar{
+  width: 0;
 }

@@ -202,24 +202,49 @@ body {
    will-change: transform;
    font-family: monument;
 }
-
-.section-heading{
-  font-family: 'Source-sans-pro', sans-serif;
-  font-size: 100px;
+.pricing-preview{
+  background-color: #E0E5EB;
+  z-index: -2;
+  padding: 5vh 0 5vh 0;
+  text-align: center;
+  display: grid;
+  justify-items: center;
 }
-.section-subheading{
-  font-family: 'Source-sans-pro', sans-serif;
-  font-size: 25px;
-  margin: -20px 0 3vh 0;
+.pricing-preview-grid{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em 1em;
+  margin: -6vh 5% 0 5%;
 }
-.section-heading-spacer{
-  height: 3px;
-  width: 100px;
-  margin: 0 0 10vh 0;
-  background-color: #305289;
-  border-radius: 3px;
+.pricing-preview-element{
+  position: relative;
+  border-radius: 50px;
+  font-family: 'sofia-pro', sans-serif;
+  text-align: center;
+  height: 350px;
+  width: 90%;
+  padding: 10px;
+  background: #E0E5EB;
+  box-shadow:  24px 24px 48px #bec3c8, 
+             -24px -24px 48px #ffffff!important;
+  place-self: center;
+  overflow: hidden;
 }
-
+.pricing-preview-title{
+  color: #305289;
+  font-size: 35px;
+  padding: 5px 0 20px 0;
+}
+.pricing-preview-text{
+  font-weight: 300;
+  font-size: 17px;
+}
+.pricing-preview-price{
+  position: absolute;
+  bottom: 35px;
+  left: 65px;
+}
 /* RESPONSIVE DESIGN */
 /*Smartphones*/
 @media only screen and (max-width: 600px) {
