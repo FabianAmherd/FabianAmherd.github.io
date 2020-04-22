@@ -211,39 +211,38 @@ body {
   justify-items: center;
 }
 .pricing-preview-grid{
-  display: grid;
-  text-align: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1em 1em;
-  margin: -6vh 5% 0 5%;
+  display: flex;
+  margin: 0 10% 0 10%;
 }
 .pricing-preview-element{
   position: relative;
   border-radius: 50px;
   font-family: 'sofia-pro', sans-serif;
   text-align: center;
-  height: 350px;
-  width: 90%;
   padding: 10px;
   background: #E0E5EB;
   box-shadow:  24px 24px 48px #bec3c8, 
              -24px -24px 48px #ffffff!important;
-  place-self: center;
-  overflow: hidden;
+  flex: 1; 
+  margin: 20px;
+  display: flex!important;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
 }
 .pricing-preview-title{
   color: #305289;
   font-size: 35px;
-  padding: 5px 0 20px 0;
+  padding-top: 5px;
 }
 .pricing-preview-text{
   font-weight: 300;
   font-size: 17px;
+  margin: 0px 15px;
 }
 .pricing-preview-price{
-  position: absolute;
-  bottom: 35px;
-  left: 65px;
+  padding-bottom: 10px;
+  position: relative;
 }
 /* RESPONSIVE DESIGN */
 /*Smartphones*/

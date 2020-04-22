@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
-const links = document.querySelectorAll('nav-links li');
+var links = document.querySelectorAll('nav-links li');
 const colNavRight = document.querySelector('.col-nav-right');
 const address = document.querySelector('div.address-container')
 const heroButton = document.querySelector('.hero-button')
@@ -15,11 +15,14 @@ hamburger.addEventListener('click', () => {
    menuCircle.classList.toggle("open")
 });
 
-links.addEventListener('click', () => {
-   navLinks.classList.toggle("open");
-   hamburger.classList.toggle("open")
-   colNavRight.classList.toggle("links-open")
-   address.classList.toggle("links-open")
-   address.classList.toggle("closed_menu")
-   menuCircle.classList.toggle("open")
-});
+document.querySelectorAll('.menu-li').forEach(item => {
+   item.addEventListener('click', event => {
+      navLinks.classList.toggle("open");
+      hamburger.classList.toggle("open")
+      colNavRight.classList.toggle("links-open")
+      address.classList.toggle("links-open")
+      address.classList.toggle("closed_menu")
+      menuCircle.classList.toggle("open")
+      console.log("asdf")
+   })
+ })

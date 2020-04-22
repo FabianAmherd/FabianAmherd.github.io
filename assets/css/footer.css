@@ -1,68 +1,71 @@
 .footer {
-  background-color: #4b79c5;
-  padding-top: 100px;
-  padding-bottom: 20px;
+  background: linear-gradient(-45deg, #2b4a7b, #335893);
   color: rgb(255,255,255);
   font-family: 'sofia-pro', sans-serif;
   font-size: 18px;
-  text-align: center;
   font-weight: 300;
   position: relative;
+  width: 96%;
+  height: 50vh;
+  padding: 100px 300px 100px 300px;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 100px;
+  box-shadow:  21px 21px 42px #96999d, 
+  -21px -21px 42px #ffffff;
 }
-#Logo {
-  padding-bottom: 43px;
-  text-align: center;
-  background: #E0E5EB;
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 80%;
 }
-.footer-latify{
-  margin: 0px 40px 0px 0px;
-  font-size: 28px;
-  font-weight: 600;
+
+.footer-container > div{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
-.footer-latify > img{
-  vertical-align:middle;
-  padding-bottom: 6px;
+
+.footer-container div .title{
+  margin-bottom: 20px;
 }
-.adress-street{
-  margin: 0px 0px 0px 48px;
+
+.footer-container div .text{
+  font-weight: 500;
+  line-height: 2.5;
 }
-.adress-postcode{
-  margin: 0px 0px 0px 32px;
+
+.footer-container div h3{
+  font-size: 20px;
 }
-.footer-email{
-  margin: 30px 0px 30px 15px;
+
+.footer-container div .text-slogan{
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+  padding-right: 30px;
 }
-.footer-email > img{
-  vertical-align:middle;
-  padding-bottom: 6px;
+
+.copyright-container{
+  display: flex;
+  justify-content: space-between;
 }
-.footer-phone > img{
-  vertical-align:middle;
-  padding-bottom: 3px;
+
+.copyright{
+  font-size: 18px;
+  font-weight: bold;
 }
-#copyright{
-  font-size: 13px;
-  margin-top: 41px;
-  margin-bottom: 0px;
-}
-#copyright > img{
-  vertical-align:middle;
-  padding: 0px 3px 2.7px 0px;
-}
-.legal-link:hover {
-  color: #c9c9c9;
-  text-decoration: none;
-}
-.legal-link{
+
+.footer a{
+  text-decoration: underline;
   color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
+  
 }
-.footer>div>p>a{
-  text-decoration: none;
-  color: white;
-}
-.footer>div>p>a:hover{
-  text-decoration: none;
-  color: white;
+
+.legal-link{
+  padding-right: 30px;
 }

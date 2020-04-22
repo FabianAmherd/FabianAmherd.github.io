@@ -172,7 +172,7 @@ nav .logo img {
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   border-radius: 50px;
-  background: linear-gradient(145deg, #272727, #2e2e2e);
+  background: linear-gradient(-45deg, #272727, #2e2e2e);
   box-shadow:  7px 7px 14px #1a1a1a, 
               -7px -7px 14px #3c3c3c;
   height: 70px;
