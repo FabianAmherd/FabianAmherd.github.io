@@ -44,6 +44,14 @@
   background-color: #305289;
   border-radius: 3px;
 }
+.section-heading-text{
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+  width: 80%;
+  margin: 0 0 10vh 0;
+}
 /*Hide scrollbar*/
 ::-webkit-scrollbar{
   width: 0;

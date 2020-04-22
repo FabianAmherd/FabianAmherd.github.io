@@ -155,6 +155,7 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 /* RESPONSIVE DESIGN */
 /*Smartphones*/
 @media only screen and (max-width: 600px) {
