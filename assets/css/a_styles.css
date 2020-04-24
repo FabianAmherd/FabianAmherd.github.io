@@ -9,14 +9,15 @@
 #pricing-section{
   background-color: #E0E5EB;
   z-index: -2;
-  padding: 5vh 0 15vh 0;
+  padding: 20vh 0 15vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
 }
 .pricing-table{
   font-family: 'sofia-pro', sans-serif;
-  width: 75%;
+  margin: 50px 0 0 0;
+  width: 70%;
   border: 1px transparent;
   border-radius: 50px;
   box-shadow:  41px 41px 82px #bec3c8, 
@@ -75,7 +76,7 @@
   font-family: 'sofia-pro', sans-serif;
   background-color: #E0E5EB;
   z-index: -2;
-  padding: 5vh 0 15vh 0;
+  padding: 0 0 15vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
@@ -83,30 +84,28 @@
 #extras-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3em 1em;
+  grid-gap: 3em 3em;
   margin: 0 5%;
 }
 .extra-element {
   border-radius: 50px;
-  height: 450px;
-  text-align: center;
-  width: 80%;
+  height: 300px;
+  text-align: justify;
   background: #E0E5EB;
   box-shadow:  24px 24px 48px #bec3c8, 
              -24px -24px 48px #ffffff!important;
-  place-self: center;
   overflow: hidden;
-  padding: 10px;
+  padding: 20px;
 }
 .extra-img{
   height: 50px;
   width:50px;
 }
 .extra-title{
-  font-size: 29px;
+  font-size: 28px;
   font-weight: 400;
   text-align: center;
-  margin: 25px 0px 15px 0px;
+  margin: 10px 0px 5px 0px;
 }
 .extra-title > img{
   vertical-align: middle;
@@ -114,10 +113,9 @@
 }
 .extra-price{
   color: #305289;
-  padding-right: 10px;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 600;
-  margin: 40px 0px 30px 0px;
+  margin: 15px 0px 20px 0px;
   text-align: center;
 }
 .extra-text{

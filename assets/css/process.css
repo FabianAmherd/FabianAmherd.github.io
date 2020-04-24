@@ -2,7 +2,7 @@
 .process-section{
   background-color: #E0E5EB;
   z-index: -2;
-  padding: 5vh 0 15vh 0;
+  padding: 5vh 0 5vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
@@ -41,5 +41,5 @@
   text-align: center;
   overflow: hidden;
   width: 60%;
-  height: 33vh;
+  height: 220px;
 }

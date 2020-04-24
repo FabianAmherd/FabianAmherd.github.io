@@ -8,29 +8,24 @@
 }
 #vorteile-section{
   background-color: #E0E5EB;
-  z-index: -2;
   padding: 5vh 0 15vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
-  margin: 0px 0 100px 0;
   font-family: 'sofia-pro', sans-serif;
 }
 #grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-gap: 3em 1em;
-  padding: 0 5%;
+  grid-gap: 3em 3em;
+  padding: 0 15%;
 }
 .grid-element {
   border-radius: 50px;
-  height: 230px;
-  text-align: left;
-  width: 80%;
+  height: 200px;
   background: #E0E5EB;
   box-shadow:  24px 24px 48px #bec3c8, 
              -24px -24px 48px #ffffff!important;
-  place-self: center;
   overflow: hidden;
 }
 .grid-img{

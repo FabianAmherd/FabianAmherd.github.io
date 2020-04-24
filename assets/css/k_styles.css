@@ -9,25 +9,36 @@
 
 #contact-section{
   background-color: #E0E5EB;
-  z-index: -2;
   padding: 5vh 0 15vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
 }
 
+.contact-block{
+  margin: 3vh 0 6vh 0;
+  border-radius: 50px;
+  height: 300px;
+  text-align: center;
+  background: #E0E5EB;
+  box-shadow:  24px 24px 48px #bec3c8, 
+             -24px -24px 48px #ffffff!important;
+  overflow: hidden;
+  padding: 20px;
+}
+
 .contact-subheading{
   font-family: 'sofia-pro', sans-serif;
   font-size: 27px;
   color: rgba(0, 0, 0, 0.65);
-  margin: 10vh 0px 0px 0px;
+  margin: 0;
 }
 
 .contact-email{
   font-family: 'sofia-pro', sans-serif;
   font-size: 35px;
   color: #000000;
-  margin: 0px 0px 20vh 0px;
+  margin: 0px 0px 5vh 0px;
 }
 
 .contact-email > a{
@@ -38,6 +49,7 @@
 }
 
 .contact-email > a:hover{
+  color: rgba(0, 0, 0, 0.65);
   text-decoration: none;
 }
 
