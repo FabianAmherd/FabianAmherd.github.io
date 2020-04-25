@@ -265,7 +265,7 @@ nav .logo img {
 }
 
 #menu-circle.open {
-  transform: scale(4);
+  transform: scale(3);
   transition-duration: .5s;
   visibility: visible;
 }

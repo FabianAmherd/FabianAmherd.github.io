@@ -1,5 +1,6 @@
 introImg = document.querySelector(".intro_img_container")
 introImg2 = document.querySelector(".intro_img_container2")
+body = document.querySelector("#body")
 
 document.addEventListener("DOMContentLoaded", () => {
   anime
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       delay: 2200,
       translateY: "-100vh",
       duration: 1200,
-      easing: "easeOutExpo",
+      easing: "easeInOutExpo",
       complete: function (anime) {
         document.querySelector(".welcome").remove();
       },
@@ -20,28 +21,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   anime({
     targets: ".welcome_logo",
-    opacity: 1,
-    scale: 0.5,
-    duration: 1800,
     easing: "easeOutExpo",
+    scale: {
+      delay: 0,
+      value: [2,1],
+      duration: 1800,
+      easing: "easeOutExpo",
+    },
+    boxShadow: {
+      value: "14px 14px 28px #bec3c8, -14px -14px 28px #ffffff",
+      duration: 200,
+      easing: "easeOutExpo",
+    },
+    translateX: {
+      value: ["0%", "-80%"],
+      duration: 1200,
+      delay: 800,
+    }
+  
   });
 
-  anime({
-    targets: ".welcome_logo",
-    boxShadow: "14px 14px 28px #bec3c8, -14px -14px 28px #ffffff",
-    duration: 200,
-    easing: "easeOutExpo",
-  });
 
   anime({
     targets: ".welcome>span>span",
-    delay: 700,
+    delay: 800,
     opacity: 1,
-    duration: 2200,
-    translateX: ["-100%", "0%"],
+    duration: 1200,
+    translateX: ["-100%", "-0%"],
     easing: "easeOutExpo",
     complete: function (anime) {
-      introImg.classList.toggle("streched_intro_img");
+      setTimeout(function(){
+        introImg.classList.toggle("streched_intro_img");
+      }, 1000)
     }
   });
 
@@ -50,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   anime({
     targets: ".intro_container>.word1",
-    delay: 3000,
+    delay: 3200,
     translateY: [
       {
         duration: 0,
@@ -75,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
   anime({
     targets: ".intro_container>.word2",
     easing: "easeOutExpo",
-    delay: 4500,
+    delay: 4700,
     translateY: [
       {
         duration: 0,
@@ -91,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   anime({
      targets: ".intro",
-     delay: 5500,
+     delay: 6200,
      translateY: "-100vh",
       duration: 1500,
      easing: "easeInOutExpo",
@@ -154,6 +165,9 @@ function playMainAnimation() {
     duration: 2700,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
+    complete: function (anime) {
+      body.style.removeProperty("overflow");
+    },
   });
 
 }
