@@ -113,7 +113,7 @@ nav .logo img {
 .col-nav-left{
   display: flex;
   color: white;
-  font-family: sofia-pro, sans-serif;
+  font-family: proxima-nova, sans-serif;
   align-items: center;
   justify-content: center;
   flex-direction: column;

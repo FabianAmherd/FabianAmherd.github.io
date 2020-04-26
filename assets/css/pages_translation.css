@@ -14,16 +14,14 @@
   font-weight: 400;
   font-size: 24px;
   background-color: #E0E5EB;
-  margin: 50px 0 15vh 0;
+  margin: 70px 0 0 0;
   padding: 15px;
   border-radius: 50px;
   background: #E0E5EB;
   box-shadow:  8px 8px 16px #b3b7bc, 
                -8px -8px 16px #ffffff;
-  transition: box-shadow 6s ease-in-out;
 }
 .translation-btn:hover{
-  transition: box-shadow 6s ease-in-out;
   box-shadow: inset 8px 8px 16px #b3b7bc, inset -8px -8px 16px #ffffff;
 }
 .translation-btn>a {
@@ -39,13 +37,16 @@
 
 /* Section headings */
 .section-heading{
-  font-family: 'Source-sans-pro', sans-serif;
-  font-size: 100px;
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 70px;
+  color: #000000;
 }
 .section-subheading{
-  font-family: 'Source-sans-pro', sans-serif;
+  font-family: 'sofia-pro', sans-serif;
   font-size: 25px;
-  margin: -15px 0 3vh 0;
+  margin: 0px 0 3vh 0;
+  color: #000000;
+
 }
 .section-heading-spacer{
   height: 3px;
