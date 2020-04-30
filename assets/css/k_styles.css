@@ -23,7 +23,11 @@
   font-family: 'sofia-pro', sans-serif;
   font-size: 27px;
   color: rgba(0, 0, 0, 0.65);
-  margin: 0;
+  margin:0;
+}
+
+.other-contact{
+  margin-top: 100px;
 }
 
 .contact-email{

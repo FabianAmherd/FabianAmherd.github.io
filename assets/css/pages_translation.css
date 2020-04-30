@@ -1,7 +1,14 @@
+.pages-translation{
+  text-align: center;
+  background-color: #E0E5EB;
+  margin: 0;
+  padding-bottom: 200px;
+}
 .translation-title{
  font-family: 'sofia-pro', sans-serif;
  color: #305289;
  font-size: 50px;
+ padding: 100px 0 0 0;
 }
 .translation-text{
  font-family: 'sofia-pro', sans-serif; 
@@ -14,7 +21,7 @@
   font-weight: 400;
   font-size: 24px;
   background-color: #E0E5EB;
-  margin: 70px 0 0 0;
+  margin: 20px 0 0 0;
   padding: 15px;
   border-radius: 50px;
   background: #E0E5EB;

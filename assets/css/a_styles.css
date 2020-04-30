@@ -6,6 +6,9 @@
   font-size: 100%;
   box-sizing: border-box;
 }
+html{
+  background-color: #E0E5EB;
+}
 #pricing-section{
   background-color: #E0E5EB;
   z-index: -2;

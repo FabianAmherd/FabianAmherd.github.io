@@ -51,7 +51,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
-
+	<main id="swup">
 		<div class="container">
 			<div class="fs-form-wrap" id="fs-form-wrap">
 
@@ -100,5 +100,6 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 				} );
 			})();
 		</script>
+	</main>
 	</body>
 </html>
