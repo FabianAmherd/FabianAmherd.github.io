@@ -1,3 +1,5 @@
+
+
 .pages-translation{
   text-align: center;
   background-color: #E0E5EB;
@@ -5,19 +7,20 @@
   padding-bottom: 200px;
 }
 .translation-title{
- font-family: 'sofia-pro', sans-serif;
+ font-family: 'Inter', sans-serif;
  color: #305289;
  font-size: 50px;
  padding: 100px 0 0 0;
+ font-weight: 600;
 }
 .translation-text{
- font-family: 'sofia-pro', sans-serif; 
+ font-family: 'Inter', sans-serif; 
  font-weight: 300;
  font-size: 25px;
  margin: 30px 0px;
 }
 .translation-btn{
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 24px;
   background-color: #E0E5EB;
@@ -32,10 +35,12 @@
   box-shadow: inset 8px 8px 16px #b3b7bc, inset -8px -8px 16px #ffffff;
 }
 .translation-btn>a {
+  font-family: 'proxima-nova', sans-serif;
   display: block;
   color: #305289;
   text-decoration: none;
   line-height: 30px;
+  font-weight: 600;
 }
 .translation-btn>a:hover {
   display: block;
@@ -44,21 +49,23 @@
 
 /* Section headings */
 .section-heading{
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 70px;
+  font-weight: 700;
   color: #000000;
 }
 .section-subheading{
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 25px;
-  margin: 0px 0 3vh 0;
+  margin: 0px 0 2vh 0;
   color: #000000;
 
 }
 .section-heading-spacer{
-  height: 3px;
+  height: 4px;
+  border-radius: 5px;
   width: 100px;
-  margin: 0 0 6vh 0;
+  margin: 0 0 5vh 0;
   background-color: #305289;
 }
 .section-heading-text{

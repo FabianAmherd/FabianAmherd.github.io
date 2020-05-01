@@ -2,6 +2,8 @@
   src: url(fonts/MonumentExtended-Regular.otf);
   font-family: monument;
 }
+@import url('https://rsms.me/inter/inter.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -207,18 +209,17 @@ body {
 .pricing-preview{
   background-color: #E0E5EB;
   z-index: -2;
-  padding: 5vh 0 5vh 0;
+  padding: 5vh 0 15vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
 }
 .pricing-preview-grid{
   display: flex;
-  margin: 0 10% 0 10%;
+  margin: 7vh 10% 0 10%;
 }
 .pricing-preview-element{
   border-radius: 50px;
-  font-family: 'sofia-pro', sans-serif;
   text-align: center;
   padding: 10px;
   background: #E0E5EB;
@@ -232,19 +233,29 @@ body {
   max-width: 300px;
 }
 .pricing-preview-title{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   color: #305289;
   font-size: 35px;
   padding-top: 5px;
 }
 .pricing-preview-text{
+  font-family: 'Inter', sans-serif;
+
   font-weight: 300;
-  font-size: 17px;
-  margin: 0px 15px;
+  font-size: 20px;
+  margin: 25px 15px;
 }
 .pricing-preview-price{
+  font-family: 'Inter', sans-serif;
   padding-bottom: 10px;
   position: relative;
 }
+.preview-btn{
+  margin-top: 120px !important;
+  font-family: 'Inter', sans-serif;
+}
+
 /* RESPONSIVE DESIGN */
 /*Smartphones*/
 @media only screen and (max-width: 600px) {

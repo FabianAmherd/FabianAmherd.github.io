@@ -2,33 +2,12 @@
 .process-section{
   background-color: #E0E5EB;
   z-index: -2;
-  padding: 5vh 0 5vh 0;
+  padding: 5vh 0 15vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
 }
-.clip-link:before {
-  position: absolute;
-  content: attr(data-content);
-  color: #000000;
-  text-decoration: none;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  transition: clip-path .4s ease-in-out;
-}
-.clip-link{
-  font-family: 'Inter', sans-serif;
-  position: relative;
-  display: inline-block;
-  font-size: 4em;
-  color: transparent;
-  -webkit-text-stroke: 1px #000000;
-  font-weight: 800;
-  text-decoration: none;
-  overflow: hidden;
-}
-.clip-link:hover::before {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
+
 .process-text {
   display: block;
   text-align: justify;
@@ -37,9 +16,30 @@
   font-weight: 300;
   line-height: 1.5em;
 }
-.process-block {
-  text-align: center;
-  overflow: hidden;
-  width: 60%;
-  height: 220px;
+
+.process-container{
+  display: flex;
+  width: 85%;
+  text-align: left;
+  font-family: 'Inter';
+
+}
+
+.process-container .process-column{
+  margin: 0px 75px 0px 75px;
+  flex: 1;
+}
+
+.process-container .number{
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+.process-container h3{
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+.process-container .process-text{
+  font-size: 25px;
 }
