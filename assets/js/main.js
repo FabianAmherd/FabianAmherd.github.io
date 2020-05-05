@@ -1,3 +1,6 @@
+/* Main javascript file */
+
+/* Navigation javascript */
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 var links = document.querySelectorAll('nav-links li');

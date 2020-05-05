@@ -15,6 +15,7 @@
 body {
   width: 100%;
   background-color: #E0E5EB;
+  overflow-x: hidden;
 }
 #hero {
   height: 100vh;

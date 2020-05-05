@@ -8,6 +8,7 @@
 }
 html{
   background-color: #E0E5EB;
+  overflow-x: hidden;
 }
 #pricing-section{
   background-color: #E0E5EB;

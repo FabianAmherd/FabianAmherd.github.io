@@ -151,9 +151,9 @@
     <div class="introductory-text">Willkommen bei Latify. Wir sind ein Web-Entwicklungs-Unternehmen, dass seinen Kunden hilft, wirklich einzigartig zu werden. Mit uns können Sie sich von Ihrer besten Seite zu zeigen, um so neue Möglichkeiten für Ihr Unternehmen zu eröffnen. Profitieren Sie vom digitalen Wandel und schaffen Sie gleichzeitig einen Vorsprung. Wir bieten allen unseren Kunden handgemachte und massgeschneiderte Webseiten zu einem fairen Preis.</div>
 
     <section class="pricing-preview">
-      <p class="section-heading">Unser Angebot</p>
-      <p class="section-subheading">Sehen Sie sich erst einmal um.</p>
-      <div class="section-heading-spacer"></div>
+      <p class="section-heading pph">Unser Angebot</p>
+      <p class="section-subheading ppsh">Sehen Sie sich erst einmal um.</p>
+      <div class="section-heading-spacer pphs"></div>
       <div class="pricing-preview-grid">
         <div class="pricing-preview-element hvr-grow">
           <div class="pricing-preview-title">Onepager</div>
@@ -182,9 +182,9 @@
     </section>
 
     <section class="process-section">
-      <p class="section-heading">Unser Weg</p>
-      <p class="section-subheading">führt Sie direkt zu Ihrer neuen Webseite.</p>
-      <div class="section-heading-spacer"></div>
+      <p class="section-heading ph">Unser Weg</p>
+      <p class="section-subheading psh">führt Sie direkt zu Ihrer neuen Webseite.</p>
+      <div class="section-heading-spacer phs"></div>
       <div class="process-container">
         <div class="process-column">
           <div class="number">01</div>
@@ -208,9 +208,9 @@
 
     <!--Vorteile-->
     <section id="vorteile-section">
-      <p class="section-heading">Unsere Vorteile</p>
-      <p class="section-subheading">Was Sie bei uns immer dabeihaben.</p>
-      <div class="section-heading-spacer"></div>
+      <p class="section-heading vh">Unsere Vorteile</p>
+      <p class="section-subheading vsh">Was Sie bei uns immer dabeihaben.</p>
+      <div class="section-heading-spacer vhs"></div>
       <div id="grid-container">
           <div class="grid-element">
               <p class="grid-title"><img src="assets/img/Rectangle%2028.png" class="grid-img">&nbsp;Hosting-Einrichtung</p>
@@ -241,11 +241,11 @@
 
     <!--Kontakt-->
     <section id="contact-section">
-      <p class="section-heading">Wollen wir beginnen?</p>
-      <p class="section-subheading">Auf zu Ihrer neuen Webseite!</p>
-      <div class="section-heading-spacer"></div>
-      <p class="translation-title">Kontaktformular</p>
-      <p class="translation-text">Übermitteln Sie erste Informationen per Kontaktformular.</p>
+      <p class="section-heading ch">Wollen wir beginnen?</p>
+      <p class="section-subheading csh">Auf zu Ihrer neuen Webseite!</p>
+      <div class="section-heading-spacer chs"></div>
+      <p class="translation-title ctti">Kontaktformular</p>
+      <p class="translation-text ctte">Übermitteln Sie erste Informationen per Kontaktformular.</p>
       <button class="translation-btn contact-btn" type="button" name="Hover"><a href="/fullscreenform.php">Kontakt aufnehmen</a></button>
       <div class="other-contact">
         <div class="contact-container">
@@ -276,7 +276,7 @@
           <img src="assets/img/logo_blue.png" width="50" alt="Latify_Logo_white">
           <div class="text-slogan">Ihre Firma für individuelles und intelligentes Webdesign.</div>
         </div>
-        <div class="adresse">
+        <div class="address">
           <div class="title">
             <h3>Adresse</h3>
           </div>
@@ -292,8 +292,7 @@
           <div class="text">
             <a href="tel:+41445251214">044 525 12 14</a> <br>
             <a href="mailto:hello@latify.ch?subject=Anfrage für eine Zusammenarbeit mit Latify">hello@latify.ch</a>
-          </div>
-          
+          </div>          
         </div>
       
         <div class="social">
@@ -338,6 +337,13 @@
     <script src="assets/js/welcome.js"></script>
     <script type="text/javascript" src="assets/js/observers.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="assets/js/scrollanim.js"></script>
+
     <script data-swup-ignore-script="" src="assets/js/swup.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/SwupOverlayTheme.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/SwupHeadPlugin.min.js"></script>
@@ -348,11 +354,59 @@
 
     <script data-swup-ignore-script="">
 
-      function init(){setTimeout(function() {
-            if (document.querySelector('.home')) {
-              location.reload()
-            }
-        }, 490)}
+      function init(){
+        if (document.querySelector('#pricing-section')){
+          var tl6 = new TimelineMax()
+          var tl7 = new TimelineMax()
+          var tl8 = new TimelineMax()
+          var tl9 = new TimelineMax()
+          const controller = new ScrollMagic.Controller()
+
+          tl6.from("footer", .5, {scale: 1.2, opacity:0})
+          tl6.from(".slogan", .5, {scale: 1.2, opacity:0})
+          tl6.from(".address", .5, {scale: 1.2, opacity:0}, "=-.25")
+          tl6.from(".kontakt", .5, {scale: 1.2, opacity:0}, "=-.25")
+          tl6.from(".social", .5, {scale: 1.2, opacity:0}, "=-.25")
+          tl6.from(".copyright-container", .5, {y:30, opacity:0})
+          const scene6 = new ScrollMagic.Scene({
+            triggerElement: "footer",
+            reverse:false
+          }).setTween(tl6).addTo(controller);
+
+          tl7.from(".ah", .6, {x:200, opacity:0})
+          tl7.from(".ash", .6, {x:-200, opacity:0}, "=-.2")
+          tl7.from(".ahs", .6, {y:200, opacity:0}, "=-.2")
+          tl7.from(".aht", .6, {x:100, opacity:0}, "=-.2")
+          tl7.from(".pricing-table", .6, {y:100, opacity:0}, "=-.2")
+          const scene7 = new ScrollMagic.Scene({
+            triggerElement: "#pricing-section",
+            reverse:false
+          }).setTween(tl7).addTo(controller);
+
+          tl8.from(".eh", .6, {x:200, opacity:0})
+          tl8.from(".esh", .6, {x:-200, opacity:0}, "=-.2")
+          tl8.from(".ehs", .6, {y:200, opacity:0}, "=-.2")
+          tl8.from(".eht", .6, {x:100, opacity:0}, "=-.2")
+          tl8.from(".extra-element:nth-of-type(1)", .4, {scale: 1.2, opacity:0})
+          tl8.from(".extra-element:nth-of-type(4)", .4, {scale: 1.2, opacity:0}, "=-.4")
+          tl8.from(".extra-element:nth-of-type(3)", .4, {scale: 1.2, opacity:0})
+          tl8.from(".extra-element:nth-of-type(6)", .4, {scale: 1.2, opacity:0}, "=-.4")
+          tl8.from(".extra-element:nth-of-type(2)", .4, {scale: 1.2, opacity:0})
+          tl8.from(".extra-element:nth-of-type(5)", .4, {scale: 1.2, opacity:0}, "=-.4")
+          const scene8 = new ScrollMagic.Scene({
+            triggerElement: ".extras-section",
+            reverse:false
+          }).setTween(tl8).addTo(controller);
+
+          tl9.from(".tti", .4, {x:200, opacity:0})
+          tl9.from(".tte", .4, {x:-200, opacity:0}, "=-.2")
+          tl9.from(".translation-btn", .4, {y:200, opacity:0}, "=-.2")
+          const scene9 = new ScrollMagic.Scene({
+            triggerElement: ".tti",
+            reverse:false
+          }).setTween(tl9).addTo(controller);
+        }
+      }
 
       const swup = new Swup({
         plugins: [new SwupOverlayTheme({
