@@ -216,7 +216,7 @@ body {
 }
 .pricing-preview-grid{
   display: flex;
-  margin: 7vh 10% 0 10%;
+  margin: 3vh 10% 0 10%;
 }
 .pricing-preview-element{
   border-radius: 50px;
