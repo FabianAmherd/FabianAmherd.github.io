@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
       value: ["0%", "-80%"],
       duration: 1200,
       delay: 800,
+    },
+
+    complete: function (anime) {
+      document.querySelector("nav").style.opacity ="0";
     }
   
   });
@@ -122,7 +126,6 @@ function playMainAnimation() {
       delay: 1500,
       duration: 1500,
       translateY: ["-100px", "0px"],
-      translateX: ["0", "0"],
       easing: "easeOutExpo",
       opacity: 1,
     });

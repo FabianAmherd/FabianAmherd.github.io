@@ -20,10 +20,12 @@
 }
 
 .contact-subheading{
-  font-family: 'sofia-pro', sans-serif;
-  font-size: 27px;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
   color: rgba(0, 0, 0, 0.65);
   margin:0;
+  margin-bottom: 20px;
+
 }
 
 .other-contact{
@@ -39,6 +41,10 @@
 }
 .contact-element{
   justify-self: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 90%;
   border-radius: 50px;
   height: 240px;
@@ -50,14 +56,13 @@
 }
 
 .contact-email{
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 35px;
   color: #000000;
-  margin: 0px 0px 5vh 0px;
 }
 
 .contact-email > a{
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 35px;
   color: #000000;
   text-decoration: none;
@@ -69,7 +74,7 @@
 }
 
 .contact-linkedin > a{
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 35px;
   color: #000000;
   text-decoration: none;
