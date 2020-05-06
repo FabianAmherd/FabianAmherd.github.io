@@ -12,13 +12,13 @@ html{
 #pricing-section{
   background-color: #E0E5EB;
   z-index: -2;
-  padding: 20vh 0 15vh 0;
+  padding: 30vh 0 15vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
 }
 .pricing-table{
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 50px 0 0 0;
   width: 70%;
   border: 1px transparent;
@@ -76,7 +76,7 @@ html{
   width: 80px;
 }
 .extras-section{
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #E0E5EB;
   z-index: -2;
   padding: 0 0 15vh 0;
@@ -88,7 +88,8 @@ html{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3em 3em;
-  margin: 0 5%;
+  margin: 0 15%;
+
 }
 .extra-element {
   border-radius: 50px;
@@ -98,7 +99,7 @@ html{
   box-shadow:  24px 24px 48px #bec3c8, 
              -24px -24px 48px #ffffff!important;
   overflow: hidden;
-  padding: 20px;
+  padding: 30px;
 }
 .extra-img{
   height: 50px;
@@ -122,9 +123,9 @@ html{
   text-align: center;
 }
 .extra-text{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
-  margin: 10px 0px 0px 0px;
+  margin: 25px 15px;
 }
 .hvr-grow {
   display: inline-block;

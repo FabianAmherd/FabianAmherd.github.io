@@ -1,4 +1,7 @@
 @import url('https://rsms.me/inter/inter.css');
+#swup{
+  overflow: hidden;
+}
 
 nav {
   width: 100%;

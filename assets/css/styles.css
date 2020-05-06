@@ -97,7 +97,7 @@ body {
   justify-content: center;
   flex-direction: row;
   letter-spacing: 2px;
-  color: rgb(17, 17, 17);
+  color: #305289;
   z-index: 10;
   overflow: hidden;
 }
@@ -188,7 +188,7 @@ body {
 }
 
 .welcome_logo img{
-  width: 100px;
+  width: 120px;
 }
 
 .welcome>span{
@@ -200,7 +200,7 @@ body {
 .welcome>span>span{
    display: inline-block;
    font-size: 50px;
-   color: rgb(32, 32, 32);
+   color: #305289;
    -webkit-transform: translateY(-100%);
    transform: translateY(-100%);
    will-change: transform;
