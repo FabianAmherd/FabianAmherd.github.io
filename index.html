@@ -406,6 +406,11 @@
             reverse:false
           }).setTween(tl9).addTo(controller);
         }
+        if (document.querySelector('#hero')){
+          document.querySelector(".welcome").remove();
+          document.querySelector(".intro").remove();
+          playMainAnimation()
+        }
       }
 
       const swup = new Swup({
