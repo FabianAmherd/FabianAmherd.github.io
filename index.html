@@ -51,7 +51,7 @@
           </svg>
  
 
-          <a href="index.html" class="logo">
+          <a href="/index.html" class="logo">
             <img class="top" src="assets/img/logo_blue.png" alt="Latify_Logo" />
           </a>
 
@@ -158,7 +158,7 @@
         <div class="pricing-preview-element hvr-grow">
           <div class="pricing-preview-title">Onepager</div>
           <div class="pricing-preview-text">Übersichtliche und kompakte Webseite. Empfehlenswert für kleine Läden und Privatpersonen.</div>
-          <div class="pricing-preview-price"><span><p class="pricing-currency">CHF</p> <p class="pricing-number">690.-</p></span></div>
+          <div class="pricing-preview-price"><span><p class="pricing-currency">CHF</p><p class="pricing-number">690.-</p></span></div>
         </div>
         <div class="pricing-preview-element hvr-grow">
           <div class="pricing-preview-title">Basic</div>
@@ -319,7 +319,7 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script data-swup-reload-script="" type="text/javascript" src="assets/js/main.js"></script>
 
   </main>
 
@@ -338,108 +338,43 @@
     <script type="text/javascript" src="assets/js/observers.js"></script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
-    <script type="text/javascript" src="assets/js/scrollanim.js"></script>
+    <script data-swup-reload-script="" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script data-swup-reload-script="" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script data-swup-reload-script="" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script data-swup-reload-script="" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script data-swup-reload-script="" type="text/javascript" src="assets/js/scrollanim2.js"></script>
 
     <script data-swup-ignore-script="" src="assets/js/swup.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/SwupOverlayTheme.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/SwupHeadPlugin.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/SwupScrollPlugin.min.js"></script>
-    <script src="assets/js/slideNav.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/SwupScriptsPlugin.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/anime.min.js"></script>
 
-    <script data-swup-ignore-script="">
-
-      function init(){
-        if (document.querySelector('#pricing-section')){
-          var tl6 = new TimelineMax()
-          var tl7 = new TimelineMax()
-          var tl8 = new TimelineMax()
-          var tl9 = new TimelineMax()
-          const controller = new ScrollMagic.Controller()
-
-          tl6.from("footer", .5, {scale: 1.2, opacity:0})
-          tl6.from(".slogan", .5, {scale: 1.2, opacity:0})
-          tl6.from(".address", .5, {scale: 1.2, opacity:0}, "=-.25")
-          tl6.from(".kontakt", .5, {scale: 1.2, opacity:0}, "=-.25")
-          tl6.from(".social", .5, {scale: 1.2, opacity:0}, "=-.25")
-          tl6.from(".copyright-container", .5, {y:30, opacity:0})
-          const scene6 = new ScrollMagic.Scene({
-            triggerElement: "footer",
-            reverse:false
-          }).setTween(tl6).addTo(controller);
-
-          tl7.from(".ah", .6, {x:200, opacity:0})
-          tl7.from(".ash", .6, {x:-200, opacity:0}, "=-.2")
-          tl7.from(".ahs", .6, {y:200, opacity:0}, "=-.2")
-          tl7.from(".aht", .6, {x:100, opacity:0}, "=-.2")
-          tl7.from(".pricing-table", .6, {y:100, opacity:0}, "=-.2")
-          const scene7 = new ScrollMagic.Scene({
-            triggerElement: "#pricing-section",
-            reverse:false
-          }).setTween(tl7).addTo(controller);
-
-          tl8.from(".eh", .6, {x:200, opacity:0})
-          tl8.from(".esh", .6, {x:-200, opacity:0}, "=-.2")
-          tl8.from(".ehs", .6, {y:200, opacity:0}, "=-.2")
-          tl8.from(".eht", .6, {x:100, opacity:0}, "=-.2")
-          tl8.from(".extra-element:nth-of-type(1)", .4, {scale: 1.2, opacity:0})
-          tl8.from(".extra-element:nth-of-type(4)", .4, {scale: 1.2, opacity:0}, "=-.4")
-          tl8.from(".extra-element:nth-of-type(3)", .4, {scale: 1.2, opacity:0})
-          tl8.from(".extra-element:nth-of-type(6)", .4, {scale: 1.2, opacity:0}, "=-.4")
-          tl8.from(".extra-element:nth-of-type(2)", .4, {scale: 1.2, opacity:0})
-          tl8.from(".extra-element:nth-of-type(5)", .4, {scale: 1.2, opacity:0}, "=-.4")
-          const scene8 = new ScrollMagic.Scene({
-            triggerElement: ".extras-section",
-            reverse:false
-          }).setTween(tl8).addTo(controller);
-
-          tl9.from(".tti", .4, {x:200, opacity:0})
-          tl9.from(".tte", .4, {x:-200, opacity:0}, "=-.2")
-          tl9.from(".translation-btn", .4, {y:200, opacity:0}, "=-.2")
-          const scene9 = new ScrollMagic.Scene({
-            triggerElement: ".tti",
-            reverse:false
-          }).setTween(tl9).addTo(controller);
-        }
-        if (document.querySelector('#hero')){
-          document.querySelector(".welcome").remove();
-          document.querySelector(".intro").remove();
-          playMainAnimation()
-        }
-      }
-
+    <script>
+      window.addEventListener('load', firstinit)
       const swup = new Swup({
         plugins: [new SwupOverlayTheme({
           color: '#305289',
           duration: 700,
           direction: 'to-right',
         }),
-        new SwupHeadPlugin(),
+        new SwupHeadPlugin({}),
         new SwupScrollPlugin({
-          doScrollingRightAway: false,
+          doScrollingRightAway: true,
           animateScroll: false,
           scrollFriction: 0.3,
           scrollAcceleration: 0.025,
         }),
-        new SwupScriptsPlugin()]
+        new SwupScriptsPlugin({
+          head: true,
+          body: true,
+          optin: true,
+        })]
       });
-
+      
+      swup.on('contentReplaced', whatever)
       swup.on('contentReplaced', init);
-
-      window.slide = new SlideNav({
-        activeClass: "active",
-        toggleButtonSelector: false,
-        toggleBoxSelector: false,
-        hideAfterSelect: true,
-        speed: 70,
-        changeHash: false,
-        navBoxToggleClass: false
-      });
     </script>
 
   </body>

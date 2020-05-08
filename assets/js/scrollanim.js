@@ -1,3 +1,4 @@
+console.log('scrollanim.js is executed')
 var tl1 = new TimelineMax()
 var tl2 = new TimelineMax()
 var tl3 = new TimelineMax()
