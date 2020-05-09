@@ -34,8 +34,8 @@ function firstinit(){
     reverse:false
   }).setTween(tl1).addTo(controllernew);
 
-  tl2.from(".pph", .6, {x:100, opacity:0})
-  tl2.from(".ppsh", .6, {x:-100, opacity:0}, "=-.6")
+  tl2.from(".pph", .6, {y:100, opacity:0})
+  tl2.from(".ppsh", .6, {y:100, opacity:0}, "=-.6")
   tl2.from(".pphs", .6, {y:100, opacity:0}, "=-.6")
   tl2.from(".pricing-preview-element:nth-of-type(1)", .3, {y: 100, opacity:0})
   tl2.from(".pricing-preview-element:nth-of-type(2)", .3, {y: 100, opacity:0}, "=-.3")
@@ -47,8 +47,8 @@ function firstinit(){
     reverse:false
   }).setTween(tl2).addTo(controllernew);
 
-  tl3.from(".ph", .6, {x:100, opacity:0})
-  tl3.from(".psh", .6, {x:-100, opacity:0}, "=-.6")
+  tl3.from(".ph", .6, {y:100, opacity:0})
+  tl3.from(".psh", .6, {y:100, opacity:0}, "=-.6")
   tl3.from(".phs", .6, {y:100, opacity:0}, "=-.6")
   tl3.from(".process-column", .4, {y:200, opacity:0}, "=-.2")
   const scene3 = new ScrollMagic.Scene({
@@ -56,8 +56,8 @@ function firstinit(){
     reverse:false
   }).setTween(tl3).addTo(controllernew);
 
-  tl4.from(".vh", .6, {x:100, opacity:0})
-  tl4.from(".vsh", .6, {x:-100, opacity:0}, "=-.6")
+  tl4.from(".vh", .6, {y:100, opacity:0})
+  tl4.from(".vsh", .6, {y:100, opacity:0}, "=-.6")
   tl4.from(".vhs", .6, {y:100, opacity:0}, "=-.6")
   tl4.from(".grid-element:nth-of-type(1)", .5, {x:-100, opacity:0}, "=-.5")
   tl4.from(".grid-element:nth-of-type(2)", .5, {x:100, opacity:0}, "=-.5")
@@ -70,8 +70,8 @@ function firstinit(){
     reverse:false
   }).setTween(tl4).addTo(controllernew);
 
-  tl5.from(".ch", .6, {x:100, opacity:0})
-  tl5.from(".csh", .6, {x:-100, opacity:0}, "=-.6")
+  tl5.from(".ch", .6, {y:100, opacity:0})
+  tl5.from(".csh", .6, {y:100, opacity:0}, "=-.6")
   tl5.from(".chs", .6, {y:100, opacity:0}, "=-.6")
   tl5.from(".ctti", .6, {scale: 1.1, opacity:0}, "=-.3")
   tl5.from(".ctte", .4, {y:100, opacity:0}, "=-.4")
@@ -100,8 +100,8 @@ function whatever() {
     var tl10 = new TimelineMax()
     const controller2 = new ScrollMagic.Controller()
 
-    tl8.from(".ah", .6, {x:100, opacity:0})
-    tl8.from(".ash", .6, {x:-100, opacity:0}, "=-.6")
+    tl8.from(".ah", .6, {y:100, opacity:0})
+    tl8.from(".ash", .6, {y:100, opacity:0}, "=-.6")
     tl8.from(".ahs", .6, {y:100, opacity:0}, "=-.6")
     tl8.from(".aht", .6, {x:100, opacity:0}, "=-.6")
     tl8.from(".pricing-table", .6, {y:100, opacity:0}, "=-.2")
@@ -110,10 +110,10 @@ function whatever() {
       reverse:false
     }).setTween(tl8).addTo(controller2);
 
-    tl9.from(".eh", .6, {x:100, opacity:0})
-    tl9.from(".esh", .6, {x:-100, opacity:0}, "=-.6")
+    tl9.from(".eh", .6, {y:100, opacity:0})
+    tl9.from(".esh", .6, {y:100, opacity:0}, "=-.6")
     tl9.from(".ehs", .6, {y:100, opacity:0}, "=-.6")
-    tl9.from(".eht", .6, {x:100, opacity:0}, "=-.6")
+    tl9.from(".eht", .6, {y:100, opacity:0}, "=-.6")
     tl9.from(".extra-element:nth-of-type(1)", .4, {scale: 1.1, opacity:0}, "=-.4")
     tl9.from(".extra-element:nth-of-type(4)", .4, {scale: 1.1, opacity:0}, "=-.4")
     tl9.from(".extra-element:nth-of-type(3)", .4, {scale: 1.1, opacity:0}, "=-.4")
