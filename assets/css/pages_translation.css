@@ -25,7 +25,6 @@
   font-size: 24px;
   background-color: #E0E5EB;
   margin: 20px 0 0 0;
-  padding: 15px;
   border-radius: 50px;
   background: #E0E5EB;
   box-shadow:  8px 8px 16px #b3b7bc, 
@@ -39,6 +38,7 @@
   display: block;
   color: #305289;
   text-decoration: none;
+  margin: 15px;
   line-height: 30px;
   font-weight: 600;
 }

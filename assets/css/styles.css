@@ -2,7 +2,6 @@
   src: url(../fonts/monomenti.otf);
   font-family: monomenti;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -15,58 +14,6 @@ body {
   width: 100%;
   background-color: #e0e5eb;
 }
-#hero {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-position: bottom;
-  
-}
-
-.hero-bg{
-  width: 40%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  left: 70%;
-  top: 50%;
-  transform: translate(-50%, -40%);
-}
-
-.hero-title-wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 30%;
-  position: relative;
-  left: 15%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.hero-title {
-  width: 100%;
-  text-align: left;
-  overflow: hidden;
-}
-.hero-title > span {
-  display: inline-block;
-  overflow: hidden;
-  padding-left: 7px;
-  margin-right: 7px;
-}
-.hero-title > span > span {
-  display: inline-block;
-  font-size: 70px;
-  color: #000000;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-  will-change: transform;
-  font-family: "Inter";
-  font-weight: 800;
-}
-
 /* Loading Screen */
 .welcome {
   height: 100vh;
@@ -182,6 +129,52 @@ body {
   will-change: transform;
   font-family: monomenti;
 }
+/* Index */
+#hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #e0e5eb;
+  display: flex;
+  flex-direction: column;
+}
+.hero-scrolled {
+  background-color: rgb(225, 225, 225);
+  transition-property: background-color;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.hero-title-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  position: relative;
+  left: 10%;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.hero-title {
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+}
+.hero-title > span {
+  display: inline-block;
+  overflow: hidden;
+  padding-left: 7px;
+  margin-right: 7px;
+}
+.hero-title > span > span {
+  display: inline-block;
+  font-size: 70px;
+  color: #000000;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  will-change: transform;
+  font-family: "Inter";
+  font-weight: 800;
+}
 .introductory-text {
   font-family: "Inter", sans-serif;
   width: 80%;
@@ -225,7 +218,6 @@ body {
 }
 .pricing-preview-text {
   font-family: "Inter", sans-serif;
-
   font-weight: 300;
   font-size: 20px;
   margin: 25px 15px;
@@ -235,10 +227,173 @@ body {
   padding-bottom: 10px;
   position: relative;
 }
+.pricing-currency{
+  font-size: 20px;
+  color: #305289;
+  font-weight: bold;
+  display: inline-block;
+}
+.pricing-number{
+  font-size: 30px;
+  color: #305289;
+  font-weight: bold;
+  display: inline-block;
+}
 .preview-btn {
   margin-top: 120px !important;
   font-family: "Inter", sans-serif;
 }
+/* Vorteile */
+#vorteile-section{
+  background-color: #E0E5EB;
+  padding: 5vh 0 15vh 0;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  font-family: 'Inter', sans-serif;
+}
+#grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 5em 0em;
+  padding: 0 12.5%;
+}
+.grid-element {
+  border-radius: 50px;
+  height: 200px;
+  background: #E0E5EB;
+  box-shadow: inset 11px 11px 21px #bec3c8, 
+  inset -11px -11px 21px #ffffff!important;
+  margin: 0 2.53em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.grid-img{
+  height: 60px;
+  width: 60px;
+}
+.grid-title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.grid-title > img{
+  vertical-align: middle;
+  margin: 0px 5px 0px 0px;
+}
+.grid-text{
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* Kontakt */
+#contact-section{
+  background-color: #E0E5EB;
+  padding: 5vh 0 15vh 0;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+#contact-section .contact-btn{
+  margin: 20px 0 60px 0 !important;
+}
+.contact-subheading{
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.65);
+  margin:0;
+  margin-bottom: 20px;
+}
+.other-contact{
+  display: grid;
+  justify-items: center;
+  margin-top: 100px;
+}
+.contact-container{
+  display: grid;
+  width: 85%;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Inter';
+}
+.contact-element{
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 50px;
+  height: 240px;
+  padding: 20px;
+  background: #E0E5EB;
+  box-shadow:  24px 24px 48px #bec3c8, 
+             -24px -24px 48px #ffffff!important;
+  overflow: hidden;
+}
+.contact-email{
+  font-family: 'Inter', sans-serif;
+  font-size: 35px;
+  color: #000000;
+}
+.contact-email > a{
+  font-family: 'Inter', sans-serif;
+  font-size: 35px;
+  color: #000000;
+  text-decoration: none;
+}
+.contact-email > a:hover{
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+.contact-linkedin > a{
+  font-family: 'Inter', sans-serif;
+  font-size: 35px;
+  color: #000000;
+  text-decoration: none;
+  margin: 0;
+}
+.contact-linkedin>a:hover{
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+.contact-btn{
+  margin: 30px 0px 20vh 0px !important;
+}
+.contact-zurich{
+  font-family: 'Source-sans-pro', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: #000000;
+  margin: 90px 0px 0px 0px;
+}
+.contact-address{
+  font-family: 'sofia-pro', sans-serif;
+  font-size: 23px;
+  color: #000000;
+  margin: 20px 0px 0px 0px;
+  line-height: 27px;
+}
+
+
 
 /* RESPONSIVE DESIGN */
 /*Smartphones*/
