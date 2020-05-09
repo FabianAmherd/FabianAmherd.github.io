@@ -218,7 +218,6 @@ body {
 }
 .pricing-preview-text {
   font-family: "Inter", sans-serif;
-
   font-weight: 300;
   font-size: 20px;
   margin: 25px 15px;
@@ -227,6 +226,18 @@ body {
   font-family: "Inter", sans-serif;
   padding-bottom: 10px;
   position: relative;
+}
+.pricing-currency{
+  font-size: 20px;
+  color: #305289;
+  font-weight: bold;
+  display: inline-block;
+}
+.pricing-number{
+  font-size: 30px;
+  color: #305289;
+  font-weight: bold;
+  display: inline-block;
 }
 .preview-btn {
   margin-top: 120px !important;

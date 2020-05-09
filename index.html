@@ -10,7 +10,6 @@
 
     <!--Section stylesheets-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/a_styles.css" /> 
 
     <!--Components stylesheets-->
     <link rel="stylesheet" href="assets/css/cursor.css" />
@@ -148,24 +147,24 @@
         <div class="pricing-preview-element hvr-grow">
           <div class="pricing-preview-title">Onepager</div>
           <div class="pricing-preview-text">Übersichtliche und kompakte Webseite. Empfehlenswert für kleine Läden und Privatpersonen.</div>
-          <div class="pricing-preview-price"><span><p class="pricing-currency">CHF</p><p class="pricing-number">690.-</p></span></div>
+          <div class="pricing-preview-price"><span><p class="pricing-currency">CHF </p><p class="pricing-number">690.-</p></span></div>
         </div>
         <div class="pricing-preview-element hvr-grow">
           <div class="pricing-preview-title">Basic</div>
           <div class="pricing-preview-text">
             Dann ist dieses Paket die richtige Wahl für Sie. SSL-Verschlüsselung und bis zu 4 Seiten inbegriffen.</div>
-            <div class="pricing-preview-price"><span><p class="pricing-currency">CHF</p> <p class="pricing-number">890.-</p></span></div>
+            <div class="pricing-preview-price"><span><p class="pricing-currency">CHF </p> <p class="pricing-number">890.-</p></span></div>
         </div>
         <div class="pricing-preview-element hvr-grow">
           <div class="pricing-preview-title">Premium</div>
           <div class="pricing-preview-text">Für alle, die ein bisschen mehr wollen: 8 Seiten, 2 Design-Anpassungsrunden,
             SEO und mehr. </div>
-            <div class="pricing-preview-price"><span><p class="pricing-currency">CHF</p> <p class="pricing-number">1890.-</p></span></div>
+            <div class="pricing-preview-price"><span><p class="pricing-currency">CHF </p> <p class="pricing-number">1890.-</p></span></div>
         </div>
         <div class="pricing-preview-element hvr-grow">
           <div class="pricing-preview-title">Allrounder</div>
           <div class="pricing-preview-text">Der Allrounder für grössere Projekte und Firmen: bis zu 15 Seiten, 3 Design-Anpassungsrunden.</div>
-          <div class="pricing-preview-price"><span><p class="pricing-currency">Ab CHF</p> <p class="pricing-number">2790.-</p></span></div>
+          <div class="pricing-preview-price"><span><p class="pricing-currency">Ab CHF </p> <p class="pricing-number">2790.-</p></span></div>
         </div>
       </div>
       <button class="translation-btn preview-btn" type="button" name="Hover"><a href="/angebot.html">Mehr erfahren</a></button>
@@ -329,6 +328,7 @@
     <script data-swup-ignore-script="" src="assets/js/swup.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/SwupOverlayTheme.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/SwupScrollPlugin.min.js"></script>
+    <script data-swup-ignore-script="" src="assets/js/SwupHeadPlugin.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/SwupScriptsPlugin.min.js"></script>
     <script data-swup-ignore-script="" src="assets/js/anime.min.js"></script>
 
@@ -340,6 +340,7 @@
           duration: 700,
           direction: 'to-right',
         }),
+        new SwupHeadPlugin({}),
         new SwupScrollPlugin({
           doScrollingRightAway: false,
           animateScroll: false,
