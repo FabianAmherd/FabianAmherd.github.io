@@ -131,6 +131,15 @@ function playMainAnimation() {
     });
 
   anime({
+    targets: ".hero-bg",
+    delay: 600,
+    duration: 2700,
+    opacity: 1,
+    translateX: ["50%", "0%"],
+    easing: "easeOutExpo",
+  })
+
+  anime({
     targets: ".word1",
     delay: 0,
     duration: 2700,
@@ -140,14 +149,6 @@ function playMainAnimation() {
 
   anime({
     targets: ".word2",
-    delay: 100,
-    duration: 2700,
-    translateY: ["-100%", "0%"],
-    easing: "easeOutExpo",
-  });
-
-  anime({
-    targets: ".word3",
     delay: 200,
     duration: 2700,
     translateY: ["-100%", "0%"],
@@ -155,8 +156,16 @@ function playMainAnimation() {
   });
 
   anime({
+    targets: ".word3",
+    delay: 400,
+    duration: 2700,
+    translateY: ["-100%", "0%"],
+    easing: "easeOutExpo",
+  });
+
+  anime({
     targets: ".word4",
-    delay: 300,
+    delay: 600,
     duration: 2700,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
@@ -164,7 +173,7 @@ function playMainAnimation() {
 
   anime({
     targets: ".word5",
-    delay: 400,
+    delay: 800,
     duration: 2700,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
