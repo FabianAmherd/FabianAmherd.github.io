@@ -2,7 +2,6 @@
   src: url(../fonts/monomenti.otf);
   font-family: monomenti;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -15,52 +14,6 @@ body {
   width: 100%;
   background-color: #e0e5eb;
 }
-#hero {
-  height: 100vh;
-  width: 100%;
-  background-color: #e0e5eb;
-  display: flex;
-  flex-direction: column;
-}
-.hero-scrolled {
-  background-color: rgb(225, 225, 225);
-  transition-property: background-color;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
-}
-.hero-title-wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 60%;
-  position: relative;
-  left: 10%;
-  top: 40%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.hero-title {
-  width: 100%;
-  text-align: left;
-  overflow: hidden;
-}
-.hero-title > span {
-  display: inline-block;
-  overflow: hidden;
-  padding-left: 7px;
-  margin-right: 7px;
-}
-.hero-title > span > span {
-  display: inline-block;
-  font-size: 70px;
-  color: #000000;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-  will-change: transform;
-  font-family: "Inter";
-  font-weight: 800;
-}
-
 /* Loading Screen */
 .welcome {
   height: 100vh;
@@ -175,6 +128,52 @@ body {
   transform: translateY(-100%);
   will-change: transform;
   font-family: monomenti;
+}
+/* Index */
+#hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #e0e5eb;
+  display: flex;
+  flex-direction: column;
+}
+.hero-scrolled {
+  background-color: rgb(225, 225, 225);
+  transition-property: background-color;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.hero-title-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  position: relative;
+  left: 10%;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.hero-title {
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+}
+.hero-title > span {
+  display: inline-block;
+  overflow: hidden;
+  padding-left: 7px;
+  margin-right: 7px;
+}
+.hero-title > span > span {
+  display: inline-block;
+  font-size: 70px;
+  color: #000000;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  will-change: transform;
+  font-family: "Inter";
+  font-weight: 800;
 }
 .introductory-text {
   font-family: "Inter", sans-serif;
