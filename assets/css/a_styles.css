@@ -28,7 +28,7 @@ html{
 }
 .heading-row{
   font-weight: 400;
-  font-size: 29px;
+  font-size: 1.81rem;
 }
 .heading-row .column{
   color: #305289;
@@ -36,7 +36,7 @@ html{
 .table-row{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  font-size: 22px;
+  font-size: 1.38rem;
   width: 100%;
   place-content: center;
 }
@@ -46,7 +46,7 @@ html{
   padding: 20px;
 }
 .property{
-  font-size: 21.6px;
+  font-size: 1.35rem;
   font-weight: 300;
   text-align: center;
   padding:  20px 8px;
@@ -54,13 +54,13 @@ html{
   overflow-x: hidden;
 }
 .pricing-currency{
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #305289;
   font-weight: bold;
   display: inline-block;
 }
 .pricing-number{
-  font-size: 30px;
+  font-size: 1.88rem;
   color: #305289;
   font-weight: bold;
   display: inline-block;
@@ -106,7 +106,7 @@ html{
   width:50px;
 }
 .extra-title{
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
   text-align: center;
   margin: 10px 0px 5px 0px;
@@ -117,13 +117,13 @@ html{
 }
 .extra-price{
   color: #305289;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 15px 0px 20px 0px;
   text-align: center;
 }
 .extra-text{
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
   margin: 25px 15px;
 }
