@@ -137,5 +137,5 @@ function whatever() {
 
 function scrolltop(){
   
-  setTimeout(() => {window.scrollTo(0,0)},100);
+  setTimeout(() => {window.scrollTo(0,0)},200);
 }
