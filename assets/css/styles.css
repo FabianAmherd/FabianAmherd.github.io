@@ -1,6 +1,6 @@
 @font-face {
-  src: url(fonts/MonumentExtended-Regular.otf);
-  font-family: monument;
+  src: url(../fonts/monomenti.otf);
+  font-family: monomenti;
 }
 
 * {
@@ -13,12 +13,12 @@
 }
 body {
   width: 100%;
-  background-color: #E0E5EB;
+  background-color: #e0e5eb;
 }
 #hero {
   height: 100vh;
   width: 100%;
-  background-color: #E0E5EB;
+  background-color: #e0e5eb;
   display: flex;
   flex-direction: column;
 }
@@ -44,45 +44,23 @@ body {
   text-align: left;
   overflow: hidden;
 }
-.hero-title>span{
+.hero-title > span {
   display: inline-block;
   overflow: hidden;
   padding-left: 7px;
   margin-right: 7px;
 }
-.hero-title>span>span{
-   display: inline-block;
-   font-size: 70px;
-   color: rgb(66, 66, 66);
-   -webkit-transform: translateY(-100%);
-   transform: translateY(-100%);
-   will-change: transform;
-   font-family: 'proxima-nova';
+.hero-title > span > span {
+  display: inline-block;
+  font-size: 70px;
+  color: #000000;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  will-change: transform;
+  font-family: "Inter";
+  font-weight: 800;
 }
-.hero-button {
-  opacity: 0;
-}
-.hero-button button {
-  font-size: 20px;
-  text-decoration: none;
-  border: 1px solid rgb(17, 17, 17);
-  border-radius: 30px;
-  background-color: rgb(17, 17, 17);
-  padding: 15px;
-  color: #EEEEEE;
-  font-family: Circular;
-}
-.hero-button button:hover {
-  text-decoration: none;
-  border: 1px solid rgb(59, 58, 58);
-  border-radius: 30px;
-  background-color: rgb(233, 233, 233);
-  padding: 15px;
-  color: black;
-  transition-property: all;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-in-out;
-}
+
 /* Loading Screen */
 .welcome {
   height: 100vh;
@@ -90,7 +68,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #E0E5EB;
+  background-color: #e0e5eb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,14 +79,14 @@ body {
   overflow: hidden;
 }
 .intro {
-  font-family: 'proxima-nova', sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-weight: 800;
   height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #E0E5EB;
+  background-color: #e0e5eb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,28 +98,28 @@ body {
   opacity: 1;
   text-shadow: 0px 0px 6px #00000073;
 }
-.intro_container{
+.intro_container {
   position: absolute;
   display: inline-block;
   overflow: hidden;
 }
 
-.intro_container>span{
+.intro_container > span {
   display: inline-block;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
   margin: 10px;
-  color: #E0E5EB;
+  color: #e0e5eb;
 }
 
-.intro_img{
+.intro_img {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   display: block;
   width: 100%;
   height: auto;
 }
 
-.intro_img_container{
+.intro_img_container {
   position: absolute;
   display: flex;
   align-items: center;
@@ -152,7 +130,7 @@ body {
   width: 42%;
 }
 
-.intro_img_container2{
+.intro_img_container2 {
   position: absolute;
   display: flex;
   align-items: center;
@@ -162,17 +140,10 @@ body {
   width: 42%;
 }
 
-.streched_intro_img{
+.streched_intro_img {
   clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
 }
 
-
-
-.welcome_heading {
-  font-size: 40px;
-  font-family: monument;
-
-}
 .welcome_logo {
   height: 150px;
   width: 150px;
@@ -183,30 +154,30 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  transform:scale(2);
+  transform: scale(2);
 }
 
-.welcome_logo img{
+.welcome_logo img {
   width: 120px;
 }
 
-.welcome>span{
+.welcome > span {
   display: inline-block;
   overflow: hidden;
-  position: absolute; 
+  position: absolute;
   transform: translateX(40%);
 }
-.welcome>span>span{
-   display: inline-block;
-   font-size: 50px;
-   color: #305289;
-   -webkit-transform: translateY(-100%);
-   transform: translateY(-100%);
-   will-change: transform;
-   font-family: monument;
+.welcome > span > span {
+  display: inline-block;
+  font-size: 50px;
+  color: #305289;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  will-change: transform;
+  font-family: monomenti;
 }
-.introductory-text{
-  font-family: 'Inter', sans-serif;
+.introductory-text {
+  font-family: "Inter", sans-serif;
   width: 80%;
   margin: 0 0 15vh 10%;
   text-align: left;
@@ -214,78 +185,71 @@ body {
   font-size: 28px;
   font-weight: 300;
 }
-.pricing-preview{
-  background-color: #E0E5EB;
+.pricing-preview {
+  background-color: #e0e5eb;
   z-index: -2;
   padding: 5vh 0 15vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
 }
-.pricing-preview-grid{
+.pricing-preview-grid {
   display: flex;
   margin: 3vh 10% 0 10%;
 }
-.pricing-preview-element{
+.pricing-preview-element {
   border-radius: 50px;
   text-align: center;
   padding: 10px;
-  background: #E0E5EB;
-  box-shadow:  24px 24px 48px #bec3c8, 
-             -24px -24px 48px #ffffff!important;
-  flex: 1; 
+  background: #e0e5eb;
+  box-shadow: 24px 24px 48px #bec3c8, -24px -24px 48px #ffffff !important;
+  flex: 1;
   margin: 0px 30px;
-  display: flex!important;
+  display: flex !important;
   flex-direction: column;
   justify-content: space-between;
   max-width: 300px;
 }
-.pricing-preview-title{
-  font-family: 'Inter', sans-serif;
+.pricing-preview-title {
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   color: #305289;
   font-size: 35px;
   padding-top: 5px;
 }
-.pricing-preview-text{
-  font-family: 'Inter', sans-serif;
+.pricing-preview-text {
+  font-family: "Inter", sans-serif;
 
   font-weight: 300;
   font-size: 20px;
   margin: 25px 15px;
 }
-.pricing-preview-price{
-  font-family: 'Inter', sans-serif;
+.pricing-preview-price {
+  font-family: "Inter", sans-serif;
   padding-bottom: 10px;
   position: relative;
 }
-.preview-btn{
+.preview-btn {
   margin-top: 120px !important;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* RESPONSIVE DESIGN */
 /*Smartphones*/
 @media only screen and (max-width: 600px) {
-
 }
 /*Large Smartphones and Tablets*/
 @media only screen and (min-width: 600px) {
-
 }
 /*Landscape Tablets*/
 @media only screen and (min-width: 768px) {
-
 }
 /*Laptops*/
 @media only screen and (min-width: 992px) {
-
 }
 /*Larger Desktops*/
 @media only screen and (min-width: 1200px) {
-
 }
 /*Very large Desktops*/
 @media only screen and (min-width: 1600px) {
-
 }
