@@ -1,7 +1,8 @@
 html, body, .container {
+	font-size: 100%;
 	height: 100%;
 	margin: 0;
-	font-family: 'sofia-pro', sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 /* Main form wrapper */
 .fs-form-wrap {
@@ -19,7 +20,7 @@ html, body, .container {
 .fs-form {
 	position: relative;
 	text-align: left;
-	font-size: 2.5em;
+	font-size: 2.5rem;
 }
 .no-js .fs-form {
 	padding: 0 0 6em 0;
@@ -40,7 +41,7 @@ html, body, .container {
 	height: 100%;
 	background: #ffffff;
 	color: rgba(0, 0, 0, 0.65);
-	font-size: 1em;
+	font-size: 1rem;
 }
 .fs-form-overview .fs-fields::before {
 	display: block;
@@ -48,7 +49,7 @@ html, body, .container {
 	color: rgb(0, 0, 0);
 	content: 'Noch einmal kontrollieren';
 	font-weight: 700;
-	font-size: 3em;
+	font-size: 3rem;
 }
 /* Switch view animation (we hide the current view, switch the view class and show it again) */
 .fs-form.fs-show {
@@ -156,7 +157,7 @@ button.fs-continue,
 	color: rgb(255, 255, 255);
 	text-overflow: ellipsis;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	border-radius: 0;
 }
 .fs-fields input:invalid {
@@ -173,7 +174,7 @@ button.fs-continue,
 	background-color: #ffffff; /* Fixes chrome bug with placeholder */
 }
 .fs-form-overview .fs-fields input {
-	font-size: 1.2em;
+	font-size: 1.2rem;
 }
 .fs-fields textarea {
 	padding: 0.25em;
@@ -184,7 +185,7 @@ button.fs-continue,
 	background-color: transparent;
 	color: #ffffff;
 	font-weight: 700;
-	font-size: 0.85em;
+	font-size: 0.85rem;
 	resize: none;
 }
 .fs-form-overview .fs-fields textarea {
@@ -209,7 +210,7 @@ button.fs-continue,
 	border-radius: 5px;
 	width: 90px;
 	height: 70px;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 }
 .fs-form-overview .cs-skin-boxes > span::before {
 	padding-top: 50px;
@@ -304,8 +305,8 @@ button.fs-continue,
 	margin: 40px;
 	width: 2em;
 	font-weight: 700;
-	font-size: 2em;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 2rem;
+	font-family: 'Inter', sans-serif;
 	cursor: default;
 }
 .fs-numbers:after {
@@ -407,7 +408,7 @@ button.fs-continue {
 	right: 0;
 	bottom: 0;
 	margin: 0 40px 60px 0;
-	font-size: 1.25em;
+	font-size: 1.25rem;
 }
 button.fs-continue:hover {
 	background: #ffffff;
@@ -428,7 +429,7 @@ button.fs-submit:focus{
 	background: transparent;
 	color: rgba(255, 255, 255, 0.65);
 	content: 'oder drücken Sie ENTER';
-	font-size: 0.5em;
+	font-size: 0.5rem;
 	pointer-events: none;
 }
 /* Error message */
@@ -441,7 +442,7 @@ button.fs-submit:focus{
 	width: 70%;
 	color: #eb5153;
 	font-weight: 700;
-	font-size: 1em;
+	font-size: 1rem;
 	opacity: 0;
 	-webkit-transform: translate3d(-50%,-5px,0);
 	transform: translate3d(-50%,-5px,0);
@@ -542,7 +543,7 @@ input[type=text]::-ms-clear {
 	}
 
 	.fs-form-wrap {
-		font-size: 70%;
+		font-size: 0.7rem;
 	}
 
 	.fs-form {
@@ -551,14 +552,14 @@ input[type=text]::-ms-clear {
 		left: 0;
 		padding: 0 3.75em 0 1em;
 		width: auto;
-		font-size: 2em;
+		font-size: 2rem;
 	}
 
 	.fs-form.fs-form-overview {
 		top: 0;
 		right: 0;
 		padding: 1.5em 1em 8em 1em;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 	}
 
 	.fs-title {
@@ -581,7 +582,7 @@ input[type=text]::-ms-clear {
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
-		font-size: 2em;
+		font-size: 2rem;
 	}
 
 	button.fs-continue::before {
@@ -592,7 +593,7 @@ input[type=text]::-ms-clear {
 		height: 100%;
 		content: '\27A1';
 		text-align: center;
-		font-size: 1em;
+		font-size: 1rem;
 		line-height: 50px;
 	}
 
@@ -602,7 +603,7 @@ input[type=text]::-ms-clear {
 
 	button.fs-submit {
 		width: 100%;
-		font-size: 1.25em;
+		font-size: 1.25rem;
 	}
 
 	.fs-message-error {
@@ -610,7 +611,7 @@ input[type=text]::-ms-clear {
 		left: 0;
 		padding: 0 90px 0 2em;
 		width: 100%;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		-webkit-transform: translate3d(0,-5px,0);
 		transform: translate3d(0,-5px,0);
 	}
@@ -624,10 +625,10 @@ input[type=text]::-ms-clear {
 	margin-top: -10%;
 }
 .fs-anim-upper{
-	font-size:2em !important;
+	font-size:2rem !important;
 }
 .fs-anim-lower{
-	font-size:1em !important;
+	font-size:1rem !important;
 }
 .fs-form-overview ol.fs-fields > li{
 	max-width: 50% !important;
