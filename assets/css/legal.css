@@ -1,14 +1,15 @@
+@import url('https://rsms.me/inter/inter.css');
 *{
   margin: 0;
   padding: 0;
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
 }
 img{
   vertical-align: middle;
 }
 .legal-container{
-  background: #000000;
+  background: #131313;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -23,6 +24,7 @@ img{
   left: 5%;
   width: 70px;
   height: 70px;
+  transform: translateY(-50%);
 }
 .legal-title{
   font-family: 'proxima-nova', sans-serif;
@@ -30,14 +32,22 @@ img{
   padding: 15vh 0 8vh 0;
 }
 .main-imprint{
-  text-align: left;
-  margin-right: 3vw;
+  text-align: center;
+}
+.main-imprint img{
+  margin-right: 20px;
 }
 .legal-latify{
   font-size: 30px;
   font-weight: 800;
   margin-bottom: 2vh;
+  display: flex;
+  justify-content: left;
 }
+.legal-latify img{
+  margin-right: 12px;
+}
+.legal-latify
 .legal-link:hover {
   color: #c9c9c9;
   text-decoration: none;
@@ -47,6 +57,15 @@ img{
   text-decoration: none;
   font-size: 19px;
   display: inline-block;
+}
+.footer-email{
+  display: flex;
+  justify-content: left;
+  margin-bottom: 2vh;
+}
+.footer-phone{
+  display: flex;
+  justify-content: left;
   margin-bottom: 2vh;
 }
 .legal-home-link:hover {
@@ -58,17 +77,21 @@ img{
   text-decoration: none;
   display: inline-block;
   position: absolute;
-  top: 9vh;
+  top: 5vh;
   right: 5%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 .zurich{
   font-size: 35px;
   font-weight: 800;
   padding: 4vh 0 3vh 0;
+  text-align: center;
 }
 .nav-address1{
   font-size: 20px;
   font-weight: 300;
+  text-align: center;
 }
 /* Privacy Policy */
 .legal-text{

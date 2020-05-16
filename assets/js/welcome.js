@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .add({
       delay: 2200,
       translateY: "-100vh",
-      duration: 1200,
+      duration: 1000,
       easing: "easeInOutExpo",
       complete: function (anime) {
         document.querySelector(".welcome").remove();
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   anime({
     targets: ".intro_container>.word1",
-    delay: 3200,
+    delay: 3100,
     translateY: [
       {
         duration: 0,
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
   anime({
     targets: ".intro_container>.word2",
     easing: "easeOutExpo",
-    delay: 4700,
+    delay: 4600,
     translateY: [
       {
         duration: 0,
@@ -135,6 +135,7 @@ function playMainAnimation() {
     delay: 600,
     duration: 2700,
     opacity: 1,
+    translateY: ["10%", "10%"],
     translateX: ["50%", "0%"],
     easing: "easeOutExpo",
   })
@@ -182,4 +183,11 @@ function playMainAnimation() {
     },
   });
 
+  anime({
+    targets: ".mouse",
+    delay: 3500,
+    duration: 1500,
+    opacity: [0, 1],
+    easing: "linear"
+  })
 }
