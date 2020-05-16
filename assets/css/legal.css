@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+  font-size: 100%;
   font-weight: 300;
 }
 img{
@@ -28,7 +29,7 @@ img{
 }
 .legal-title{
   font-family: 'proxima-nova', sans-serif;
-  font-size: 70px;
+  font-size: 4.375rem;
   padding: 15vh 0 8vh 0;
 }
 .main-imprint{
@@ -38,7 +39,7 @@ img{
   margin-right: 20px;
 }
 .legal-latify{
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 800;
   margin-bottom: 2vh;
   display: flex;
@@ -55,7 +56,7 @@ img{
 .legal-link{
   color: #ffffff;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 1.188rem;
   display: inline-block;
 }
 .footer-email{
@@ -83,19 +84,19 @@ img{
   font-weight: 500;
 }
 .zurich{
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: 800;
   padding: 4vh 0 3vh 0;
   text-align: center;
 }
 .nav-address1{
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
 }
 /* Privacy Policy */
 .legal-text{
-  font-size: 15px;
+  font-size: 0.938rem;
   text-align: justify;
   width: 80vw;
   margin-top: -5vh;
