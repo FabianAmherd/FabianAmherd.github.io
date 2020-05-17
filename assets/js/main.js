@@ -40,12 +40,22 @@ navlogo.addEventListener('click', () => {
    menuCircle.classList.toggle("open")
 });
 
+if(location.href != 'http://127.0.0.1:5501/angebot.html'){
 logo.addEventListener('click', () => {
    document.querySelector('html').style.scrollBehavior = 'smooth'
    setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
-});
+});}
 
 mouse.addEventListener('click', () => {
    document.querySelector('html').style.scrollBehavior = 'smooth'
    setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
 });
+
+window.onscroll = function() {
+   var mouse = document.getElementsByClassName
+   ('mouse');
+   mouse = mouse[0]
+   if ( window.pageYOffset > 100 ) {
+       mouse.classList.add("scrolled");
+   }
+}
