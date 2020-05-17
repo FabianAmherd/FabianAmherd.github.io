@@ -9,6 +9,7 @@ var heroButton = document.querySelector('.hero-button');
 var menuCircle = document.querySelector('#menu-circle');
 var navlogo = document.querySelector('.nav-logo')
 var logo = document.querySelector('.logo')
+var mouse = document.querySelector('.mouse')
 
 hamburger.addEventListener('click', () => {
    navLinks.classList.toggle("open");
@@ -40,6 +41,11 @@ navlogo.addEventListener('click', () => {
 });
 
 logo.addEventListener('click', () => {
+   document.querySelector('html').style.scrollBehavior = 'smooth'
+   setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
+});
+
+mouse.addEventListener('click', () => {
    document.querySelector('html').style.scrollBehavior = 'smooth'
    setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
 });

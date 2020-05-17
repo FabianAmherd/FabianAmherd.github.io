@@ -33,12 +33,11 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
-		<meta charset="UTF-8" />
+		<meta charset="UTF-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="assets/css/form.css" />
 		<title>Kontaktformular | Latify</title>
-		<script src="assets/js/modernizr.custom.js"></script>
+		<link rel="stylesheet" href="assets/css/form.css" />
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
@@ -86,10 +85,11 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
 		</div><!-- /container -->
-		<script src="assets/js/classie.js"></script>
-		<script src="assets/js/selectFx.js"></script>
-		<script src="assets/js/fullscreenForm.js"></script>
-		<script>
+		<script data-swup-reload-script="" src="assets/js/classie.js"></script>
+		<script data-swup-reload-script="" src="assets/js/selectFx.js"></script>
+		<script data-swup-reload-script="" src="assets/js/fullscreenForm.js"></script>
+		<script data-swup-reload-script="" src="assets/js/modernizr.custom.js"></script>
+		<script data-swup-reload-script="">
 			(function() {
 				var formWrap = document.getElementById( 'fs-form-wrap' );
 
