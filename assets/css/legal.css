@@ -9,6 +9,9 @@
 img{
   vertical-align: middle;
 }
+nav{
+  display: none !important;
+}
 .legal-container{
   background: #131313;
   color: #ffffff;
@@ -82,6 +85,9 @@ img{
   right: 5%;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+}
+.legal-address-container{
+  padding: 40px;
 }
 .zurich{
   font-size: 2.188rem;
