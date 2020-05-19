@@ -8,13 +8,13 @@ function init(){
     document.querySelector(".welcome").remove();
     document.querySelector(".intro").remove();
     playMainAnimation()
-    setTimeout(() => {document.querySelector('#vorteile-section').scrollIntoView()},100);
+    setTimeout(() => {document.querySelector('#vorteile-section').scrollIntoView()},200);
   }
   if (location.href == 'http://127.0.0.1:5501/index.html#contact-section'){
     document.querySelector(".welcome").remove();
     document.querySelector(".intro").remove();
     playMainAnimation()
-    setTimeout(() => {document.querySelector('#contact-section').scrollIntoView()},100);
+    setTimeout(() => {document.querySelector('#contact-section').scrollIntoView()},200);
   }
 }
 
@@ -61,11 +61,11 @@ function firstinit(){
   tl4.from(".vsh", .6, {opacity:0}, "=-.6")
   tl4.from(".vhs", .6, {opacity:0}, "=-.6")
   tl4.from(".grid-element:nth-of-type(1)", .6, {opacity:0}, "=-.5")
-  tl4.from(".grid-element:nth-of-type(2)", .6, {opacity:0}, "=-.5")
+  tl4.from(".grid-element:nth-of-type(2)", .6, {opacity:0}, "=-.6")
   tl4.from(".grid-element:nth-of-type(3)", .6, {opacity:0}, "=-.5")
-  tl4.from(".grid-element:nth-of-type(4)", .6, {opacity:0}, "=-.5")
+  tl4.from(".grid-element:nth-of-type(4)", .6, {opacity:0}, "=-.6")
   tl4.from(".grid-element:nth-of-type(5)", .6, {opacity:0}, "=-.5")
-  tl4.from(".grid-element:nth-of-type(6)", .6, {opacity:0}, "=-.5")
+  tl4.from(".grid-element:nth-of-type(6)", .6, {opacity:0}, "=-.6")
   const scene4 = new ScrollMagic.Scene({
     triggerElement: "#vorteile-section",
     reverse:false

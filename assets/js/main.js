@@ -10,6 +10,7 @@ var menuCircle = document.querySelector('#menu-circle');
 var navlogo = document.querySelector('.nav-logo')
 var logo = document.querySelector('.logo')
 var mouse = document.querySelector('.mouse')
+var html = document.querySelector('html')
 
 hamburger.addEventListener('click', () => {
    navLinks.classList.toggle("open");
@@ -22,12 +23,17 @@ hamburger.addEventListener('click', () => {
 
 document.querySelectorAll('.menu-li').forEach(item => {
    item.addEventListener('click', event => {
-      navLinks.classList.toggle("open");
-      hamburger.classList.toggle("open")
-      colNavRight.classList.toggle("links-open")
-      address.classList.toggle("links-open")
-      address.classList.toggle("closed_menu")
-      menuCircle.classList.toggle("open")
+      setTimeout(() => {
+         if (html.classList.contains('to-angebothtml') || html.classList.contains('to-indexhtml')){}
+         else{
+         navLinks.classList.toggle("open");
+         hamburger.classList.toggle("open")
+         colNavRight.classList.toggle("links-open")
+         address.classList.toggle("links-open")
+         address.classList.toggle("closed_menu")
+         menuCircle.classList.toggle("open")
+         }
+      },0)
    })
 })
 
@@ -46,16 +52,15 @@ logo.addEventListener('click', () => {
    setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
 });}
 
-mouse.addEventListener('click', () => {
-   document.querySelector('html').style.scrollBehavior = 'smooth'
-   setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
-});
+if (mouse){
+   mouse.addEventListener('click', () => {
+      document.querySelector('html').style.scrollBehavior = 'smooth'
+      setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
+   });
 
-window.onscroll = function() {
-   var mouse = document.getElementsByClassName
-   ('mouse');
-   mouse = mouse[0]
-   if ( window.pageYOffset > 100 ) {
-       mouse.classList.add("scrolled");
-   }
-}
+   window.onscroll = function() {
+      if(mouse){
+         if ( window.pageYOffset > 100 ) {
+            mouse.classList.add("scrolled");
+      }}
+}};
