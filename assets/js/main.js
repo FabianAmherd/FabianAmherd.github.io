@@ -64,3 +64,7 @@ if (mouse){
             mouse.classList.add("scrolled");
       }}
 }};
+
+function hidescrollbar(){
+   document.querySelector('body').style.overflowY = 'hidden'
+}
