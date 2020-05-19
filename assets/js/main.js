@@ -67,4 +67,5 @@ if (mouse){
 
 function hidescrollbar(){
    document.querySelector('body').style.overflowY = 'hidden'
+   setTimeout(() => {document.querySelector('body').removeAttribute('style')},1000);
 }
