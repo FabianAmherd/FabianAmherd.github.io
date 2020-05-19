@@ -143,7 +143,7 @@ function playMainAnimation() {
   anime({
     targets: ".word1",
     delay: 0,
-    duration: 2700,
+    duration: 2500,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
   });
@@ -151,7 +151,7 @@ function playMainAnimation() {
   anime({
     targets: ".word2",
     delay: 200,
-    duration: 2700,
+    duration: 2500,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
   });
@@ -159,7 +159,7 @@ function playMainAnimation() {
   anime({
     targets: ".word3",
     delay: 400,
-    duration: 2700,
+    duration: 2500,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
   });
@@ -167,7 +167,7 @@ function playMainAnimation() {
   anime({
     targets: ".word4",
     delay: 600,
-    duration: 2700,
+    duration: 2500,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
   });
@@ -175,7 +175,15 @@ function playMainAnimation() {
   anime({
     targets: ".word5",
     delay: 800,
-    duration: 2700,
+    duration: 2500,
+    translateY: ["-100%", "0%"],
+    easing: "easeOutExpo",
+  });
+
+  anime({
+    targets: ".word6",
+    delay: 1000,
+    duration: 2500,
     translateY: ["-100%", "0%"],
     easing: "easeOutExpo",
     complete: function (anime) {
@@ -185,7 +193,7 @@ function playMainAnimation() {
 
   anime({
     targets: ".mouse",
-    delay: 3500,
+    delay: 3000,
     duration: 1500,
     opacity: [0, 1],
     easing: "linear"
