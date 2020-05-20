@@ -9,7 +9,8 @@ var heroButton = document.querySelector('.hero-button');
 var menuCircle = document.querySelector('#menu-circle');
 var navlogo = document.querySelector('.nav-logo')
 var logo = document.querySelector('.logo')
-var mouse = document.querySelector('.mouse')
+var btn1 = document.querySelector('.btn1')
+var btn2 = document.querySelector('.btn2')
 var html = document.querySelector('html')
 
 hamburger.addEventListener('click', () => {
@@ -52,18 +53,19 @@ logo.addEventListener('click', () => {
    setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
 });}
 
-if (mouse){
-   mouse.addEventListener('click', () => {
+if (btn1){
+   btn1.addEventListener('click', () => {
       document.querySelector('html').style.scrollBehavior = 'smooth'
       setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
    });
+};
 
-   window.onscroll = function() {
-      if(mouse){
-         if ( window.pageYOffset > 100 ) {
-            mouse.classList.add("scrolled");
-      }}
-}};
+if (btn2){
+   btn2.addEventListener('click', () => {
+      document.querySelector('html').style.scrollBehavior = 'smooth'
+      setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
+   });
+};
 
 function hidescrollbar(){
    document.querySelector('body').style.overflowY = 'hidden'

@@ -134,7 +134,7 @@ function playMainAnimation() {
     targets: ".hero-bg",
     delay: 600,
     duration: 2700,
-    opacity: 1,
+    opacity: [0,1],
     translateY: ["10%", "10%"],
     translateX: ["50%", "0%"],
     easing: "easeOutExpo",
@@ -192,10 +192,10 @@ function playMainAnimation() {
   });
 
   anime({
-    targets: ".mouse",
-    delay: 3000,
+    targets: ".hero-btns",
+    delay: 2400,
     duration: 1500,
     opacity: [0, 1],
-    easing: "linear"
-  })
+    easing: "easeInOutExpo"
+  });
 }
