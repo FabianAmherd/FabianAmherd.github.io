@@ -36,7 +36,6 @@ function firstinit(){
   const scene1 = new ScrollMagic.Scene({
     triggerElement: ".introductory-text",
     reverse:false,
-    offset: '-100'
   }).setTween(tl1).addTo(controllernew);
 
   tl2.from(".pph", 2, {opacity:0, y:200, ease:Expo.easeOut})
@@ -52,9 +51,7 @@ function firstinit(){
     reverse:false,
   }).setTween(tl2).addTo(controllernew);
 
-  tl3.from(".ph", 2, {opacity:0, y:200, ease:Expo.easeOut})
-  tl3.from(".psh", 2, {opacity:0, y:200, ease:Expo.easeOut}, "=-2")
-  tl3.from(".pc1", 3, {opacity:0, y:200, ease:Expo.easeOut}, "=-1.5")
+  tl3.from(".pc1", 3, {opacity:0, y:200, ease:Expo.easeOut}, )
   tl3.from(".pc2", 3, {opacity:0, y:200, ease:Expo.easeOut},"=-2")
   tl3.from(".pc3", 3, {opacity:0, y:200, ease:Expo.easeOut},"=-2")
  

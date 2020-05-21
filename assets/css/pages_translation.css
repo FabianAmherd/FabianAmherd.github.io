@@ -34,7 +34,7 @@
   box-shadow: inset 8px 8px 16px #b3b7bc, inset -8px -8px 16px #ffffff;
 }
 .translation-btn>a {
-  font-family: 'proxima-nova', sans-serif;
+  font-family: 'Inter', sans-serif;
   display: block;
   color: #305289;
   text-decoration: none;
