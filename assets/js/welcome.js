@@ -102,6 +102,9 @@ document.addEventListener("DOMContentLoaded", () => {
         value: "+=100",
       },
     ],
+     complete: function (anime) {
+      document.querySelector(".intro_img_container").remove();
+    },
   });
 
   anime({

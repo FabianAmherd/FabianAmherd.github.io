@@ -7,11 +7,12 @@ var colNavRight = document.querySelector('.col-nav-right');
 var address = document.querySelector('div.address-container')
 var heroButton = document.querySelector('.hero-button');
 var menuCircle = document.querySelector('#menu-circle');
-var navlogo = document.querySelector('.nav-logo')
-var logo = document.querySelector('.logo')
-var btn1 = document.querySelector('.btn1')
-var btn2 = document.querySelector('.btn2')
-var html = document.querySelector('html')
+var navlogo = document.querySelector('.nav-logo');
+var logo = document.querySelector('.logo');
+var btn1 = document.querySelector('.btn1');
+var btn2 = document.querySelector('.btn2');
+var html = document.querySelector('html');
+var introduction = document.querySelector('#introduction');
 
 hamburger.addEventListener('click', () => {
    navLinks.classList.toggle("open");
@@ -53,12 +54,11 @@ logo.addEventListener('click', () => {
    setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
 });}
 
-if (btn1){
+if (btn1)
    btn1.addEventListener('click', () => {
-      document.querySelector('html').style.scrollBehavior = 'smooth'
-      setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
-   });
-};
+      introduction.scrollIntoView({behavior: "smooth", block: "center"})
+   })
+
 
 if (btn2){
    btn2.addEventListener('click', () => {

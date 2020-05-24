@@ -41,7 +41,7 @@ function firstinit(){
   tl2.from(".pph", 2, {opacity:0, y:200, ease:Expo.easeOut})
   tl2.from(".ppsh", 2, {opacity:0, y:200, ease:Expo.easeOut}, "=-2")
   tl2.from(".pphs", 1, {opacity:0}, "=-1")
-  tl2.from(".pricing-preview-element:nth-of-type(1)", 3, {opacity:0, y:200, ease:Expo.easeOut}, "=-1")
+  tl2.from(".pricing-preview-element:nth-of-type(1)", 3, {opacity:0, y:200, ease:Expo.easeOut}, "=-1.5")
   tl2.from(".pricing-preview-element:nth-of-type(2)", 3, {opacity:0, y:200, ease:Expo.easeOut}, "=-2.8")
   tl2.from(".pricing-preview-element:nth-of-type(3)", 3, {opacity:0, y:200, ease:Expo.easeOut}, "=-2.8")
   tl2.from(".pricing-preview-element:nth-of-type(4)", 3, {opacity:0, y:200, ease:Expo.easeOut}, "=-2.8")

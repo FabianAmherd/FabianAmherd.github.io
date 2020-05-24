@@ -23,8 +23,8 @@ html{
   width: 70%;
   border: 1px transparent;
   border-radius: 50px;
-  box-shadow:  41px 41px 82px #bec3c8, 
-              -41px -41px 82px #ffffff!important;
+  box-shadow:  30px 30px 59px #bec3c8, 
+             -30px -30px 59px #ffffff!important;
 }
 .heading-row{
   font-weight: 400;
@@ -94,10 +94,10 @@ html{
 .extra-element {
   border-radius: 50px;
   height: 300px;
-  text-align: justify;
+  text-align: center;
   background: #E0E5EB;
-  box-shadow:  24px 24px 48px #bec3c8, 
-             -24px -24px 48px #ffffff!important;
+box-shadow:  19px 19px 39px #bec3c8, 
+             -19px -19px 39px #ffffff!important;
   overflow: hidden;
   padding: 30px;
 }

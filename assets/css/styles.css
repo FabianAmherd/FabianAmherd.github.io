@@ -196,15 +196,21 @@ body {
   opacity: 0;
 }
 .hero-btns .btn1{
-  color: #000000;
-  border: solid 1px;
+  color: #131313;
+
   margin-right: 20px;
   transition: all .3s linear;
+  box-shadow:  9px 9px 18px #bec3c8, 
+             -9px -9px 18px #ffffff;
+}
+.hero-btns .btn1:hover{
+  cursor: pointer;
 }
 
 .hero-btns .btn2{
-  color: #e0e5eb;
-  background-color: #000000;
+  box-shadow:  9px 9px 18px #bec3c8, 
+             -9px -9px 18px #ffffff;
+  color: #131313;
   transition: all .3s linear;
 }
 .hero-bg{
@@ -216,10 +222,8 @@ body {
 #introduction{
   width: 100%;
   display: flex;
-  height: 70vh;
-  margin-bottom: 20vh;
+  height: 80vh;
   justify-content: center;
-  align-items: center;
   background-color: #E0E5EB;
 }
 .introduction-wrapper{
@@ -459,135 +463,6 @@ body {
 }
 
 /* animations */
-@keyframes colorSlide{
-  0% {
-    background-position: 0% 100%;
-  }
-  20% {
-    background-position: 0% 0%;
-  }
-  21% {
-    background-color: #bdbdbd;
-  }
-  29.99% {
-    background-color: #131313;
-    background-position: 0% 0%;
-  }
-  30% {
-    background-color: #bdbdbd;
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 0% 0%;
-  }
-  51% {
-    background-color: #bdbdbd;
-  }
-  59% {
-    background-color: #131313;
-    background-position: 0% 0%;
-  }
-  60% {
-    background-color: #bdbdbd;
-    background-position: 0% 100%;
-  }
-  80% {
-    background-position: 0% 0%;
-  }
-  81% {
-    background-color: #bdbdbd;
-  }
-  90%, 100% {
-    background-color: #131313;
-  }
-}
-
-
-@keyframes trackBallSlide{
-  0%{
-    opacity: 1;
-    transform: scale(1) translateY(-15px);
-  }
-  6%{
-    opacity: 1;
-    transform: scale(0.9) translateY(0px);
-  }
-  14%{
-    opacity: 0;
-    transform: scale(0.4) translateY(30px);
-  }
-  15%, 19%{
-    opacity: 0;
-    transform: scale(0.4) translateY(-15px);
-  }
-  28%, 29.99%{
-    opacity: 1;
-    transform: scale(1) translateY(-15px);
-  }
-  30%{
-    opacity: 1;
-    transform: scale(1) translateY(-15px);
-  }
-  36%{
-    opacity: 1;
-    transform: scale(0.9) translateY(0px);
-  }
-  44%{
-    opacity: 0;
-    transform: scale(0.4) translateY(20px);
-  }
-  45%, 49%{
-    opacity: 0;
-    transform: scale(0.4) translateY(-15px);
-  }
-  58%, 59.99%{
-    opacity: 1;
-    transform: scale(1) translateY(-15px);
-  }
-  60%{
-    opacity: 1;
-    transform: scale(0.9) translateY(-15px);
-  }
-  66%{
-    opacity: 1;
-    transform: scale(0.9) translateY(0px);
-  }
-  74%{
-    opacity: 0;
-    transform: scale(0.4) translateY(20px);
-  }
-  75%, 79%{
-    opacity: 0;
-    transform: scale(0.4) translateY(-15px);
-  }
-  88%, 100%{
-    opacity: 1;
-    transform: scale(1) translateY(-15px);
-  }
-}
-@keyframes nudgeMouse{
-  0%{
-    transform: translateY(0);
-  }
-  20%{
-    transform: translateY(8px);
-  }
-  30%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(8px);
-  }
-  60%{
-    transform: translateY(0);
-  }
-  80%{
-    transform: translateY(8px);
-  }
-  90%{
-    transform: translateY(0);
-  }
-}
 
 /* RESPONSIVE DESIGN */
 /*Smartphones*/
