@@ -465,19 +465,32 @@ body {
 /* RESPONSIVE DESIGN */
 /*Smartphones*/
 @media only screen and (max-width: 600px) {
+  .hero-title > span > span{color: brown !important}
 }
 /*Large Smartphones and Tablets*/
 @media only screen and (min-width: 600px) {
+  .hero-title > span > span{color: forestgreen !important}
 }
 /*Landscape Tablets*/
 @media only screen and (min-width: 768px) {
+  .hero-title > span > span{color: violet !important}
 }
 /*Laptops*/
 @media only screen and (min-width: 992px) {
+  .hero-title > span > span{color: yellow !important}
 }
 /*Larger Desktops*/
 @media only screen and (min-width: 1200px) {
+  .hero-title > span > span{color: green !important}
 }
 /*Very large Desktops*/
 @media only screen and (min-width: 1600px) {
+  .hero-title > span > span{color: red !important}
+  *{
+    font-size: 50%;
+  }
+}
+/*Full HD Desktops*/
+@media only screen and (min-width: 1900px) {
+  .hero-title > span > span{color: blue !important}
 }
