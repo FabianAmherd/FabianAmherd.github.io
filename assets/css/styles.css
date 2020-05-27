@@ -264,7 +264,7 @@ body {
 }
 .pricing-preview-grid {
   display: flex;
-  margin: 3vh 10% 0 10%;
+  margin: 3vh 10% 120px 10%;
 }
 .pricing-preview-element {
   border-radius: 50px;
@@ -304,14 +304,10 @@ body {
   display: inline-block;
 }
 .pricing-number{
-  font-size: 1.88rem;
+  font-size: 1.95rem;
   color: #305289;
   font-weight: bold;
   display: inline-block;
-}
-.preview-btn {
-  margin-top: 120px !important;
-  font-family: "Inter", sans-serif;
 }
 /* Vorteile */
 #vorteile-section{
@@ -325,7 +321,7 @@ body {
 #grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-gap: 2.5em 0em;
+  grid-gap: 2.5em 0.75em;
   padding: 0 12.5%;
 }
 .grid-element {
@@ -334,7 +330,6 @@ body {
   background: #E0E5EB;
   box-shadow: inset 11px 11px 21px #bec3c8, 
   inset -11px -11px 21px #ffffff!important;
-  margin: 0 1.25em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -383,9 +378,6 @@ body {
   display: grid;
   justify-items: center;
 }
-#contact-section .contact-btn{
-  margin: 20px 0 60px 0 !important;
-}
 .contact-subheading{
   font-family: 'Inter', sans-serif;
   font-size: 1.25rem;
@@ -396,7 +388,6 @@ body {
 .other-contact{
   display: grid;
   justify-items: center;
-  margin-top: 100px;
 }
 .contact-container{
   display: grid;
@@ -446,7 +437,31 @@ body {
   text-decoration: none;
 }
 .contact-btn{
-  margin: 30px 0px 20vh 0px !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: #E0E5EB;
+  margin: 30px 0px 15vh 0px;
+  border-radius: 50px;
+  background: #E0E5EB;
+  box-shadow:  8px 8px 16px #b3b7bc, 
+               -8px -8px 16px #ffffff;
+}
+.contact-btn:hover{
+  box-shadow: inset 8px 8px 16px #b3b7bc, inset -8px -8px 16px #ffffff;
+}
+.contact-btn>a {
+  font-family: 'Inter', sans-serif;
+  display: block;
+  color: #305289;
+  text-decoration: none;
+  margin: 15px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.contact-btn>a:hover {
+  display: block;
+  text-decoration: none;
 }
 .contact-zurich{
   font-family: 'Source-sans-pro', sans-serif;
@@ -463,24 +478,348 @@ body {
   line-height: 27px;
 }
 
-/* animations */
-
 /* RESPONSIVE DESIGN */
-/*Smartphones*/
-@media only screen and (max-width: 600px) {
-}
-/*Large Smartphones and Tablets*/
-@media only screen and (min-width: 600px) {
-}
-/*Landscape Tablets*/
-@media only screen and (min-width: 768px) {
-}
-/*Laptops*/
-@media only screen and (min-width: 992px) {
-}
-/*Larger Desktops*/
-@media only screen and (min-width: 1200px) {
+/*Full HD Desktops*/
+@media only screen and (max-width: 1919px) {
+  *{
+    font-size: 88%;
+  }
+  #grid-container{
+    grid-gap: 5em 7em;
+  }
+  .grid-element {
+    height: 200px;
+  }
+  .contact-element{
+    height: 220px;
+  }
 }
 /*Very large Desktops*/
-@media only screen and (min-width: 1600px) {
+@media only screen and (max-width: 1600px) {
+  *{
+    font-size: 75%;
+  }
+  .hero-btns a{
+    padding: 17px 19px;
+  }
+  #introduction{
+    height: 90vh;
+  }
+  .introduction-wrapper img{
+    width:350px;
+    height: 350px;
+  }
+  .pricing-preview-element {
+    margin: 0px 20px;
+  }
+
+  .translation-btn>a {
+    margin: 8px 12px !important;
+  }
+  .process-column{
+    margin: 0px 50px !important;
+  }
+  #grid-container{
+    grid-gap: 5em 5em;
+    padding: 0 10%;
+  }
+  .grid-element {
+    height: 150px;
+  }
+  .grid-img{
+    height: 50px;
+    width: 50px;
+  }
+  .translation-title{
+    padding: 40px 0 0 0 !important;
+  }
+  button.contact-btn{
+    margin: 0 ;
+  }
+  .contact-btn>a {
+    margin: 8px 12px !important;
+  }
+  .other-contact{
+    margin-top: 110px;
+  }
+  .contact-element{
+    height: 200px;
+  }
+}
+/*Larger Desktops*/
+@media only screen and (max-width: 1200px) {
+  *{
+    font-size: 60%;
+  }
+  .introduction-wrapper img{
+    width:300px;
+    height: 300px;
+  }
+  .pricing-preview-grid {
+    display: flex;
+    margin: 3vh 10% 60px 10%;
+  }
+  .pricing-preview-element {
+    margin: 0px 15px;
+  }
+  .translation-btn{
+    font-size: 3.5rem !important;
+  }
+  #grid-container{
+    grid-gap: 10em 10em;
+    padding: 0 12.5%;
+  }
+  .grid-element {
+    height: 140px;
+  }
+  .grid-img{
+    height: 40px;
+    width: 40px;
+  }
+  .translation-title{
+    padding: 15px 0 0 0 !important;
+  }
+  .contact-btn>a {
+    margin: 6px 12px !important;
+    font-size: 1.5rem;
+  }
+  .other-contact{
+    margin-top: 70px;
+  }
+  .contact-element{
+    height: 160px;
+  }
+}
+/*Laptops*/
+@media only screen and (max-width: 992px) {
+  *{
+    font-size: 47%;
+  }
+  .hero-btns a{
+    padding: 14px 16px;
+    font-size: 1.7rem;
+  }
+  .introduction-wrapper img{
+    width:230px;
+    height: 230px;
+  }
+  .pricing-preview-grid {
+    display: flex;
+    margin: 3vh 3% 20px 3%;
+  }
+  .pricing-preview-element {
+    margin: 0px 10px;
+    border-radius: 30px;
+  }
+  .pricing-preview-title{
+    font-size: 2.7rem;
+  }
+  .pricing-preview-text{
+    font-size: 1.55rem;
+  }
+  .pricing-number{
+    font-size: 2.6rem;
+  }
+  .translation-btn{
+    font-size: 3.5rem !important;
+  }
+  .process-column{
+    margin: 0px 30px !important;
+  }
+  .number{
+    margin-bottom: 10px !important;
+  }
+  .process-container h3{
+    margin-bottom: 30px !important;
+  }
+  #grid-container{
+    grid-gap: 30em 30em;
+    padding: 0 10%;
+  }
+  .grid-element {
+    height: 100px;
+    border-radius: 30px;
+  }
+  .grid-img{
+    height: 30px;
+    width: 30px;
+  }
+  .other-contact{
+    margin-top: 50px;
+  }
+  .contact-element{
+    height: 120px;
+    border-radius: 30px;
+  }
+}
+/*Landscape Tablets*/
+@media only screen and (max-width: 768px) {
+  *{
+    font-size: 37%;
+  }
+  .hero-wrapper{
+    width: 80%;
+  }
+  .hero-btns{
+    margin-top: 40px;
+  }
+  .hero-btns a{
+    padding: 14px 16px;
+  }
+  .introduction-wrapper img{
+    width:190px;
+    height: 190px;
+  }
+  .pricing-preview-element {
+    margin: 0px 13px;
+    border-radius: 30px;
+    padding: 4px;
+  }
+  .pricing-preview-title{
+    font-size: 2.7rem;
+  }
+  .pricing-preview-text{
+    font-size: 1.55rem;
+    margin: 15px 8px;
+  }
+  .pricing-number{
+    font-size: 2.6rem;
+  }
+  .translation-btn>a {
+    margin: 5px 12px !important;
+    font-size: 2rem !important;
+  }
+  .process-column{
+    margin: 0px 20px !important;
+  }
+  #grid-container{
+    grid-gap: 100em 50em;
+    padding: 0 8%;
+  }
+  .grid-element {
+    height: 85px;
+    border-radius: 30px;
+  }
+  .grid-img{
+    height: 30px;
+    width: 30px;
+  }
+  .grid-text{
+    padding-top: 3px;
+    font-size: 1.45rem;
+  }
+  .translation-title{
+    padding: 15px 0 0 0 !important;
+  }
+  .translation-text{
+    margin: 15px 0px !important;
+  }
+  .contact-btn>a {
+    margin: 0px 8px !important;
+    font-size: 1.5rem;
+  }
+  .other-contact{
+    margin-top: 60px;
+  }
+  .contact-element{
+    height: 90px;
+  }
+  .contact-subheading{
+    margin-bottom: 5px;
+  }
+}
+/*Smartphones*/
+@media only screen and (max-width: 600px) {
+  *{
+    font-size: 25%;
+  }
+  .hero-title > span{
+    padding-left: 2px;
+    margin-right: 4px;
+  }
+  .hero-btns{
+    margin-top: 30px;
+  }
+  .hero-btns a{
+    padding: 8px 12px;
+  }
+  .introductory-text{
+    margin-right: 50px;
+    line-height: 1.8em;
+    font-size:2.2rem;
+  }
+  .introduction-wrapper img{
+    width:140px;
+    height: 140px;
+  }
+  .pricing-preview-grid{
+    margin: 3vh 2% 0px 2%;
+  }
+  div.pricing-preview-element {
+    margin: 0px 5px;
+    border-radius: 30px;
+    padding: 4px;
+    box-shadow: 10px 10px 18px #bec3c8, -10px -10px 18px #ffffff !important;
+  }
+  .pricing-preview-title{
+    font-size: 3.3rem;
+  }
+  .pricing-preview-text{
+    font-size: 1.9rem;
+    margin: 15px 8px;
+  }
+  .translation-btn>a {
+    margin: 0px 8px !important;
+    font-size: 2rem !important;
+  }
+  .process-column{
+    margin: 0px 8px !important;
+  }
+  .process-container .process-text{
+    font-size: 1.9rem !important;
+  }
+  .section-heading-spacer{
+    margin: 0 0 3vh 0 !important;
+  }
+  #grid-container{
+    grid-gap: 2rem 2rem;
+    padding: 0 8%;
+  }
+  .grid-element {
+    height: 60px;
+    border-radius: 20px;
+  }
+  .grid-img{
+    height: 20px;
+    width: 20px;
+  }
+  .grid-text{
+    padding-top: 3px;
+    font-size: 1.45rem;
+  }
+  .translation-title{
+    padding: 10px 0 0 0 !important;
+  }
+  .translation-text{
+    margin: 10px 0px !important;
+  }
+  .contact-btn>a {
+    margin: 0px 8px !important;
+    font-size: 2.2rem;
+  }
+  .other-contact{
+    margin-top: 30px;
+  }
+  div.contact-element{
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 18px #bec3c8, -10px -10px 18px #ffffff !important;
+  }
+  .contact-subheading{
+    margin-bottom: 5px;
+  }
+  .contact-btn{
+    box-shadow:  4px 4px 8px #b3b7bc, 
+    -4px -4px 8px #ffffff;
+  }
 }

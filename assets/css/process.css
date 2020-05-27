@@ -25,21 +25,21 @@
 }
 
 .process-container .process-column{
-  margin: 0px 70px 0px 70px;
+  margin: 0px 70px;
   flex: 1;
 }
 
 .process-container .number{
   margin-bottom: 40px;
   color: rgb(121, 121, 121);
-  font-size: 25px;
+  font-size: 1.56rem;
 }
 
 .process-container h3{
-  font-size: 45px;
+  font-size: 2.81rem;
   margin-bottom: 40px;
 }
 
 .process-container .process-text{
-  font-size: 25px;
+  font-size: 1.56rem;
 }
