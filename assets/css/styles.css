@@ -191,7 +191,7 @@ body {
   font-weight: 600;
 }
 .hero-btns{
-  margin-top: 60px;
+  margin-top: 100px;
   margin-left: 10px;
   opacity: 0;
 }
@@ -212,6 +212,7 @@ body {
              -9px -9px 18px #ffffff;
   color: #131313;
   transition: all .3s linear;
+  margin-left: 20px;
 }
 .hero-bg{
   opacity: 0;
