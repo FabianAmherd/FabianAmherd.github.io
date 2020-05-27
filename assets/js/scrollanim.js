@@ -22,7 +22,7 @@ var previewComp = document.querySelector(".pricing-preview-element")
 
 function firstinit(){
   var tl1 = new TimelineMax()
-  var tl2 = new TimelineMax({onComplete: removeMatrixTransform})
+  var tl2 = new TimelineMax({onComplete: addHoverClass})
   var tl3 = new TimelineMax()
   var tl4 = new TimelineMax()
   var tl5 = new TimelineMax()
@@ -87,10 +87,11 @@ function firstinit(){
   }).setTween(tl5).addTo(controllernew);
 }
 
-function removeMatrixTransform(){
+function addHoverClass(){
   var ppes = document.querySelectorAll('.pricing-preview-element');
   ppes.forEach(function(el){
-    el.style.transform = ''
+    el.classList.add('hvr-grow');
+    el.style.transform = '';
   })
 }
 
