@@ -21,7 +21,7 @@ function init(){
 var previewComp = document.querySelector(".pricing-preview-element")
 
 function firstinit(){
-  var tl1 = new TimelineMax()
+  var tl1 = new TimelineMax({onComplete: removeHoverClass})
   var tl2 = new TimelineMax({onComplete: addHoverClass})
   var tl3 = new TimelineMax()
   var tl4 = new TimelineMax()
@@ -87,6 +87,12 @@ function firstinit(){
   }).setTween(tl5).addTo(controllernew);
 }
 
+function removeHoverClass(){
+  var ppes = document.querySelectorAll('.pricing-preview-element');
+  ppes.forEach(function(el){
+    el.classList.remove('hvr-grow');
+  })
+}
 function addHoverClass(){
   var ppes = document.querySelectorAll('.pricing-preview-element');
   ppes.forEach(function(el){
