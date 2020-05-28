@@ -862,15 +862,17 @@ body {
   }
   .hero-wrapper{
     flex-direction: column;
-    width: 95%;
+    width: 100%;
   }
   .hero-title-wrapper {
     transform: translateX(5%);
+    height: 50vh;
+    justify-content: space-between;
   }
   .hero-bg{
     opacity: 0;
     width: 80%;
-    margin-bottom: 25%;
+    display:none
   }
   .hero-title {
     text-align: center;
@@ -881,11 +883,19 @@ body {
     padding-left: 2px;
     margin-right: 4px;
   }
+  .hero-title > span > span{
+    font-size: 6rem;
+  }
   .hero-btns{
-    transform: translateY(48vh);
+    text-align: center;
+    padding-right: 40px;
+    width: 100vw;
+  }
+  .btn2{
+    margin-left: 29px !important;
   }
   .hero-btns a{
-    padding: 25px 19px;
+    padding: 20px 15px;
     font-size: 2.5rem;
   }
   #introduction{
@@ -1015,6 +1025,9 @@ body {
   *{
     font-size: 45%;
   }
+  .hero-title-wrapper{
+    height: 45vh;
+  }
   .hero-wrapper{
     flex-direction: column;
     width: 95%;
@@ -1030,10 +1043,8 @@ body {
     padding-left: 2px;
     margin-right: 4px;
   }
-  .hero-btns{
-  }
   .hero-btns a{
-    padding: 25px 19px;
+    padding: 21px 15px;
     font-size: 2.5rem;
   }
   #introduction{
@@ -1046,7 +1057,7 @@ body {
     text-align: justify;
     margin-right: 0px;
     line-height: 1.8em;
-    font-size:2.2rem;
+    font-size:2.24rem;
   }
   .introduction-wrapper img{
     width:310px;
@@ -1163,14 +1174,14 @@ body {
   *{
     font-size: 40%;
   }
-  .hero-title{
-    transform: translateY(3vh);
+  .hero-title > span > span{
+    font-size: 5.5rem;
   }
-  .hero-bg{
-    margin-bottom: 20%;
+  .btn2{
+    margin-left: 25px !important;
   }
   .hero-btns a{
-    padding: 20px 15px;
+    padding: 12px 9.4px;
     font-size: 2.5rem;
   }
   .introduction-wrapper img{
