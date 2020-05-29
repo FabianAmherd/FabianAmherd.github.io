@@ -1114,13 +1114,13 @@ body {
     margin: 0 0 3vh 0 !important;
   }
   #grid-container{
-    grid-gap: 2rem 2rem;
+    grid-gap: 4rem 4rem;
     padding: 0 6%;
     grid-template-columns: 1fr;
   }
   .grid-element {
     height: 120px;
-    border-radius: 20px;
+    border-radius: 30px;
   }
   .grid-img{
     height: 35px;
@@ -1134,7 +1134,7 @@ body {
   }
   .grid-text{
     padding-top: 3px;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
   }
   .translation-title{
     font-size: 3.3rem !important;
