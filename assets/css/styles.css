@@ -248,8 +248,7 @@ body {
 }
 
 .introduction-wrapper img{
-  width: 500px;
-  height: 500px;
+  width: 800px;
   display:inline-block;
 
 }
@@ -506,8 +505,7 @@ body {
   }
   .introduction-wrapper img{
     width:350px;
-    height: 350px;
-  }
+   }
   .pricing-preview-element {
     margin: 0px 20px;
   }
@@ -555,7 +553,6 @@ body {
   }
   .introduction-wrapper img{
     width:300px;
-    height: 300px;
   }
   .pricing-preview-grid {
     display: flex;
@@ -599,6 +596,28 @@ body {
 @media only screen and (max-width: 1024px) and (min-height:1200px){
   *{
     font-size: 70%;
+  }
+  .intro_container > span {
+    font-size: 5.3rem;
+    margin: 0px;
+  }
+  .intro_container{
+    font-size: 1rem;
+  }
+  .welcome_logo{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 3.8rem;
+  }
+  .welcome span span{
+    font-size: 4rem;
+  }
+  .welcome_logo img{
+    width: 10rem;
+  }
+  .intro_img{
+    width: 50%;
+    height: auto;
   }
   #introduction{
     height: 40vh;
@@ -679,7 +698,6 @@ body {
   }
   .introduction-wrapper img{
     width:230px;
-    height: 230px;
   }
   .pricing-preview-grid {
     display: flex;
@@ -756,7 +774,6 @@ body {
   }
   .introduction-wrapper img{
     width:190px;
-    height: 190px;
   }
   .pricing-preview-element {
     margin: 0px 13px;
@@ -821,6 +838,22 @@ body {
 @media only screen and (max-width: 768px) and (min-height:1000px){
   *{
     font-size: 55%;
+  }
+  .intro_container > span {
+    font-size: 4.3rem;
+    margin: 0px;
+  }
+  .welcome_logo{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 3.5rem;
+  }
+  .welcome_logo img{
+    width: 9rem;
+  }
+  .intro_img{
+    width: 50%;
+    height: auto;
   }
   #introduction{
     height: 40vh;
@@ -895,6 +928,22 @@ body {
   *{
     font-size: 28%;
   }
+  .intro_container > span {
+    font-size: 4.3rem;
+    margin: 0px;
+  }
+  .welcome_logo{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 3.5rem;
+  }
+  .welcome_logo img{
+    width: 9rem;
+  }
+  .intro_img{
+    width: 80%;
+    height: auto;
+  }
   .hero-title > span{
     padding-left: 2px;
     margin-right: 4px;
@@ -913,7 +962,6 @@ body {
   }
   .introduction-wrapper img{
     width:140px;
-    height: 140px;
   }
   .pricing-preview-grid{
     margin: 3vh 2% 0px 2%;
@@ -1051,14 +1099,13 @@ body {
     flex-direction: column;
   }
   .introductory-text{
-    text-align: justify;
+    text-align: left;
     margin-right: 0px;
     line-height: 1.8em;
     font-size:2.2rem;
   }
   .introduction-wrapper img{
     width:310px;
-    height: 310px;
   }
   .section-heading{
     font-size: 4.375rem !important;
@@ -1105,7 +1152,7 @@ body {
   }
   .process-container .process-text{
     font-size: 1.9rem !important;
-    text-align: justify !important;
+    text-align: left !important;
   }
   .section-heading-spacer{
     margin: 0 0 3vh 0 !important;
@@ -1171,6 +1218,22 @@ body {
   *{
     font-size: 45%;
   }
+  .intro_container > span {
+    font-size: 4.3rem;
+    margin: 0px;
+  }
+  .welcome_logo{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 3.5rem;
+  }
+  .welcome_logo img{
+    width: 9rem;
+  }
+  .intro_img{
+    width: 80%;
+    height: auto;
+  }
   .hero-title-wrapper{
     height: 45vh;
   }
@@ -1200,14 +1263,13 @@ body {
     flex-direction: column;
   }
   .introductory-text{
-    text-align: justify;
+    text-align: left;
     margin-right: 0px;
     line-height: 1.8em;
     font-size:2.24rem;
   }
   .introduction-wrapper img{
     width:310px;
-    height: 310px;
   }
   .section-heading{
     font-size: 4.375rem !important;
@@ -1254,7 +1316,7 @@ body {
   }
   .process-container .process-text{
     font-size: 1.9rem !important;
-    text-align: justify !important;
+    text-align: left !important;
   }
   .section-heading-spacer{
     margin: 0 0 3vh 0 !important;
@@ -1320,25 +1382,9 @@ body {
   *{
     font-size: 40%;
   }
-  .hero-title > span > span{
-    font-size: 4.7rem;
-  }
-  .btn2{
-    margin-left: 25px !important;
-  }
-  .hero-btns a{
-    padding: 12px 9.4px;
-    font-size: 2.5rem;
-  }
-  .introduction-wrapper img{
-    width:250px;
-    height: 250px;
-  }
-  .grid-text{
-    font-size: 1.8rem;
-  }
-  .grid-element {
-    height: 130px;
+  .intro_container > span {
+    font-size: 4.3rem;
+    margin: 0px;
   }
   .welcome_logo{
     height: 12rem;
@@ -1351,5 +1397,24 @@ body {
   .intro_img{
     width: 80%;
     height: auto;
+  }
+  .hero-title > span > span{
+    font-size: 4.7rem;
+  }
+  .btn2{
+    margin-left: 25px !important;
+  }
+  .hero-btns a{
+    padding: 12px 9.4px;
+    font-size: 2.5rem;
+  }
+  .introduction-wrapper img{
+    width:250px;
+  }
+  .grid-text{
+    font-size: 1.8rem;
+  }
+  .grid-element {
+    height: 130px;
   }
 }

@@ -435,6 +435,7 @@ nav .logo img {
     width: 37px;
   }
 }
+
 /*Landscape Tablets*/
 @media only screen and (max-width: 768px) {
   nav{
@@ -735,5 +736,4 @@ nav .logo img {
   .hamburger .line::before{
     width: 33px;
   }
-  .cl-effect-5 a span
 }
