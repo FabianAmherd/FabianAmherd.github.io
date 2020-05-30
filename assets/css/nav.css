@@ -363,21 +363,156 @@ nav .logo img {
 /*Laptops*/
 @media only screen and (max-width: 992px) {
 
+  nav{
+    height: 10vh;
+  }
+  nav .logo{
+    width: 90px;
+    height: 60px;
+    margin-left: 0;
+  }
+
+  nav .logo img{
+    width: 55px;
+  }
+
+  .nav-logo{
+    width: 90px;
+    height: 60px;
+    margin-left: 0;
+    top: 5vh;
+  }
+
+  .nav-logo img{
+    width: 55px;
+    height: 55px;
+  }
+  #menu-circle.open{
+    transform: scale(7);
+  }
+
+  .col-nav-right{
+   height: auto;
+   margin-right: 10%;
+  }
+  .nav-links{
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav-link-element{
+    font-size: 20rem;
+    padding: 0px!important;
+  }
+  .zurich{
+    padding-bottom: 10px;
+    font-size: 3rem;
+  }
+  .linkedin{
+    height: 60px;
+    width: 60px;
+  }
+  .linkedin img{
+    width: 28px;
+  }
+  .address-container{
+    padding: 35px 50px;
+    border-radius: 50px;
+  }
+  .nav-address1{
+    font-size: 2rem;
+  }
+  .nav-address2{
+    font-size: 2rem;
+  }
+  .hamburger{
+    height: 60px;
+    width: 60px;
+    margin-right: 0px;
+  }
+  .hamburger .line{
+    width: 37px;
+  }
+  .hamburger .line::before{
+    width: 37px;
+  }
 }
 /*Landscape Tablets*/
 @media only screen and (max-width: 768px) {
+  nav{
+    height: 10vh;
+  }
+  nav .logo{
+    width: 90px;
+    height: 60px;
+    margin-left: 0;
+  }
+
+  nav .logo img{
+    width: 55px;
+  }
+
+  .nav-logo{
+    width: 90px;
+    height: 60px;
+    margin-left: 0;
+    top: 5vh;
+  }
+
+  .nav-logo img{
+    width: 55px;
+    height: 55px;
+  }
+  #menu-circle.open{
+    transform: scale(5);
+  }
+
+  .col-nav-right{
+   height: auto;
+   margin-right: 10%;
+  }
+  .nav-links{
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav-link-element{
+    font-size: 20rem;
+    padding: 0px!important;
+  }
+  .zurich{
+    padding-bottom: 10px;
+    font-size: 3rem;
+  }
+  .linkedin{
+    height: 60px;
+    width: 60px;
+  }
+  .linkedin img{
+    width: 28px;
+  }
+  .address-container{
+    padding: 35px 50px;
+    border-radius: 50px;
+  }
+  .nav-address1{
+    font-size: 2rem;
+  }
+  .nav-address2{
+    font-size: 2rem;
+  }
+  .hamburger{
+    height: 60px;
+    width: 60px;
+    margin-right: 0px;
+  }
+  .hamburger .line{
+    width: 37px;
+  }
+  .hamburger .line::before{
+    width: 37px;
+  }
+
 
 }
 /*Large Smartphones*/
 @media only screen and (max-width: 600px) {
-
-}
-/*Smartphones*/
-@media only screen and (max-width: 450px) {
-
-}
-/*Smaller Smartphones*/
-@media only screen and (max-width: 380px) {
   nav{
     height: 12vh;
   }
@@ -411,11 +546,15 @@ nav .logo img {
    margin-right: 10%;
   }
   .nav-links{
-    grid-template-columns: 1fr 2.5fr;
+    grid-template-columns: 1fr 1fr;
   }
   .nav-link-element{
-    font-size: 14rem;
+    font-size: 9rem;
     padding: 0px!important;
+  }
+  .zurich{
+    padding-bottom: 10px;
+    font-size: 3rem;
   }
   .linkedin{
     height: 60px;
@@ -425,7 +564,14 @@ nav .logo img {
     width: 28px;
   }
   .address-container{
-    display: none;
+    padding: 35px;
+    border-radius: 50px;
+  }
+  .nav-address1{
+    font-size: 1.7rem;
+  }
+  .nav-address2{
+    font-size: 1.7rem;
   }
   .hamburger{
     height: 60px;
@@ -438,4 +584,156 @@ nav .logo img {
   .hamburger .line::before{
     width: 37px;
   }
+
+}
+/*Smartphones*/
+@media only screen and (max-width: 450px) {
+  nav{
+    
+    height: 12vh;
+  }
+  nav .logo{
+    width: 90px;
+    height: 60px;
+    margin-left: 0;
+  }
+
+  nav .logo img{
+    width: 55px;
+  }
+
+  .nav-logo{
+    width: 90px;
+    height: 60px;
+    margin-left: 0;
+    top: 6vh;
+  }
+
+  .nav-logo img{
+    width: 55px;
+    height: 55px;
+  }
+  #menu-circle.open{
+    transform: scale(5);
+  }
+
+  .col-nav-right{
+   height: auto;
+   margin-right: 10%;
+  }
+  .nav-links{
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav-link-element{
+    font-size: 9rem;
+    padding: 0px!important;
+  }
+  .zurich{
+    padding-bottom: 10px;
+    font-size: 3rem;
+  }
+  .linkedin{
+    height: 60px;
+    width: 60px;
+  }
+  .linkedin img{
+    width: 28px;
+  }
+  .address-container{
+    padding: 35px;
+    border-radius: 50px;
+  }
+  .nav-address1{
+    font-size: 1.7rem;
+  }
+  .nav-address2{
+    font-size: 1.7rem;
+  }
+  .hamburger{
+    height: 60px;
+    width: 60px;
+    margin-right: 0px;
+  }
+  .hamburger .line{
+    width: 37px;
+  }
+  .hamburger .line::before{
+    width: 37px;
+  }
+
+}
+/*Smaller Smartphones*/
+@media only screen and (max-width: 350px) {
+  nav{
+    height: 14vh;
+  }
+  nav .logo{
+    width: 80px;
+    height: 55px;
+    margin-left: 0;
+  }
+
+  nav .logo img{
+    width: 50px;
+  }
+
+  .nav-logo{
+    width: 80px;
+    height: 55px;
+    margin-left: 0;
+    top: 7vh;
+  }
+
+  .nav-logo img{
+    width: 50px;
+    height: 50px;
+  }
+  #menu-circle.open{
+    transform: scale(5);
+  }
+
+  .col-nav-right{
+   height: auto;
+   margin-right: 10%;
+  }
+  .nav-links{
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav-link-element{
+    font-size: 9rem;
+    padding: 0px!important;
+  }
+  .zurich{
+    padding-bottom: 10px;
+    font-size: 3rem;
+  }
+  .linkedin{
+    height: 55px;
+    width: 55px;
+  }
+  .linkedin img{
+    width: 25px;
+  }
+  .address-container{
+    padding: 30px;
+    border-radius: 50px;
+  }
+  .nav-address1{
+    font-size: 1.7rem;
+  }
+  .nav-address2{
+    font-size: 1.7rem;
+  }
+  .hamburger{
+    height: 55px;
+    width: 55px;
+    margin-right: 0px;
+  }
+  .hamburger .line{
+    width: 33px;
+  }
+  .hamburger .line::before{
+    width: 33px;
+  }
+  .cl-effect-5 a span
 }
