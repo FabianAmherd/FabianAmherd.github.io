@@ -595,6 +595,79 @@ body {
     height: 160px;
   }
 }
+/*Portrait Tablets (iPad Pro)*/
+@media only screen and (max-width: 1024px) and (min-height:1200px){
+  *{
+    font-size: 70%;
+  }
+  #introduction{
+    height: 40vh;
+  }
+  .pricing-preview {
+    padding: 5vh 0 5vh 0;
+  }
+  .pphs{
+    display: none;
+  }
+  .pricing-preview-grid {
+    margin: 3vh 2% 20px 2%;
+  }
+  .pricing-preview-element {
+    margin: 0px 6px;
+    border-radius: 30px;
+    padding: 4px;
+  }
+  .process-section{
+    padding: 5vh 0 5vh 0;
+  }
+  .process-column{
+    margin: 0px 10px !important;
+  }
+  #vorteile-section{
+    padding: 5vh 0 5vh 0;
+  }
+  #grid-container{
+    grid-gap: 25em 25em;
+    padding: 0 8%;
+  }
+  .vhs{
+    display: none;
+  }
+  .grid-element {
+    height: 150px;
+    border-radius: 30px;
+  }
+  .grid-img{
+    height: 35px;
+    width: 35px;
+  }
+  .chs{
+    display: none;
+  }
+  .translation-title{
+    padding: 30px 0 0 0 !important;
+  }
+  .translation-text{
+    margin: 20px 0px !important;
+  }
+  .contact-btn>a {
+    margin: 0px 8px !important;
+    font-size: 1.5rem;
+  }
+  .other-contact{
+    margin-top: 60px;
+  }
+  .contact-container{
+    width: 95%;
+  }
+  .contact-element{
+    height: 150px;
+  }
+  .contact-subheading{
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+  }
+}
 /*Laptops*/
 @media only screen and (max-width: 992px) {
   *{
@@ -744,6 +817,79 @@ body {
     font-size: 1.6rem;
   }
 }
+/*Portrait Tablets (iPad)*/
+@media only screen and (max-width: 768px) and (min-height:1000px){
+  *{
+    font-size: 55%;
+  }
+  #introduction{
+    height: 40vh;
+  }
+  .pricing-preview {
+    padding: 5vh 0 5vh 0;
+  }
+  .pphs{
+    display: none;
+  }
+  .pricing-preview-grid {
+    margin: 3vh 2% 20px 2%;
+  }
+  .pricing-preview-element {
+    margin: 0px 6px;
+    border-radius: 30px;
+    padding: 4px;
+  }
+  .process-section{
+    padding: 5vh 0 5vh 0;
+  }
+  .process-column{
+    margin: 0px 10px !important;
+  }
+  #vorteile-section{
+    padding: 5vh 0 5vh 0;
+  }
+  #grid-container{
+    grid-gap: 25em 25em;
+    padding: 0 8%;
+  }
+  .vhs{
+    display: none;
+  }
+  .grid-element {
+    height: 150px;
+    border-radius: 30px;
+  }
+  .grid-img{
+    height: 35px;
+    width: 35px;
+  }
+  .chs{
+    display: none;
+  }
+  .translation-title{
+    padding: 30px 0 0 0 !important;
+  }
+  .translation-text{
+    margin: 20px 0px !important;
+  }
+  .contact-btn>a {
+    margin: 0px 8px !important;
+    font-size: 1.5rem;
+  }
+  .other-contact{
+    margin-top: 60px;
+  }
+  .contact-container{
+    width: 95%;
+  }
+  .contact-element{
+    height: 150px;
+  }
+  .contact-subheading{
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+  }
+}
 /*Large Smartphones*/
 @media only screen and (max-width: 600px) {
   *{
@@ -884,7 +1030,7 @@ body {
     margin-right: 4px;
   }
   .hero-title > span > span{
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .hero-btns{
     text-align: center;
@@ -1175,7 +1321,7 @@ body {
     font-size: 40%;
   }
   .hero-title > span > span{
-    font-size: 5.5rem;
+    font-size: 4.7rem;
   }
   .btn2{
     margin-left: 25px !important;
