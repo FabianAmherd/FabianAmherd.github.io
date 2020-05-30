@@ -1194,4 +1194,16 @@ body {
   .grid-element {
     height: 130px;
   }
+  .welcome_logo{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 3.5rem;
+  }
+  .welcome_logo img{
+    width: 9rem;
+  }
+  .intro_img{
+    width: 80%;
+    height: auto;
+  }
 }

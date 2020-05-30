@@ -69,3 +69,55 @@
 .legal-link{
   padding-right: 30px;
 }
+
+/* RESPONSIVE DESIGN */
+/*Full HD Desktops*/
+@media only screen and (max-width: 1919px) {
+
+}
+/*Larger Desktops*/
+@media only screen and (max-width: 1600px) {
+
+}
+/*Desktops*/
+@media only screen and (max-width: 1200px) {
+
+}
+/*Laptops*/
+@media only screen and (max-width: 992px) {
+
+}
+/*Landscape Tablets*/
+@media only screen and (max-width: 768px) {
+
+}
+/*Large Smartphones*/
+@media only screen and (max-width: 600px) {
+
+}
+/*Smartphones*/
+@media only screen and (max-width: 450px) {
+
+}
+/*Smaller Smartphones*/
+@media only screen and (max-width: 380px) {
+  .footer{
+    padding: 20px;
+    border-radius: 50px;
+  }
+  .footer-container div .text{
+    font-size: 3rem;
+  }
+  .footer-container div .text-slogan{
+    padding-right: 10px;
+  }
+  .footer img{
+    width: 30px;
+  }
+  .copyright img{
+    width: 10px;
+  }
+  .copyright-container{
+    align-content: center;
+  }
+}
