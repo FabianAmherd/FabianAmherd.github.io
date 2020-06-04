@@ -67,7 +67,7 @@
 }
 
 .legal-link{
-  padding-right: 30px;
+  padding-left: 30px;
 }
 
 /* RESPONSIVE DESIGN */
@@ -77,15 +77,54 @@
 }
 /*Larger Desktops*/
 @media only screen and (max-width: 1600px) {
-
+  .footer-container>div>div>p{
+    font-size: 1.2rem;
+  }
+  .footer-container>div>div>p>a{
+    font-size: 1.2rem;
+  }
+  .copyright{
+    font-size: 1.2rem;
+  }
+  .policy{
+    font-size: 1.6rem;
+  }
 }
 /*Desktops*/
 @media only screen and (max-width: 1200px) {
 
 }
+@media only screen and (max-width: 1024px) and (min-height:1200px){
+  .footer-container>div>div>p{
+    font-size: 1.5rem;
+  }
+  .footer-container>div>div>p>a{
+    font-size: 1.5rem;
+  }
+  .copyright{
+    font-size: 1.5rem;
+  }
+  .policy{
+    font-size: 1.5rem;
+  }
+}
 /*Laptops*/
 @media only screen and (max-width: 992px) {
 
+}
+@media only screen and (max-width: 768px) and (min-height:1000px){
+  .footer-container>div>div>p{
+    font-size: 1.5rem;
+  }
+  .footer-container>div>div>p>a{
+    font-size: 1.5rem;
+  }
+  .copyright{
+    font-size: 1.5rem;
+  }
+  .policy{
+    font-size: 2.5rem;
+  }
 }
 /*Landscape Tablets*/
 @media only screen and (max-width: 768px) {
@@ -97,15 +136,49 @@
 }
 /*Smartphones*/
 @media only screen and (max-width: 450px) {
-
-}
-/*Smaller Smartphones*/
-@media only screen and (max-width: 380px) {
+  .footer-container>div>div>p{
+    font-size: 1.5rem;
+  }
+  .footer-container>div>div>p>a{
+    font-size: 1.5rem;
+  }
+  .copyright{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .copyright-container{
+    flex-direction: column;
+    justify-items: center;
+  }
+  .policy{
+    font-size: 2.7rem;
+    align-items: center;
+    justify-items: space-between;
+    text-align: center;
+  }
+  .policy a{
+    padding: 20px;
+  }
+  .footer-container{
+    flex-direction: column; 
+    padding: 20px;
+  }
+  .footer-container > div > img{
+    margin: auto;
+  }
+  .footer-container > div{
+    margin: 0px 0px 20px 0px;
+  }
+  .footer-container > div > div {
+    text-align: center;
+  }
   .footer{
     padding: 20px;
     border-radius: 50px;
+    height: auto;
   }
-  .footer-container div .text{
+
+  .footer-container div a{
     font-size: 3rem;
   }
   .footer-container div .text-slogan{
@@ -119,5 +192,10 @@
   }
   .copyright-container{
     align-content: center;
+    padding: 20px;
   }
+}
+/*Smaller Smartphones*/
+@media only screen and (max-width: 380px) {
+
 }
