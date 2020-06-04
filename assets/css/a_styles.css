@@ -267,6 +267,6 @@ box-shadow:  19px 19px 39px #bec3c8,
 /*extra small*/
 @media only screen and (max-width: 330px) {
   *{
-    font-size: 45%;
+    font-size: 40%;
   }
 }
