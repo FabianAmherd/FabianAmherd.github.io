@@ -38,6 +38,8 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Kontaktformular | Latify</title>
 		<link rel="stylesheet" href="assets/css/form.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<script src="assets/js/modernizr.custom.js"></script>
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
@@ -87,7 +89,6 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 		<script src="assets/js/classie.js"></script>
 		<script src="assets/js/selectFx.js"></script>
 		<script src="assets/js/fullscreenForm.js"></script>
-		<script src="assets/js/modernizr.custom.js"></script>
 		<script>
 			(function() {
 				var formWrap = document.getElementById( 'fs-form-wrap' );
