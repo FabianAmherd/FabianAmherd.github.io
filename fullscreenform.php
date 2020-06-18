@@ -50,7 +50,6 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
-	<main id="swup">
 		<div class="container">
 			<div class="fs-form-wrap" id="fs-form-wrap">
 
@@ -85,11 +84,11 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
 		</div><!-- /container -->
-		<script data-swup-reload-script="" src="assets/js/classie.js"></script>
-		<script data-swup-reload-script="" src="assets/js/selectFx.js"></script>
-		<script data-swup-reload-script="" src="assets/js/fullscreenForm.js"></script>
-		<script data-swup-reload-script="" src="assets/js/modernizr.custom.js"></script>
-		<script data-swup-reload-script="">
+		<script src="assets/js/classie.js"></script>
+		<script src="assets/js/selectFx.js"></script>
+		<script src="assets/js/fullscreenForm.js"></script>
+		<script src="assets/js/modernizr.custom.js"></script>
+		<script>
 			(function() {
 				var formWrap = document.getElementById( 'fs-form-wrap' );
 
@@ -100,6 +99,5 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 				} );
 			})();
 		</script>
-	</main>
 	</body>
 </html>
