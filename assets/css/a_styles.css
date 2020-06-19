@@ -12,15 +12,15 @@ html{
 #pricing-section{
   background-color: #E0E5EB;
   z-index: -2;
-  padding: 30vh 0 15vh 0;
+  padding: 15vh 0 15vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
 }
 .pricing-table{
   font-family: 'Inter', sans-serif;
-  margin: 50px 0 0 0;
-  width: 70%;
+  margin: 40px 0 0 0;
+  width: 65%;
   border: 1px transparent;
   border-radius: 50px;
   box-shadow:  30px 30px 59px #bec3c8, 
@@ -43,15 +43,16 @@ html{
 .column{
   display: grid;
   place-content: center;
-  padding: 20px;
+  padding: 15px;
 }
 .property{
   font-size: 1.35rem;
   font-weight: 300;
   text-align: center;
-  padding:  20px 8px;
+  padding:  10px 8px;
   width: 1fr;
   overflow-x: hidden;
+  align-self: center;
 }
 .pricing-currency{
   font-size: 1.25rem;
@@ -93,7 +94,6 @@ html{
 }
 .extra-element {
   border-radius: 50px;
-  height: 300px;
   text-align: center;
   background: #E0E5EB;
 box-shadow:  19px 19px 39px #bec3c8, 
@@ -102,11 +102,11 @@ box-shadow:  19px 19px 39px #bec3c8,
   padding: 30px;
 }
 .extra-img{
-  height: 50px;
-  width:50px;
+  height: 40px;
+  width: 40px;
 }
 .extra-title{
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
   margin: 10px 0px 5px 0px;
@@ -117,7 +117,7 @@ box-shadow:  19px 19px 39px #bec3c8,
 }
 .extra-price{
   color: #305289;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin: 15px 0px 20px 0px;
   text-align: center;
@@ -125,7 +125,7 @@ box-shadow:  19px 19px 39px #bec3c8,
 .extra-text{
   font-size: 1.25rem;
   font-weight: 300;
-  margin: 25px 15px;
+  margin: 25px 0px 0px 0px;
 }
 .hvr-grow {
   display: inline-block;

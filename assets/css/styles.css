@@ -371,7 +371,7 @@ body {
 /* Kontakt */
 #contact-section{
   background-color: #E0E5EB;
-  padding: 5vh 0 15vh 0;
+  padding: 5vh 0 5vh 0;
   text-align: center;
   display: grid;
   justify-items: center;
@@ -392,6 +392,7 @@ body {
   width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   font-family: 'Inter';
+  margin: 5vh 0 0 0;
 }
 .contact-element{
   justify-self: center;
@@ -403,9 +404,6 @@ body {
   border-radius: 50px;
   height: 240px;
   padding: 30px;
-  background: #E0E5EB;
-  box-shadow:  24px 24px 48px #bec3c8, 
-             -24px -24px 48px #ffffff!important;
   overflow: hidden;
 }
 .contact-email{
@@ -437,13 +435,14 @@ body {
 .contact-btn{
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   background-color: #E0E5EB;
-  margin: 30px 0px 15vh 0px;
-  border-radius: 50px;
+  margin: 0px 0px 5vh 0px;
+  border-radius: 100px;
+  padding: 1.4rem 1.718rem;
   background: #E0E5EB;
-  box-shadow:  8px 8px 16px #b3b7bc, 
-               -8px -8px 16px #ffffff;
+  box-shadow:  12px 12px 24px #bec3c8, 
+  -12px -12px 24px #ffffff!important;
 }
 .contact-btn:hover{
   box-shadow: inset 8px 8px 16px #b3b7bc, inset -8px -8px 16px #ffffff;
@@ -453,7 +452,6 @@ body {
   display: block;
   color: #305289;
   text-decoration: none;
-  margin: 15px;
   line-height: 30px;
   font-weight: 600;
 }
