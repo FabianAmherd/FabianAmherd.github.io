@@ -71,3 +71,8 @@
   width: 50%;
   margin: 0 0 6vh 0;
 }
+@media only screen and (max-width: 1024px) and (min-height:1200px){
+  .translation-btn>a {
+    padding: 1.5rem 1.618rem;
+  }
+}
