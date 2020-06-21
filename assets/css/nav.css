@@ -685,6 +685,7 @@ nav .logo img {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
+  }
 }
 /*Smaller Smartphones*/
 @media only screen and (max-width: 380px) {
