@@ -507,10 +507,6 @@ body {
   .pricing-preview-element {
     margin: 0px 20px;
   }
-
-  .translation-btn>a {
-    margin: 13px !important;
-  }
   .process-column{
     margin: 0px 50px !important;
   }
@@ -530,9 +526,6 @@ body {
   }
   button.contact-btn{
     margin: 0 ;
-  }
-  .contact-btn>a {
-    margin: 8px 12px !important;
   }
   .other-contact{
     margin-top: 110px;
@@ -580,7 +573,6 @@ body {
     padding: 15px 0 0 0 !important;
   }
   .contact-btn>a {
-    margin: 6px 12px !important;
     font-size: 1.5rem;
   }
   .other-contact{
@@ -819,7 +811,6 @@ body {
     margin: 15px 0px !important;
   }
   .contact-btn>a {
-    margin: 0px 8px !important;
     font-size: 1.5rem;
   }
   .other-contact{
@@ -904,7 +895,6 @@ body {
     margin: 20px 0px !important;
   }
   .contact-btn>a {
-    margin: 0px 8px !important;
     font-size: 1.5rem;
   }
   .other-contact{
@@ -978,7 +968,6 @@ body {
     margin: 10px 8px;
   }
   .translation-btn>a {
-    margin: 0px 8px !important;
     font-size: 2rem !important;
   }
   .headline{
@@ -1025,7 +1014,6 @@ body {
     font-size: 2.5rem !important;
   }
   .contact-btn>a {
-    margin: 0px 8px !important;
     font-size: 2.2rem;
   }
   .other-contact{
@@ -1037,7 +1025,7 @@ body {
   div.contact-element{
     height: 85px;
     border-radius: 20px;
-    box-shadow: 10px 10px 18px #bec3c8, -10px -10px 18px #ffffff !important;
+
   }
   .contact-subheading{
     margin-bottom: 5px;
@@ -1139,7 +1127,6 @@ body {
     margin-top: 50px !important;
   }
   .translation-btn>a {
-    margin: 15px 15px !important;
     font-size: 2.5rem !important;
   }
   .process-section{
@@ -1191,7 +1178,6 @@ body {
     margin: 20px 0px !important;
   }
   .contact-btn>a {
-    margin: 8px 16px !important;
     font-size: 2.2rem;
   }
   .other-contact{
@@ -1205,7 +1191,6 @@ body {
     height: 100px;
     margin: 10px 0px;
     border-radius: 20px;
-    box-shadow: 10px 10px 18px #bec3c8, -10px -10px 18px #ffffff !important;
   }
   .contact-subheading{
     margin-bottom: 5px;
@@ -1300,7 +1285,6 @@ body {
     margin-top: 50px !important;
   }
   .translation-btn>a {
-    margin: 15px 15px !important;
     font-size: 2.5rem !important;
   }
   .process-section{
@@ -1352,7 +1336,6 @@ body {
     margin: 20px 0px !important;
   }
   .contact-btn>a {
-    margin: 8px 16px !important;
     font-size: 2.2rem;
   }
   .other-contact{
@@ -1366,7 +1349,6 @@ body {
     height: 100px;
     margin: 10px 0px;
     border-radius: 20px;
-    box-shadow: 10px 10px 18px #bec3c8, -10px -10px 18px #ffffff !important;
   }
   .contact-subheading{
     margin-bottom: 5px;
