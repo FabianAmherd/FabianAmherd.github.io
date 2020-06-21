@@ -73,7 +73,3 @@
   width: 50%;
   margin: 0 0 6vh 0;
 }
-/*Hide scrollbar*/
-::-webkit-scrollbar{
-  width: 0;
-}
