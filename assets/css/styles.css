@@ -185,10 +185,11 @@ body {
 .hero-btns a{
   font-family: 'Inter', sans-serif;
   border-radius: 40px;
-  padding: 22.5px 27.5px;
+  padding: 1.7rem 1.718rem;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: 600;
+  line-height: 30px;
 }
 .hero-btns{
   margin-top: 100px;
@@ -435,17 +436,13 @@ body {
 .contact-btn{
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 1.75rem;
   background-color: #E0E5EB;
   margin: 0px 0px 5vh 0px;
   border-radius: 100px;
-  padding: 1.4rem 1.718rem;
+  padding: 1.7rem 1.718rem;
   background: #E0E5EB;
   box-shadow:  12px 12px 24px #bec3c8, 
   -12px -12px 24px #ffffff!important;
-}
-.contact-btn:hover{
-  box-shadow: inset 8px 8px 16px #b3b7bc, inset -8px -8px 16px #ffffff;
 }
 .contact-btn>a {
   font-family: 'Inter', sans-serif;
@@ -454,10 +451,7 @@ body {
   text-decoration: none;
   line-height: 30px;
   font-weight: 600;
-}
-.contact-btn>a:hover {
-  display: block;
-  text-decoration: none;
+  font-size: 1.5rem;
 }
 .contact-zurich{
   font-family: 'Source-sans-pro', sans-serif;
@@ -619,7 +613,7 @@ body {
     display: none;
   }
   .pricing-preview-grid {
-    margin: 3vh 2% 20px 2%;
+    margin: 3vh 2% 5vh 2%;
   }
   .pricing-preview-element {
     border-radius: 30px;
@@ -662,8 +656,10 @@ body {
     margin: 20px 0px !important;
   }
   .contact-btn>a {
-
     font-size: 1.5rem;
+  }
+  .contact-btn{
+    margin: 2vh 0!important;
   }
   .other-contact{
     margin-top: 60px;
@@ -855,7 +851,7 @@ body {
     display: none;
   }
   .pricing-preview-grid {
-    margin: 3vh 2% 20px 2%;
+    margin: 3vh 2% 5vh 2%;
   }
   .pricing-preview-element {
     border-radius: 30px;
@@ -895,7 +891,10 @@ body {
     margin: 20px 0px !important;
   }
   .contact-btn>a {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+  .contact-btn{
+    margin: 2vh 0!important;
   }
   .other-contact{
     margin-top: 60px;
@@ -953,6 +952,9 @@ body {
   }
   .pricing-preview-grid{
     margin: 3vh 2% 0px 2%;
+  }
+  .preview-btn{
+    margin-top: 50px !important;
   }
   div.pricing-preview-element {
     margin: 0px 10px;

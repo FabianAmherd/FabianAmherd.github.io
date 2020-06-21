@@ -15,6 +15,7 @@
   border-radius: 100px;
   box-shadow:  13px 13px 27px #bec3c8, 
              -13px -13px 27px #ffffff;
+  min-height: 500px;
 }
 
 .footer-container{
