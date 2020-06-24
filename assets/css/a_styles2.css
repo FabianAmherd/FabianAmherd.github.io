@@ -49,8 +49,9 @@ html{
 }
 .pricing-table{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   font-family: 'Inter', sans-serif;
+  overflow: hidden;
   margin: 40px 0 0 0;
   width: 70%;
   border: 1px transparent;
@@ -58,18 +59,19 @@ html{
   box-shadow:  30px 30px 59px #bec3c8, 
              -30px -30px 59px #ffffff!important;
 }
+.table-row{
+  font-size: 1.38rem;
+  padding: 1vh 0px;
+  width: 100%;
+  text-align: center;
+}
 .heading-row{
-  font-weight: 400;
-  font-size: 1.81rem;
+  font-weight: 500;
+  font-size: 1.71rem;
+  min-height: 4.9vh;
 }
 .heading-row .column{
   color: #305289;
-}
-.table-row{
-  font-size: 1.38rem;
-  padding: 15px 0px;
-  width: 100%;
-  text-align: center;
 }
 .column{
   display: grid;
@@ -96,7 +98,13 @@ html{
   font-weight: bold;
   display: inline-block;
 }
-.column:nth-child(2n){
+.column:nth-child(3),
+.column:nth-child(5),
+.column:nth-child(7){
+  display:none;
+}
+.column:nth-child(2),
+.column:nth-child(6){
   background-color: rgba(158, 175, 252, 0.116);
 }
 .plus{
@@ -179,10 +187,19 @@ html{
  *{
    font-size: 60%;
  }
+ .tick>img{
+  width: 15px;
+ }
+ .cross>img{
+  width: 15px;
+ }
 }
 @media only screen and (max-width: 1024px) and (min-height:1200px){
   *{
     font-size: 75%;
+  }
+  .pricing-table{
+    width: 81%;
   }
   #extras-container{
     grid-template-columns: 1fr 1fr;
@@ -195,16 +212,35 @@ html{
 }
 /*Laptops*/
 @media only screen and (max-width: 992px) {
-
+  .pricing-currency{
+    font-size:1rem;
+  }
+  .pricing-number{
+    font-size: 1.6rem;
+  }
+  .table-row{
+    padding: 1.2vh 0px;
+  }
+  .pricing-table{
+    width: 80%;
+  }
 }
 /*Landscape Tablets*/
 @media only screen and (max-width: 768px) {
-
+  *{
+    font-size: 50%;
+  }
+  .tick>img{
+    width: 12px;
+   }
+   .cross>img{
+    width: 12px;
+   }
 }
 /*Portrait Tablets (iPad)*/
 @media only screen and (max-width: 768px) and (min-height:1000px){
   *{
-    font-size: 50%;
+    font-size: 60%;
   }
   #extras-container{
     grid-template-columns: 1fr 1fr;
@@ -234,12 +270,31 @@ html{
 }
 /*Large Smartphones*/
 @media only screen and (max-width: 600px) {
-
+  *{font-size: 40%;}
 }
 /*Smartphones*/
 @media only screen and (max-width: 450px) {
   *{
     font-size: 50%;
+  }
+  .pricing-table{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .column:nth-child(3),
+  .column:nth-child(5),
+  .column:nth-child(7){
+    display:block;
+  }
+  .column:nth-child(1),
+  .column:nth-child(2),
+  .column:nth-child(5),
+  .column:nth-child(6){
+    background-color: rgba(158, 175, 252, 0.116);
+  }
+  .heading-row{
+    transform: translateX(-57%);
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
   }
   .extra-img {
     height: 35px;
@@ -282,6 +337,9 @@ html{
 @media only screen and (max-width: 380px) {
   *{
     font-size: 45%;
+  }
+  .table-row{
+    padding: .9vh 0px;
   }
 }
 /*extra small*/
