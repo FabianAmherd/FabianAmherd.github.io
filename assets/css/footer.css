@@ -16,6 +16,7 @@
   box-shadow:  13px 13px 27px #bec3c8, 
              -13px -13px 27px #ffffff;
   min-height: 500px;
+  max-height: 600px;
 }
 
 .footer-container{
@@ -74,10 +75,6 @@
 /* RESPONSIVE DESIGN */
 /*Full HD Desktops*/
 @media only screen and (max-width: 1919px) {
-
-}
-/*Larger Desktops*/
-@media only screen and (max-width: 1600px) {
   .footer-container>div>div>p{
     font-size: 1.2rem;
   }
@@ -90,6 +87,10 @@
   .policy{
     font-size: 1.6rem;
   }
+}
+/*Larger Desktops*/
+@media only screen and (max-width: 1600px) {
+
 }
 /*Desktops*/
 @media only screen and (max-width: 1200px) {

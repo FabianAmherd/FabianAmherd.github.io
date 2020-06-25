@@ -54,6 +54,7 @@ body {
   position: absolute;
   display: inline-block;
   overflow: hidden;
+
 }
 
 .intro_container > span {
@@ -483,11 +484,17 @@ body {
   .contact-element{
     height: 220px;
   }
+  .footer-container>div>div>p {
+    font-size: 1.2rem;
+  }
 }
 /*Larger Desktops*/
 @media only screen and (max-width: 1600px) {
   *{
     font-size: 75%;
+  }
+  .hero-btns {
+    margin-top: 50px;
   }
   .hero-btns a{
     padding: 17px 19px;
@@ -770,7 +777,7 @@ body {
     margin-right: 20px;
   }
   .introduction-wrapper img{
-    width:190px;
+    width: 190px;
   }
   .pricing-preview-element {
     margin: 0px 13px;

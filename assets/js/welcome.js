@@ -69,12 +69,12 @@ document.addEventListener("DOMContentLoaded", () => {
     translateY: [
       {
         duration: 0,
-        value: "-=100%",
+        value: "-=110%",
       },
       {
         easing: "easeOutExpo",
         duration: 800,
-        value: "+=100",
+        value: "+=110",
       },
       {
         easing: "easeInExpo",
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     translateY: [
       {
         duration: 0,
-        value: "-=100%",
+        value: "-=110%",
       },
       {
         easing: "easeOutExpo",

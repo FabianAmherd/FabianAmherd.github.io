@@ -169,7 +169,9 @@ html{
 /* RESPONSIVE DESIGN */
 /*Full HD Desktops*/
 @media only screen and (max-width: 1919px) {
-
+  *{
+    font-size: 88%;
+  }
 }
 /*Larger Desktops*/
 @media only screen and (max-width: 1600px) {
