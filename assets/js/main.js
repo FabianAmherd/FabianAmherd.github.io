@@ -48,7 +48,7 @@ navlogo.addEventListener('click', () => {
    menuCircle.classList.toggle("open")
 });
 
-if(location.href != 'http://127.0.0.1:5501/angebot.html'){
+if(location.href != 'https://www.latify.ch/angebot.html'){
 logo.addEventListener('click', () => {
    document.querySelector('html').style.scrollBehavior = 'smooth'
    setTimeout(() => {document.querySelector('html').removeAttribute('style')},2000);
