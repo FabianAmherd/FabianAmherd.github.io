@@ -1,16 +1,16 @@
 function init(){
-  if (location.href == 'https://latify.ch/index.html#hero'){
+  if (location.href == 'https://www.latify.ch/index.html#hero'){
     document.querySelector(".welcome").remove();
     document.querySelector(".intro").remove();
     playMainAnimation()
   }
-  if (location.href == 'https://latify.ch/index.html#vorteile-section'){
+  if (location.href == 'https://www.latify.ch/index.html#vorteile-section'){
     document.querySelector(".welcome").remove();
     document.querySelector(".intro").remove();
     playMainAnimation()
     setTimeout(() => {document.querySelector('#vorteile-section').scrollIntoView()},200);
   }
-  if (location.href == 'https://latify.ch/index.html#contact-section'){
+  if (location.href == 'https://www.latify.ch/index.html#contact-section'){
     document.querySelector(".welcome").remove();
     document.querySelector(".intro").remove();
     playMainAnimation()
