@@ -3,7 +3,8 @@ introImg2 = document.querySelector(".intro_img_container2")
 body = document.querySelector("#body")
 
 document.addEventListener("DOMContentLoaded", () => {
-  anime
+  if (window.screen.availWidth > 450) {
+    anime
     .timeline({
       targets: ".welcome",
       easing: "easeOutExpo",
@@ -60,9 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-
-
-
   anime({
     targets: ".intro_container>.word1",
     delay: 3100,
@@ -118,6 +116,11 @@ document.addEventListener("DOMContentLoaded", () => {
       playMainAnimation()
     },
   })
+  } else {
+    document.querySelector(".intro").remove();
+    document.querySelector(".welcome").remove();
+    playPhoneAnimation()
+  }
 
 });
 
@@ -188,6 +191,94 @@ function playMainAnimation() {
     delay: 1000,
     duration: 2500,
     translateY: ["-100%", "0%"],
+    easing: "easeOutExpo",
+    complete: function (anime) {
+      body.style.removeProperty("overflow");
+    },
+  });
+
+  anime({
+    targets: ".hero-btns",
+    delay: 2400,
+    duration: 1500,
+    opacity: [0, 1],
+    easing: "easeInOutExpo"
+  });
+}
+
+function playPhoneAnimation() {
+  anime.timeline({})
+
+    .add({
+      targets: "nav",
+      delay: 1500,
+      duration: 1500,
+      translateY: ["-100px", "0px"],
+      easing: "easeOutExpo",
+      opacity: 1,
+    });
+
+  anime({
+    targets: ".hero-bg",
+    delay: 600,
+    duration: 2700,
+    opacity: [0,1],
+    translateY: ["10%", "10%"],
+    translateX: ["50%", "0%"],
+    easing: "easeOutExpo",
+  })
+
+  anime({
+    targets: ".word1",
+    delay: 600,
+    duration: 2500,
+    opacity: [0,1],
+    translateY: ["0%", "0%"],
+    easing: "easeOutExpo",
+  });
+
+  anime({
+    targets: ".word2",
+    delay: 600,
+    duration: 2500,
+    opacity: [0,1],
+    translateY: ["0%", "0%"],
+    easing: "easeOutExpo",
+  });
+
+  anime({
+    targets: ".word3",
+    delay: 600,
+    duration: 2500,
+    opacity: [0,1],
+    translateY: ["0%", "0%"],
+    easing: "easeOutExpo",
+  });
+
+  anime({
+    targets: ".word4",
+    delay: 600,
+    duration: 2500,
+    opacity: [0,1],
+    translateY: ["0%", "0%"],
+    easing: "easeOutExpo",
+  });
+
+  anime({
+    targets: ".word5",
+    delay: 600,
+    duration: 2500,
+    opacity: [0,1],
+    translateY: ["0%", "0%"],
+    easing: "easeOutExpo",
+  });
+
+  anime({
+    targets: ".word6",
+    delay: 600,
+    duration: 2500,
+    opacity: [0,1],
+    translateY: ["0%", "0%"],
     easing: "easeOutExpo",
     complete: function (anime) {
       body.style.removeProperty("overflow");

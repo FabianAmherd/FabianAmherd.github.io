@@ -56,7 +56,13 @@ logo.addEventListener('click', () => {
 
 if (btn1)
    btn1.addEventListener('click', () => {
-      introduction.scrollIntoView({behavior: "smooth", block: "center"})
+      if (window.screen.availWidth > 450) {
+         introduction.scrollIntoView({behavior: "smooth", block: "center"});
+      } else {
+         introduction.scrollIntoView({behavior: "smooth", block: "end"});
+         introduction.scrollTop -= 2400;
+      }
+      
    })
 
 
