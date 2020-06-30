@@ -178,7 +178,9 @@ html{
   *{
     font-size: 75%;
   }
-
+  .table-row{
+    padding: 2vh 0px;
+  }
   #extras-container {
     grid-gap: 9em;
 
