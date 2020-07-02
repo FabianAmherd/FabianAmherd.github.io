@@ -45,8 +45,8 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
 		<link rel="manifest" href="assets/img/favicons/site.webmanifest">
 		<link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#305289">
-		<meta name="apple-mobile-web-app-title" content="Professionelle Webseiten | Latify">
-		<meta name="application-name" content="Professionelle Webseiten | Latify">
+		<meta name="apple-mobile-web-app-title" content="Webseiten erstellen lassen | Latify">
+		<meta name="application-name" content="Webseiten erstellen lassen | Latify">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="theme-color" content="#ffffff">
 	</head>
