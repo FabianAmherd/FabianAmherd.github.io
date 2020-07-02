@@ -1,4 +1,12 @@
 /* Main javascript file */
+
+var ua = window.navigator.userAgent;
+var isIE = /MSIE|Trident/.test(ua);
+
+if ( isIE ) {
+  alert('Still using Internet Explorer? This website does not support this browser. Please view this website on another browser (Google Chrome recommended).')
+}
+
 /* Navigation javascript */
 var hamburger = document.querySelector('.hamburger');
 var navLinks = document.querySelector('.nav-links');
