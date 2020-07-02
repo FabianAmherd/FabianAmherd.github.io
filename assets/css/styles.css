@@ -3,11 +3,6 @@
   font-family: monomenti;
   font-display: swap;
 }
-@font-face {
-  src: url(../fonts/Proxima\ Nova\ Extrabold.otf);
-  font-family: proxima-nova;
-  font-display: swap;
-}
 * {
   margin: 0;
   padding: 0;
