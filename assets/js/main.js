@@ -1,6 +1,9 @@
 /* Main javascript file */
 if (window.document.documentMode) {
+   console.log('IE detected')
    alert('Still using Internet Explorer? This website does not support this browser. Please view this website on another browser (Google Chrome recommended).')
+ }else{
+    console.log('IE not detected')
  }
 
 /* Navigation javascript */
