@@ -38,7 +38,7 @@
 
 .footer-container div .text{
   font-weight: 500;
-  line-height: 2.5;
+  line-height: 3.5;
 }
 
 .footer-container div h3{
@@ -139,10 +139,10 @@
 /*Smartphones*/
 @media only screen and (max-width: 450px) {
   .footer-container>div>div>p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .footer-container>div>div>p>a{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .copyright{
     font-size: 1.5rem;
