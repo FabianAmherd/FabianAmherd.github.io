@@ -1070,21 +1070,22 @@ body {
   *{
     font-size: 50%;
   }
+  #hero{
+    min-height: 653px;
+  }
   .hero-wrapper{
     flex-direction: column;
     width: 100%;
+    margin-top: 6vh;
   }
   .hero-title-wrapper {
     flex-direction: column;
     transform: translateX(5%);
-    margin-top: 40vh;
-    height: 76vh;
-    justify-content: space-between;
+    margin: 0px 0px 3vh 0px;
   }
   .hero-bg{
     opacity: 0;
     width: 70%;
-    transform: translateY(-45vh) !important;
   }
   .hero-title {
     text-align: center;
@@ -1269,13 +1270,8 @@ body {
     flex-direction: column;
     width: 95%;
   }
-  .hero-title-wrapper {
-    margin-top: 38vh;
-    height: 75vh;
-  }
   .hero-bg{
     width: 78%;
-    transform: translateY(-45vh) !important;
   }
   .hero-title {
     text-align: center;
@@ -1422,8 +1418,12 @@ body {
     width: 80%;
     height: auto;
   }
+  .hero-wrapper{
+    margin-top: -10vh;
+  }
   .hero-title-wrapper {
-    margin-top: 42vh;
+    margin: 0px 0px 1vh 0px;
+    color: red;
   }
   .hero-title > span > span{
     font-size: 4.7rem;
