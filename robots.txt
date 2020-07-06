@@ -1,2 +1,2 @@
-User Agent: *
-Disallow: /thankyou.html
+user-agent: *
+disallow: /thankyou.html
