@@ -128,7 +128,6 @@ html{
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3em 3em;
   margin: 0 15%;
-
 }
 .extra-element {
   border-radius: 50px;
@@ -167,6 +166,43 @@ html{
 }
 
 /* RESPONSIVE DESIGN */
+/*Higher res Desktops*/
+@media only screen and (max-width: 3000px) {
+  :root{
+    font-size: 25px;
+  }
+  .table-row{
+    padding: 1.3vh 0px;
+  }
+  .tick>img{
+    width: 40px;
+   }
+   .cross>img{
+    width: 40px;
+   }
+   #extras-container{
+    margin: 0 12%;
+  }
+  .extra-element {
+    padding: 50px;
+  }
+  .extra-img{
+    height: 90px;
+    width: 90px;
+  }
+  .extra-title{
+    font-size: 1.8rem;
+  }
+  .extra-price{
+    font-size: 1.45rem;
+  }
+  .extra-text{
+    font-size: 1.35rem;
+  }
+  .translation-text{
+    margin: 60px 0 !important;
+  }
+}
 /*Full HD Desktops*/
 @media only screen and (max-width: 1919px) {
   *{

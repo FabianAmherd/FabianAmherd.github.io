@@ -471,6 +471,29 @@ body {
 }
 
 /* RESPONSIVE DESIGN */
+/*Higher res Desktops*/
+@media only screen and (max-width: 3000px) {
+  :root{
+    font-size: 25px;
+  }
+  .hero-bg{
+    width: 80%;
+  }
+  .pricing-preview-element {
+    max-width: 400px;
+    padding: 30px;
+  }
+  #grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 3em 2.5em;
+    padding: 0 17%;
+  }
+  .grid-element {
+    border-radius: 50px;
+    height: 300px;
+  }
+}
 /*Full HD Desktops*/
 @media only screen and (max-width: 1919px) {
   *{
