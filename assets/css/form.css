@@ -536,21 +536,6 @@ button.fs-submit:focus{
 input[type=text]::-ms-clear {
     display: none;
 }
-/*Higher res Desktops*/
-@media only screen and (max-width: 3000px) {
-	html, body, .container{
-		font-size: 200%;
-	}
-	.fs-progress{
-		height: 0.1em;
-	}
-	.fs-progress{
-		font-size: 1.2rem;
-	}
-	.fs-form-full, .fs-message-error{
-		max-width: 1200px;
-	}
-}
 /* Adjust form for smaller screens */
 @media screen and (max-width: 52.5em) {
 	body {
