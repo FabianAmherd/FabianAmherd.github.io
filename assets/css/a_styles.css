@@ -167,7 +167,7 @@ html{
 
 /* RESPONSIVE DESIGN */
 /*Higher res Desktops*/
-@media only screen and (max-width: 3000px) {
+@media only screen and (min-width: 2000px) {
   :root{
     font-size: 25px;
   }
