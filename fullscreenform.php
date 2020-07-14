@@ -8,7 +8,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 	$package = htmlspecialchars($_POST['q4']);
 	$additionalinfo = htmlspecialchars($_POST['q5']);
 
-	$toEmail = 'hello@latify.ch';
+	$toEmail = 'hallo@latify.ch';
 	$subject = 'Contact Form submission on latify.ch by '.$name;
 	$body = '<h2> Contact request </h2><hr><br>
 		<h4>Name: </h4><p>'.$name.'</p>
@@ -69,7 +69,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q3">Wo dürfen wir Ihnen antworten?</label>
-							<input class="fs-anim-lower" id="q3" name="q3" type="email" placeholder="hello@latify.ch" spellcheck="false" value="<?php echo isset($_POST['q3']) ? $email : ''; ?>" required/>
+							<input class="fs-anim-lower" id="q3" name="q3" type="email" placeholder="hallo@latify.ch" spellcheck="false" value="<?php echo isset($_POST['q3']) ? $email : ''; ?>" required/>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q4">Welches Paket sagt Ihnen am meisten zu?</label>
