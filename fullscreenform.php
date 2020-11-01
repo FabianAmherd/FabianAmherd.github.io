@@ -1,32 +1,49 @@
 <!-- PHP Form submit -->
 <?php
-
-if(filter_has_var(INPUT_POST, 'submit')) {
-	$name = htmlspecialchars($_POST['q1']);
-	$employer = htmlspecialchars($_POST['q2']);
-	$email = htmlspecialchars($_POST['q3']);
-	$package = htmlspecialchars($_POST['q4']);
-	$additionalinfo = htmlspecialchars($_POST['q5']);
-
-	$toEmail = 'hallo@latify.ch';
-	$subject = 'Contact Form submission on latify.ch by '.$name;
-	$body = '<h2> Contact request </h2><hr><br>
-		<h4>Name: </h4><p>'.$name.'</p>
-		<h4>Employer: </h4><p>'.$employer.'</p>
-		<h4>Email: </h4><p>'.$email.'</p>
-		<h4>Package: </h4><p>'.$package.'</p>
-		<h4>Additional info: </h4><p>'.$additionalinfo.'</p>
-	';
-	$headers = "MIME-Version: 1.0" ."\r\n";
-	$headers .= "Content-Type:text/html;charset=UTF-8" ."\r\n";
-
-	$headers .= "From: ".$name. "<".$email.">" ."\r\n";
-
-	if(mail($toEmail, $subject, $body, $headers)){
-		// Redirect to thankyou.html
-		echo "<script type='text/javascript'>window.location.replace('http://latify.ch/thankyou.html');</script>";
+if(isset($_POST['submit'])) {
+	if(!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
+			echo 'reCAPTHCA verification failed, please try again.';
 	} else {
-		$msg = '';
+			$secret = '6Lfqw90ZAAAAAP-IR67yECQVtb1HK7vVuYbXb_ho';
+
+			$ch = curl_init();
+			curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			$response = curl_exec($ch);
+			curl_close($ch);
+			$response = json_decode($response);
+
+			if($response->success) {
+					if(filter_has_var(INPUT_POST, 'submit')) {
+						$name = htmlspecialchars($_POST['q1']);
+						$employer = htmlspecialchars($_POST['q2']);
+						$email = htmlspecialchars($_POST['q3']);
+						$package = htmlspecialchars($_POST['q4']);
+						$additionalinfo = htmlspecialchars($_POST['q5']);
+					
+						$toEmail = 'hallo@latify.ch';
+						$subject = 'Contact Form submission on latify.ch by '.$name;
+						$body = '<h2> Contact request </h2><hr><br>
+							<h4>Name: </h4><p>'.$name.'</p>
+							<h4>Employer: </h4><p>'.$employer.'</p>
+							<h4>Email: </h4><p>'.$email.'</p>
+							<h4>Package: </h4><p>'.$package.'</p>
+							<h4>Additional info: </h4><p>'.$additionalinfo.'</p>
+						';
+						$headers = "MIME-Version: 1.0" ."\r\n";
+						$headers .= "Content-Type:text/html;charset=UTF-8" ."\r\n";
+					
+						$headers .= "From: ".$name. "<".$email.">" ."\r\n";
+					
+						if(mail($toEmail, $subject, $body, $headers)){
+							echo "<script type='text/javascript'>window.location.replace('http://latify.ch/thankyou.html');</script>";
+						} else {
+							$msg = '';
+						}
+					}
+			} else {
+					echo 'reCAPTHCA verification failed, please try again.';
+			}
 	}
 }
 ?>
@@ -39,6 +56,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 		<link rel="stylesheet" type="text/css" href="assets/css/form.css" />
 		<title>Kontaktformular | Latify</title>
 		<script src="assets/js/modernizr.custom.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
@@ -82,6 +100,7 @@ if(filter_has_var(INPUT_POST, 'submit')) {
 
 
 					</ol><!-- /fs-fields -->
+					<div class="g-recaptcha" data-sitekey="6Lfqw90ZAAAAAJ1k_2npQ9iy4qYnVm7UJj4_I2aR" data-theme="dark"></div>
 					<button class="fs-submit" type="submit" name="submit">Absenden</button>
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
