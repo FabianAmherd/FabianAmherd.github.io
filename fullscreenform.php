@@ -2,7 +2,7 @@
 <?php
 if(isset($_POST['submit'])) {
 	if(!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
-			echo alert('reCAPTHCA verification failed, please try again.');
+		alert('reCAPTHCA verification failed, please try again.');
 	} else {
 			$secret = '6Lfqw90ZAAAAAP-IR67yECQVtb1HK7vVuYbXb_ho';
 
@@ -42,7 +42,7 @@ if(isset($_POST['submit'])) {
 						}
 					}
 			} else {
-					echo alert('reCAPTHCA verification failed, please try again.');
+				alert('reCAPTHCA verification failed, please try again.');
 			}
 	}
 }
