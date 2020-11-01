@@ -645,3 +645,8 @@ input[type=text]::-ms-clear {
 .fs-form-overview .fs-fields > li > label{
 	color: #000000 !important;
 }
+/* reCAPTCHA style */
+.g-recaptcha{
+	display: none;
+	margin-bottom: 2em;
+}

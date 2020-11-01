@@ -2,7 +2,7 @@
 <?php
 if(isset($_POST['submit'])) {
 	if(!isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response'])) {
-			echo 'reCAPTHCA verification failed, please try again.';
+			echo alert('reCAPTHCA verification failed, please try again.');
 	} else {
 			$secret = '6Lfqw90ZAAAAAP-IR67yECQVtb1HK7vVuYbXb_ho';
 
@@ -36,13 +36,13 @@ if(isset($_POST['submit'])) {
 						$headers .= "From: ".$name. "<".$email.">" ."\r\n";
 					
 						if(mail($toEmail, $subject, $body, $headers)){
-							echo "<script type='text/javascript'>window.location.replace('http://latify.ch/thankyou.html');</script>";
+							echo "<script type='text/javascript'>window.open('https://latify.ch/thankyou.html','_self');</script>";
 						} else {
 							$msg = '';
 						}
 					}
 			} else {
-					echo 'reCAPTHCA verification failed, please try again.';
+					echo alert('reCAPTHCA verification failed, please try again.');
 			}
 	}
 }
@@ -100,7 +100,7 @@ if(isset($_POST['submit'])) {
 
 
 					</ol><!-- /fs-fields -->
-					<div class="g-recaptcha" data-sitekey="6Lfqw90ZAAAAAJ1k_2npQ9iy4qYnVm7UJj4_I2aR" style="display:none;"></div>
+					<div class="g-recaptcha" data-sitekey="6Lfqw90ZAAAAAJ1k_2npQ9iy4qYnVm7UJj4_I2aR"></div>
 					<button class="fs-submit" type="submit" name="submit">Absenden</button>
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
