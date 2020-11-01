@@ -100,7 +100,7 @@ if(isset($_POST['submit'])) {
 
 
 					</ol><!-- /fs-fields -->
-					<div class="g-recaptcha" data-sitekey="6Lfqw90ZAAAAAJ1k_2npQ9iy4qYnVm7UJj4_I2aR" data-theme="dark"></div>
+					<div class="g-recaptcha" data-sitekey="6Lfqw90ZAAAAAJ1k_2npQ9iy4qYnVm7UJj4_I2aR" style="display:none;"></div>
 					<button class="fs-submit" type="submit" name="submit">Absenden</button>
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
@@ -115,6 +115,8 @@ if(isset($_POST['submit'])) {
 				new FForm( formWrap, {
 					onReview : function() {
 						classie.add( document.body, 'overview' );
+						captcha = document.querySelector(".g-recaptcha");
+						captcha.style.display = 'block';
 					}
 				} );
 			})();
